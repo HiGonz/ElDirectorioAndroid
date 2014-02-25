@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/imagendest"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginRight="10dip"
+        android:contentDescription="@string/no_description" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clubicon"
+        android:contentDescription="@string/no_description" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/linr1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/linr2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconoNext"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="3dip"
+        android:contentDescription="@string/no_description"
+        android:src="@drawable/next_icon" />
+
+</LinearLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/layout/adapter_destacados.xml -->

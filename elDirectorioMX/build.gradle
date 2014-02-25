@@ -1,0 +1,29 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "19.0.1"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':facebook-android-sdk:facebook')
+    compile project(':library')
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:+'
+    compile 'com.google.android.gms:play-services:3.1.+'
+    compile 'com.googlecode.android-query:android-query:0.25.9'
+    compile 'com.google.code.gson:gson:2.2.+'
+    compile files('libs/commons-io-2.4.jar')
+}

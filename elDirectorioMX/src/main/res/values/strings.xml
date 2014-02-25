@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ElDirectorio</string>
+    <string name="hello_world">El Directorio </string>
+    <string name="menu_settings">Settings</string>
+    <string name="categorias">Categorías</string>
+    <string name="buscar">Buscar</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="destacados">Club El Directorio</string>
+    <string name="cupones">Cupones</string>
+    <string name="franquicias">Franquicias</string>
+    <string name="anunciate">Anúnciate</string>
+    <string name="comparte">Comparte</string>
+    <string name="image_desc">Image</string>
+    <string name="logoElDir1">ElDirectorio</string>
+    <string name="layout_anunciate_1">¡Posiciona tu marca o negocio en el Directorio a un precio accesible e incrementa tus ventas!</string>
+    <string name="layout_anunciate_2">Envía un correo electrónico con tus datos: nombre, ciudad y teléfonos (LADA incluida) a ventas@eldirectorio.mx y uno de nuestros ejecutivos se pondrá en contacto contigo.</string>
+    <string name="layout_anunciate_3">O si prefieres comunícate al (871)227 7080 para hablar con uno de nuestros representantes.</string>
+    <string name="title_activity_franquicias">Franquicias</string>
+    <string name="title_activity_cupones">Cupones</string>
+    <string name="title_activity_comparte">Comparte</string>
+    <string name="title_activity_cupones_registro">Registro</string>
+    <string name="title_activity_cupon_login">Cupones El Directorio</string>
+    <string name="title_activity_cupones_categorias">Categorías con Cupones</string>
+    <string name="title_activity_cupones_lista">Lista de Cupones</string>
+    <string name="title_activity_show_advertiser">Anunciante</string>
+    <string name="title_activity_gallery_view">Galería de Imágenes</string>
+    <string name="title_activity_favoritos">Favoritos</string>
+    <string name="title_activity_search">Búsqueda</string>
+    <string name="title_activity_show_search">Resultados de Búsqueda</string>
+    <string name="title_activity_acerca_de">Acerca De</string>
+    <string name="title_activity_categorias">Categorias</string>
+    <string name="title_activity_show_categorias">Todas las Categorías</string>
+    <string name="title_activity_main_categories">Categorías principales</string>
+    <string name="title_activity_info_club">Información Club El Directorio</string>
+    <string name="inicia_sesi_n_o_reg_strate_para_acceder_a_los_cupones">Inicia sesión o regístrate para acceder a los cupones</string>
+    <string name="nombre_de_usuario">Nombre de Usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="reg_strate_gratis_">¡Regístrate Gratis!</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="_qu_est_s_buscando_">¿Qué estás buscando?</string>
+    <string name="buscando">buscando</string>
+    <string name="en_un_radio_de_">"En un radio de: "</string>
+    <string name="linealinea">--</string>
+    <string name="buscando_">Buscando . . .</string>
+    <string name="dile_a_tus_amigos_de_el_directorio_">Dile a tus amigos de El Directorio:</string>
+    <string name="_deseas_ser_miembro_del_club_">¿Deseas ser miembro del club?</string>
+    <string name="m_s_informaci_n_en_">Más información en:</string>
+    <string name="ventas_mail">ventas@eldirectorio.mx</string>
+    <string name="logo_negocio">logo del negocio</string>
+    <string name="_datos_de_la_empresa">"Datos de la Empresa"</string>
+    <string name="testing">Cargando</string>
+    <string name="icono_localizacion">Icono localización</string>
+    <string name="icono_next">Icono Next</string>
+    <string name="_sucursales">" Sucursales"</string>
+    <string name="_contacto">" Contacto"</string>
+    <string name="_galeria">" Galeria"</string>
+    <string name="_coupons">Cupones</string>
+    <string name="header_del_directorio">Header del directorio</string>
+    <string name="app_description">El Directorio Mx es una práctica aplicación que te permite buscar negocios por palabras clave o por categoría, y obtener toda su información. En nuestro directorio comercial, con un clic, podrás llamar al negocio, obtener direcciones precisas desde tu ubicación hacia éste, visualizar su fachada, revisar su sitio web oficial, sus perfiles en redes sociales, etc. Además, con El Directorio tendrás acceso a promociones exclusivas de y para nuestros anunciantes.
+
+ 
+¡FRANQUICIAS DISPONIBLES! Gana dinero comercializando espacios en nuestro directorio.
+ 
+¡INCREMENTA TUS VENTAS! Anúnciate en nuestro directorio.
+ 
+www.eldirectorio.mx</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="imagen_seleccionada">Imagen seleccionada</string>
+    <string name="compartir_en_facebook">compartir en facebook</string>
+    <string name="compartir_en_twitter">compartir en twitter</string>
+    <string name="compartir_v_a_email">compartir vía email</string>
+    <string name="no_description">no description</string>
+    <string name="icono_destacados">icono destacados</string>
+    <string name="no_hay_cupones_en_esta_categor_a">No hay cupones en esta categoría</string>
+    <string name="title_activity_pais">El Directorio</string>
+    <string name="action_settings">Settings</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="title_activity_configure">Configuración</string>
+    <string name="m_exico">México</string>
+    <string name="ecuador">Ecuador</string>
+    <string name="select_country">Selecciona tu País</string>
+    <string name="usuario">Usuario</string>
+    <string name="inicio_sesion">Inicio de sesión</string>
+    <string name="info_contacto">Información y Contacto</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="web">Web</string>
+    <string name="email">email</string>
+    <string name="user_pass">Usuario y contraseña</string>
+    <string name="no_cuenta">¿No tienes cuenta?</string>
+    <string name="register_here">¡Registrate aquí!</string>
+    <string name="register_desc">El registro es gratis y solo toma unos segundos.</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="cupones_club">Cupones Club</string>
+    <string name="iniciar_cerrar_sesion">Iniciar/Cerrar Sesión</string>
+    <string name="facebook_app_id">524299617619996</string>
+    <string name="nombre_de_la_empresa">Nombre de la empresa</string>
+    <string name="video">Video</string>
+    <string name="ver_video">Ver video</string>
+    <string name="promociones_del_club">Promociones Club El Directorio</string>
+    <string name="seleccion_pais">Selección de País</string>
+    <string name="title_activity_no_network">Error en la Red</string>
+    <string name="activity_cupones_club">Cupones del Club El Directorio</string>
+    <string name="logo_el_directorio">Logo El Directorio</string>
+
+</resources>

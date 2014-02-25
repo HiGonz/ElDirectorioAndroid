@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NoNetworkActivity" >
+
+   <WebView
+    	android:id="@+id/noNetwork_webview"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"/>
+
+
+    
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/noNet_sidenavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
+<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/layout/activity_no_network.xml -->

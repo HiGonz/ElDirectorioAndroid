@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cupones" >
+
+    <TextView
+        android:id="@+id/cupones_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="start"
+        android:text="@string/inicia_sesi_n_o_reg_strate_para_acceder_a_los_cupones"
+        android:textSize="13sp" />
+    
+    <EditText 
+        android:id="@+id/usuarioCupones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_de_usuario"
+        android:layout_below="@id/cupones_tv"
+        android:lines="1"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <EditText
+        android:id="@+id/contraCupones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrase_a"
+        android:layout_below="@id/usuarioCupones"
+        android:lines="1"
+        android:inputType="textPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <Button 
+        android:id="@+id/BtnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contraCupones"
+        android:layout_alignParentLeft="true"
+        android:text="@string/reg_strate_gratis_"
+        android:layout_marginLeft="10dp"/>
+    
+    <Button
+        android:id="@+id/BtnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contraCupones"
+        android:layout_alignParentRight="true"
+        android:text="@string/iniciar_sesi_n"
+        android:layout_marginRight="10dp"/>
+    
+    
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/cupones_sidenavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+
+</RelativeLayout>

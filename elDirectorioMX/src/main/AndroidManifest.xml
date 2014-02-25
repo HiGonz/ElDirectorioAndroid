@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="directorio.actividades"
+    android:versionCode="43"
+    android:versionName="3.2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <compatible-screens>
+
+        <!-- all small size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        <!-- all normal size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <!-- all large size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+        <!-- all extra large size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="xlarge" />
+
+        <!-- Special case for Nexus 7 -->
+        <screen
+            android:screenDensity="213"
+            android:screenSize="large" />
+
+        <!-- For new android phones like galaxy s4 and htc one -->
+        <screen
+            android:screenDensity="480"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+    </compatible-screens>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name="directorio.applications.TodoManagerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+
+        <!-- <receiver -->
+        <!-- android:name="directorio.others.ConnectionChangeReceiver" -->
+        <!-- android:label="NetworkConnection" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity android:name="directorio.actividades.Anunciate" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.Franquicias"
+            android:label="@string/title_activity_franquicias" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.Cupones"
+            android:label="@string/title_activity_cupones" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.Comparte"
+            android:label="@string/title_activity_comparte" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponesRegistro"
+            android:label="@string/title_activity_cupones_registro" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponLogin"
+            android:label="@string/title_activity_cupon_login" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponesLista"
+            android:label="@string/title_activity_cupones_lista" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponesClub"
+            android:label="@string/activity_cupones_club" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponesClubLista"
+            android:label="@string/activity_cupones_club" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponClubLogin"
+            android:label="@string/activity_cupones_club" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.ShowAdvertiser"
+            android:label="@string/title_activity_show_advertiser" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.GalleryView"
+            android:label="@string/title_activity_gallery_view" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.Favoritos"
+            android:label="@string/title_activity_favoritos" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.ShowSearch"
+            android:label="@string/title_activity_show_search" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.AcercaDe"
+            android:label="@string/title_activity_acerca_de" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.Categorias"
+            android:label="@string/title_activity_categorias" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.ShowCategorias"
+            android:label="@string/title_activity_show_categorias" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.MainCategories"
+            android:label="@string/title_activity_main_categories" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.InfoClub"
+            android:label="@string/title_activity_info_club" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.CuponesAdv"
+            android:label="@string/title_activity_info_club" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.PaisActivity"
+            android:label="@string/title_activity_pais" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="directorio.actividades.Preferences"
+            android:label="@string/title_activity_configure" >
+        </activity>
+        <activity
+            android:name="directorio.actividades.NoNetworkActivity"
+            android:label="@string/title_activity_no_network" >
+        </activity>
+    </application>
+
+</manifest>

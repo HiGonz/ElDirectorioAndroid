@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="Ingresar datos de inicio de sesión"
+        android:title="@string/inicio_sesion" >
+
+        <PreferenceScreen
+            android:key="Inicio de Sesión"
+            android:summary="Toca aquí para iniciar sesión"
+            android:title="@string/iniciar_sesi_n" >
+
+            <PreferenceCategory
+                android:summary="Usuario y contraseña"
+                android:title="@string/user_pass" >
+
+                <EditTextPreference
+                    android:key="username"
+                    android:summary="Por favor ingresa tu nombre de usuario"
+                    android:title="@string/usuario" />
+
+                <EditTextPreference
+                    android:inputType="textPassword"
+                    android:key="password"
+                    android:summary="Entra tu contraseña"
+                    android:title="@string/contrase_a" />
+
+                <Preference
+                    android:key="iniciarCerrarSesion"
+                    android:title="@string/iniciar_cerrar_sesion" >
+                </Preference>
+            </PreferenceCategory>
+
+            <PreferenceCategory
+                android:key="No registrados"
+                android:title="@string/no_cuenta" >
+
+                <Preference
+                    android:key="registerHere"
+                    android:title="@string/register_here" >
+                </Preference>
+
+                <Preference
+                    android:summary="@string/register_desc"
+                    android:title="@string/reg_strate_gratis_" >
+                </Preference>
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Selección de país"
+        android:title="@string/seleccion_pais" >
+
+        <ListPreference
+            android:key="countrySelected"
+            android:summary="Toca aquí para seleccionar país"
+            android:title="@string/select_country" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="info"
+        android:summary="Información"
+        android:title="@string/info_contacto" >
+
+        <Preference
+            android:key="acercade"
+            android:title="@string/title_activity_acerca_de" >
+        </Preference>
+
+        <Preference
+            android:key="twitter"
+            android:summary=" @eldirectoriomx"
+            android:title="@string/twitter" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://twitter.com/EldirectorioMx" />
+        </Preference>
+
+        <Preference
+            android:key="facebook"
+            android:summary="El Directorio"
+            android:title="@string/facebook" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.facebook.com/eldirectoriomx" />
+        </Preference>
+
+        <Preference
+            android:key="web1"
+            android:summary="http://edirectorio.mx"
+            android:title="@string/web" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://m.eldirectorio.mx/" />
+        </Preference>
+
+        <Preference
+            android:key="web2"
+            android:summary="http://www.publysorpresas.com.mx"
+            android:title="@string/web" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.publysorpresas.com.mx" />
+        </Preference>
+
+        <Preference
+            android:key="email1"
+            android:summary="info@eldirectorio.mx"
+            android:title="@string/email" >
+        </Preference>
+
+        <Preference
+            android:key="email2"
+            android:summary="ventas@eldirectorio.mx"
+            android:title="@string/email" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/layout/preferences.xml -->
