@@ -174,6 +174,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	@Override
 	protected void onResume() {
 		super.onResume();
+        Log.d("Retornado","I am back");
 		buscando.setVisibility(TextView.INVISIBLE);
 		cargando.setVisibility(ProgressBar.INVISIBLE);
 		cargando.setIndeterminate(false);
@@ -189,16 +190,15 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	}
 
 	@Override
-	protected void onPause() {
+    protected void onPause() {
 		super.onPause();
 		Log.d(TAG, "on pause");
-        manager.removeUpdates(locationListener);
-		if (manager != null) {
-			manager = null;
-         }
-
+        if (locationListener != null && lm != null){
+            lm.removeUpdates(locationListener);
+            lm = null;
+        }
 		// unregisterReceiver(bcr);
-	}
+    }
 
 	/**
 	 * Método que retrae la localización del dispositivo
@@ -209,8 +209,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		// La ultima localización conocida del dispositivo, en este caso se
 		// trata de obtener por medio de los datos del proovedor de datos, en
 		// caso de que no se conozca, se regresa NULL.
-		Location loc1 = lm
-				.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+		Location loc1 = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
 		if (loc1 != null) {
 			Log.d(TAG, "Lo obtuve por WIFI");
@@ -238,33 +237,21 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			sendBroadcast(intento);
 		}
 
-		manager = (LocationManager) this
-				.getSystemService(Context.LOCATION_SERVICE);
-
+//		manager = (LocationManager) this	.getSystemService(Context.LOCATION_SERVICE);
 		locationListener = new LocationListener() {
-
 			public void onLocationChanged(Location arg0) {
 				latitude = arg0.getLatitude();
 				longitude = arg0.getLongitude();
 				Log.d(TAG, "Localizacion: " + latitude + "," + longitude);
 			}
-
 			public void onProviderDisabled(String arg0) {
-
 			}
-
 			public void onProviderEnabled(String arg0) {
-
 			}
-
 			public void onStatusChanged(String arg0, int arg1, Bundle arg2) {
-
 			}
-
 		};
-		manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0,
-				locationListener);
-
+		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0,locationListener);
 	}
 
 	/**
