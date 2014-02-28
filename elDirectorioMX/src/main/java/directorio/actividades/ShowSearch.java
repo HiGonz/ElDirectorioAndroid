@@ -216,7 +216,7 @@ public class ShowSearch extends SherlockActivity implements
 		protected void onPreExecute() {
 			pd = new ProgressDialog(ctx);
 			pd.setTitle("Cargando");
-			pd.setMessage("Descargando informaci�n");
+			pd.setMessage("Descargando información");
 			pd.setIndeterminate(false);
 			pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 			pd.show();

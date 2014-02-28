@@ -239,7 +239,7 @@ public class ShowAdvertiser extends SherlockActivity implements
 
 		} catch (ActivityNotFoundException e) {
 			(Toast.makeText(this,
-					"No se ha encontrado la aplicaci�n de Google Maps",
+					"No se ha encontrado la aplicación de Google Maps",
 					Toast.LENGTH_LONG)).show();
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -1110,7 +1110,7 @@ public class ShowAdvertiser extends SherlockActivity implements
 		protected void onPreExecute() {
 			pd = new ProgressDialog(ctx);
 			pd.setTitle("Cargando");
-			pd.setMessage("Descargando informaci�n");
+			pd.setMessage("Descargando información");
 			pd.setIndeterminate(false);
 			pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 			pd.show();

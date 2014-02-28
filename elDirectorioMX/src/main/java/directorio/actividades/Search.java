@@ -174,12 +174,10 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	@Override
 	protected void onResume() {
 		super.onResume();
-        Log.d("Retornado","I am back");
 		buscando.setVisibility(TextView.INVISIBLE);
 		cargando.setVisibility(ProgressBar.INVISIBLE);
 		cargando.setIndeterminate(false);
-		manager = (LocationManager) getApplicationContext().getSystemService(
-				Context.LOCATION_SERVICE);
+		manager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 
 		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
 				getString(R.string.facebook_app_id));
@@ -205,7 +203,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	 */
 	private void getLocation() {
 		lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
 		// La ultima localización conocida del dispositivo, en este caso se
 		// trata de obtener por medio de los datos del proovedor de datos, en
 		// caso de que no se conozca, se regresa NULL.
