@@ -4,6 +4,9 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -20,13 +23,19 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.gcm.GoogleCloudMessaging;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
 import directorio.adapters.CustomCategories;
 import directorio.applications.TodoManagerApplication;
 import directorio.services.dao.CategoriaDAO;
+import directorio.servicios.RegisterDevice;
+
 
 /**
  * Clase que se encarga de mostrar las categorías principales.
@@ -39,7 +48,16 @@ import directorio.services.dao.CategoriaDAO;
 public class MainCategories extends SherlockActivity implements
 		ISideNavigationCallback {
 
-	private SideNavigationView sideNavigationCategorias;
+    //Variables de registro para el GCM//a
+    public static final String EXTRA_MESSAGE = "message";
+    public static final String PROPERTY_REG_ID = "registration_id";
+    private static final String PROPERTY_APP_VERSION = "appVersion";
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+    GoogleCloudMessaging gcm;
+    String regid;
+    String SENDER_ID = "732420872532";
+
+    private SideNavigationView sideNavigationCategorias;
 
 	private ProgressBar progreso;
 
@@ -51,6 +69,8 @@ public class MainCategories extends SherlockActivity implements
 
 	private TodoManagerApplication tma;
 
+    private Context context;
+
 	/** Called when the activity is first created. */
 
 	@Override
@@ -59,6 +79,8 @@ public class MainCategories extends SherlockActivity implements
 		setContentView(R.layout.activitiy_main_categories);
 		setTitle("Categorias");
 		Log.d(TAG, "Actividad " + TAG);
+
+     context = getApplicationContext();
 
 		tma = (TodoManagerApplication) getApplication();
 		boolean network = tma.isNetworkAvailable();
@@ -105,6 +127,23 @@ public class MainCategories extends SherlockActivity implements
 			// carga los elementos de la interfaz
 			setupViews();
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+            if (checkPlayServices()) {
+                gcm = GoogleCloudMessaging.getInstance(this);
+                regid = getRegistrationId(context);
+
+                if (regid.length() == 0) {
+                    Log.d("GCM","No hubo registro");
+                    registerInBackground();
+                }else{
+                    Log.d("GCM",regid);
+                    Intent registrationService = new Intent(MainCategories.this, RegisterDevice.class);
+                    registrationService.putExtra("uuid",regid);
+                    startService(registrationService);
+                }
+            } else {
+                Log.i(TAG, "No valid Google Play Services APK found.");
+            }
 		}
 	}
 
@@ -154,10 +193,120 @@ public class MainCategories extends SherlockActivity implements
 
 			}
 		});
-
 	}
+    /**
+     * Metodo que verifica la existencia de Google Play Services en el dispositivo
+     */
+    private boolean checkPlayServices() {
+        int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+        if (resultCode != ConnectionResult.SUCCESS) {
+            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)) {
+                GooglePlayServicesUtil.getErrorDialog(resultCode, this,
+                        PLAY_SERVICES_RESOLUTION_REQUEST).show();
+            } else {
+                Log.i(TAG, "This device is not supported.");
+                finish();
+            }
+            return false;
+        }
+        return true;
+    }
 
-	/**
+
+    /* Se obtiene el UUID persistente en de los preferences */
+    private String getRegistrationId(Context context) {
+        final SharedPreferences prefs = getGCMPreferences(context);
+        String registrationId = prefs.getString(PROPERTY_REG_ID, "");
+
+        if (registrationId.length() == 0) {
+            Log.i(TAG, "Registration not found.");
+            return "";
+        }
+        // Check if app was updated; if so, it must clear the registration ID
+        // since the existing regID is not guaranteed to work with the new
+        // app version.
+        int registeredVersion = prefs.getInt(PROPERTY_APP_VERSION, Integer.MIN_VALUE);
+        int currentVersion = getAppVersion(context);
+        if (registeredVersion != currentVersion) {
+            Log.i(TAG, "App version changed.");
+            return "";
+        }
+        return registrationId;
+    }
+
+    /*
+    * Metodo que nos regresa las preferencias.
+     */
+    private SharedPreferences getGCMPreferences(Context context) {
+        // This sample app persists the registration ID in shared preferences, but
+        // how you store the regID in your app is up to you.
+        return getSharedPreferences(MainCategories.class.getSimpleName(), Context.MODE_PRIVATE);
+    }
+
+    /*
+    * Metodo que nos regresa la versión de la aplicación (No Utilizar esta forma)
+     */
+    private static int getAppVersion(Context context) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager() .getPackageInfo(context.getPackageName(), 0);
+            return packageInfo.versionCode;
+        } catch (NameNotFoundException e) {
+            // should never happen
+            throw new RuntimeException("Could not get package name: " + e);
+        }
+    }
+
+    /*
+    * Metodo que se encarga de registrar el celular con el GCM y mandar el Registro al Backend
+     */
+    private void registerInBackground() {
+        new AsyncTask(){
+            @Override
+            protected String doInBackground(Object[] objects) {
+                String msg = "";
+                Log.d("GCM","Comenzando registro");
+                try {
+                    if (gcm == null) {
+                        gcm = GoogleCloudMessaging.getInstance(context);
+                    }
+                    Log.d("GCM","Comenzando registro ;D");
+                    regid = gcm.register(SENDER_ID);
+                    msg = "Device registered, registration ID=" + regid;
+                    Log.d("GCM",msg);
+                    storeRegistrationId(context, regid);
+
+                    Log.d("Mandando",regid);
+                    Intent registrationService = new Intent(MainCategories.this, RegisterDevice.class);
+                    registrationService.putExtra("uuid",regid);
+                    startService(registrationService);
+                    //Aqui mandamos el id atraves de un service
+                } catch (IOException ex) {
+                    msg = "Error :" + ex.getMessage();
+                    // If there is an error, don't just keep trying to register.
+                    // Require the user to click a button again, or perform
+                    // exponential back-off.
+                    ex.printStackTrace();
+                    registerInBackground();
+                }
+                return msg;
+            }
+        }.execute(null,null,null);
+    }
+
+    /*
+    * Metodo que manda el ID de registro del GCM en las preferencias para hacerla persistente.
+     */
+    private void storeRegistrationId(Context context, String regId) {
+        final SharedPreferences prefs = getGCMPreferences(context);
+        int appVersion = getAppVersion(context);
+        Log.i(TAG, "Saving regId on app version " + appVersion);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(PROPERTY_REG_ID, regId);
+        editor.putInt(PROPERTY_APP_VERSION, appVersion);
+        editor.commit();
+    }
+
+	/*
 	 * Método que prepara los elementos de la interfaz para mostrar al usuario.
 	 */
 	private void setupViews() {

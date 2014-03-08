@@ -94,6 +94,11 @@
     <uses-permission android:name="android.permission.ACCESS_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="directorio.actividades.permission.C2D_MESSAGE" />
+    <permission android:name="directorio.actividades.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 
     <uses-feature
         android:name="android.hardware.telephony"
@@ -123,7 +128,14 @@
         <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
         <!-- </intent-filter> -->
         <!-- </receiver> -->
-
+        <activity
+            android:name="directorio.actividades.PaisActivity"
+            android:label="@string/title_activity_pais" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="directorio.actividades.Anunciate" >
         </activity>
         <activity
@@ -207,15 +219,6 @@
             android:label="@string/title_activity_info_club" >
         </activity>
         <activity
-            android:name="directorio.actividades.PaisActivity"
-            android:label="@string/title_activity_pais" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="directorio.actividades.Preferences"
             android:label="@string/title_activity_configure" >
         </activity>
@@ -223,6 +226,18 @@
             android:name="directorio.actividades.NoNetworkActivity"
             android:label="@string/title_activity_no_network" >
         </activity>
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="directorio.actividades" />
+            </intent-filter>
+        </receiver>
+        <service android:name="directorio.servicios.GcmIntentService"/>
+        <service android:name="directorio.servicios.RegisterDevice"/>
     </application>
 
 </manifest>

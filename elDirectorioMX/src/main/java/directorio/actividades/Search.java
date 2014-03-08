@@ -365,16 +365,12 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			// Mostrar todos los advertiser de la ciudad seleccionada
 			String ciudadSeleccionada = spinner.getSelectedItem().toString();
 			if (ciudadSeleccionada.equals("Todas las ciudades")) {
-				Toast.makeText(Search.this,
-						"¿Debes de insertar un valor de búsqueda!",
-						Toast.LENGTH_SHORT).show();
-
+				Toast.makeText(Search.this,"¿Debes de insertar un valor de búsqueda!",	Toast.LENGTH_SHORT).show();
 			} else {
 				intent = new Intent(Search.this, ShowSearch.class);
 				intent.putExtra("ciudad", ciudadSeleccionada);
 				intent.putExtra("porCiudad", true);
 				Search.this.startActivity(intent);
-
 			}
 			// Thread timer = new Thread() {
 			// public void run() {

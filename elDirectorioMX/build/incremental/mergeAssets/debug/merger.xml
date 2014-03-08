@@ -16,11 +16,11 @@
                 name="DirLaguna"
                 path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/assets/DirLaguna" />
             <file
-                name="RobotoCondensed-Regular.ttf"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/assets/RobotoCondensed-Regular.ttf" />
-            <file
                 name="errorPage.html"
                 path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/assets/errorPage.html" />
+            <file
+                name="RobotoCondensed-Regular.ttf"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/assets/RobotoCondensed-Regular.ttf" />
         </source>
     </dataSet>
     <dataSet config="debug" >

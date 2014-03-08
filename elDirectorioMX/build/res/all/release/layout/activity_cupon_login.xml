@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CuponLogin" >
+
+    <ProgressBar
+        android:id="@+id/loadingCats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/llCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spCiudades"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/Silver" />
+    </LinearLayout>
+
+    <directorio.others.IndexableListView
+        android:id="@+id/android:listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/llCity" />
+
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/cupon_login_sidenavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/layout/activity_cupon_login.xml -->

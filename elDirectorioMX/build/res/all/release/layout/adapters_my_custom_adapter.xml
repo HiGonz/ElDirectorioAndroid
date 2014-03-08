@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:padding="6dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:background="@color/White" >
+
+        <ImageView
+            android:id="@+id/imagendest"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginRight="10dip"
+            android:contentDescription="@string/no_description" />
+
+        <ImageView
+            android:id="@+id/iconito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clubicon"
+            android:contentDescription="@string/icono_destacados" 
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/linea1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/linea2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/linea1"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/layout/adapters_my_custom_adapter.xml -->
