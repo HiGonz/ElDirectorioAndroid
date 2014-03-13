@@ -28,4 +28,4 @@
             android:drawablePadding="5dp"
             android:imeOptions="actionDone"
             />
-</LinearLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/layout/com_facebook_search_bar_layout.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/layout/com_facebook_search_bar_layout.xml -->
+</LinearLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/layout/com_facebook_search_bar_layout.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_search_bar_layout.xml -->

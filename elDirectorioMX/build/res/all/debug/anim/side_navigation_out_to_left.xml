@@ -7,4 +7,4 @@
         android:fromXDelta="0%"
         android:toXDelta="-100%" />
 
-</set><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/library/src/main/res/anim/side_navigation_out_to_left.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXLibraryUnspecified.aar/res/anim/side_navigation_out_to_left.xml -->
+</set><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/library/src/main/res/anim/side_navigation_out_to_left.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_out_to_left.xml -->

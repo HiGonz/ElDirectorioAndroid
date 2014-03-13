@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <attr name="background" format="reference|color" />
@@ -28,7 +28,7 @@
     <color name="Red">#f00</color>
     <color name="Silver">#C0C0C0</color>
     <color name="White">#FFFFFF</color>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <color name="abs__background_holo_dark">#ff000000</color>
@@ -37,7 +37,7 @@
     <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
     <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <color name="com_facebook_blue">#3B5998</color>
@@ -47,7 +47,7 @@
     <color name="com_facebook_usersettingsfragment_connected_shadow_color">#000000</color>
     <color name="com_facebook_usersettingsfragment_connected_text_color">#FFFFFF</color>
     <color name="com_facebook_usersettingsfragment_not_connected_text_color">#A6AED7</color>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3159.aar/res/values/colors.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.google.android.gms/play-services/3.1.59/res/values/colors.xml -->
     <eat-comment />
 
     <color name="common_action_bar_splitter">#d2d2d2</color>
@@ -65,7 +65,7 @@
 
     <color name="grid_state_focused">#777dbcd3</color>
     <color name="grid_state_pressed">#BB7dbcd3</color>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXLibraryUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <color name="side_navigation_background">#303030</color>
@@ -78,7 +78,7 @@
     <declare-styleable name="Gallery1">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3159.aar/res/values/maps_attrs.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.google.android.gms/play-services/3.1.59/res/values/maps_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="MapAttrs">
@@ -103,7 +103,7 @@
         <attr name="useViewLifecycle" format="boolean" />
         <attr name="zOrderOnTop" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="SherlockActionBar">
@@ -550,7 +550,7 @@
     <declare-styleable name="SherlockView">
         <attr name="android:focusable" />
     </declare-styleable>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="com_facebook_friend_picker_fragment">
@@ -587,7 +587,7 @@
         </attr>
         <attr name="is_cropped" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="abs__action_bar_default_height">48dip</dimen>
@@ -608,7 +608,7 @@
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="com_facebook_loginview_compound_drawable_padding">12dp</dimen>
@@ -629,7 +629,7 @@
     <dimen name="image_detail_pager_margin">80dp</dimen>
     <dimen name="image_thumbnail_size">100dp</dimen>
     <dimen name="image_thumbnail_spacing">1dp</dimen>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXLibraryUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <dimen name="side_navigation_item_image_height">24dp</dimen>
@@ -640,11 +640,11 @@
     <dimen name="side_navigation_item_text_padding_left">10dp</dimen>
     <dimen name="side_navigation_item_text_size">18sp</dimen>
     <dimen name="side_navigation_width">200dp</dimen>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <drawable name="com_facebook_picker_default_separator_color">#33464c59</drawable>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <item name="abs__action_menu_divider" type="id"/>
@@ -665,7 +665,7 @@
     <string name="_galeria">" Galeria"</string>
     <string name="_qu_est_s_buscando_">¿Qué estás buscando?</string>
     <string name="_sucursales">" Sucursales"</string>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <string name="abs__action_bar_home_description">Navigate home</string>
@@ -696,7 +696,7 @@
  
 www.eldirectorio.mx</string>
     <string name="app_name">ElDirectorio</string>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3159.aar/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.google.android.gms/play-services/3.1.59/res/values/strings.xml -->
     <eat-comment />
 
     <string name="auth_client_needs_enabling_title">      An application requires Google Play Services to be enabled.</string>
@@ -713,7 +713,7 @@ www.eldirectorio.mx</string>
     <string name="buscar">Buscar</string>
     <string name="categorias">Categorías</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <string name="com_facebook_choose_friends">Choose Friends</string>
@@ -741,7 +741,7 @@ www.eldirectorio.mx</string>
     <string name="com_facebook_usersettingsfragment_log_in_button">Log in…</string>
     <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
     <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3159.aar/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.google.android.gms/play-services/3.1.59/res/values/strings.xml -->
     <eat-comment />
 
     <string name="common_google_play_services_enable_button" msgid="2523291102206661146">Enable Google Play services</string>
@@ -862,7 +862,7 @@ www.eldirectorio.mx</string>
         <item name="android:drawSelectorOnTop">true</item>
         <item name="android:listSelector">@drawable/photogrid_list_selector</item>
     </style>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ComActionbarsherlockActionbarsherlock440.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
     <eat-comment />
 
     <style name="Sherlock.__TextAppearance.Small" parent="Widget">
@@ -1480,7 +1480,7 @@ www.eldirectorio.mx</string>
         <item name="android:paddingLeft">8dp</item>
         <item name="android:paddingRight">8dp</item>
     </style>
-    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
     <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">

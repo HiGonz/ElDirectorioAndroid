@@ -72,6 +72,7 @@
                 type="anim" />
         </source>
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/library/build/res/rs/release" />
+        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/library/build/res/generated/release" />
     </dataSet>
     <dataSet config="release" >
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/library/src/release/res" />

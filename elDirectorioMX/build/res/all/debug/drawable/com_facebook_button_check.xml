@@ -18,4 +18,4 @@
   <item android:state_checked="true" android:drawable="@drawable/com_facebook_button_check_on" />
   <item android:drawable="@drawable/com_facebook_button_check_off" />
 </selector>
-<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/drawable/com_facebook_button_check.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/drawable/com_facebook_button_check.xml -->
+<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/drawable/com_facebook_button_check.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check.xml -->

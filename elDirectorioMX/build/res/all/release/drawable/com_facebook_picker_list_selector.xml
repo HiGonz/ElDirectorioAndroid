@@ -25,4 +25,4 @@
     <item android:state_focused="true"                                                             android:drawable="@drawable/com_facebook_picker_list_focused" />
 
 </selector>
-<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/drawable/com_facebook_picker_list_selector.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/drawable/com_facebook_picker_list_selector.xml -->
+<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/drawable/com_facebook_picker_list_selector.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector.xml -->

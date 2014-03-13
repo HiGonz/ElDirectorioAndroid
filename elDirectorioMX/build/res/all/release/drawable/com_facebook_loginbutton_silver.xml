@@ -21,4 +21,4 @@
           android:drawable="@drawable/com_facebook_button_grey_focused" />
     <item android:drawable="@drawable/com_facebook_button_grey_normal" />
 </selector>
-<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/drawable/com_facebook_loginbutton_silver.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-bundles/ElDirectorioMXFacebookAndroidSdkFacebookUnspecified.aar/res/drawable/com_facebook_loginbutton_silver.xml -->
+<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/facebook-android-sdk/facebook/res/drawable/com_facebook_loginbutton_silver.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_loginbutton_silver.xml -->

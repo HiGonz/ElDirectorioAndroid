@@ -36,7 +36,6 @@ import directorio.applications.TodoManagerApplication;
 import directorio.services.dao.CategoriaDAO;
 import directorio.servicios.RegisterDevice;
 
-
 /**
  * Clase que se encarga de mostrar las categorías principales.
  * 
@@ -96,8 +95,7 @@ public class MainCategories extends SherlockActivity implements
 			sideNavigationCategorias.setMenuClickCallback(this);
 
 			// Cambio Diseño ActionBar
-			getSupportActionBar().setBackgroundDrawable(
-					this.getResources().getDrawable(R.drawable.header));
+			getSupportActionBar().setBackgroundDrawable(this.getResources().getDrawable(R.drawable.header));
 			getSupportActionBar().setIcon(R.drawable.menu);
 			getSupportActionBar().setDisplayOptions(0,
 					ActionBar.DISPLAY_HOME_AS_UP);
@@ -173,9 +171,7 @@ public class MainCategories extends SherlockActivity implements
 
 								sleep(100);
 
-								Intent showCategoriesIntent = new Intent(
-										MainCategories.this,
-										ShowCategorias.class);
+								Intent showCategoriesIntent = new Intent(MainCategories.this,ShowCategorias.class);
 								showCategoriesIntent.putExtra("estado", 2);
 								showCategoriesIntent.putExtra("categoria",
 										categoria);
@@ -190,7 +186,6 @@ public class MainCategories extends SherlockActivity implements
 				thread.start();
 				progreso.setVisibility(ProgressBar.VISIBLE);
 				progreso.setIndeterminate(true);
-
 			}
 		});
 	}
@@ -317,11 +312,9 @@ public class MainCategories extends SherlockActivity implements
 				progreso.setVisibility(ProgressBar.INVISIBLE);
 				progreso.setIndeterminate(false);
 			}
-
 		} catch (Exception ex) {
 			Log.e(TAG, ex.toString());
 		}
-
 		Lista = (ListView) findViewById(R.id.list);
 	}
 
@@ -408,6 +401,5 @@ public class MainCategories extends SherlockActivity implements
 			downloadCategories();
 			return null;
 		}
-
 	}
 }

@@ -73,7 +73,7 @@ public class CustomCategories extends BaseAdapter {
 		} else if (cat.equals("Hoteles")) {
 			mLogo.setImageDrawable(con.getResources().getDrawable(
 					R.drawable.hoteles));
-		} else if (cat.equals("M�dicos")) {
+		} else if (cat.equals("Médicos")) {
 			mLogo.setImageDrawable(con.getResources().getDrawable(
 					R.drawable.medicos));
 		} else if (cat.equals("Restaurantes y Bares")) {
