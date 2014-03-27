@@ -43,11 +43,12 @@ import directorio.servicios.RegisterDevice;
  * @author Publysorpresas
  * 
  */
+
 @SuppressLint("ParserError")
 public class MainCategories extends SherlockActivity implements
 		ISideNavigationCallback {
 
-    //Variables de registro para el GCM//a
+    //Variables de registro para el GCM/a
     public static final String EXTRA_MESSAGE = "message";
     public static final String PROPERTY_REG_ID = "registration_id";
     private static final String PROPERTY_APP_VERSION = "appVersion";
@@ -162,15 +163,12 @@ public class MainCategories extends SherlockActivity implements
 				Thread thread = new Thread() {
 					public void run() {
 						try {
-
 							if (categoria == "Todas las categorias") {
 								Intent in = new Intent(MainCategories.this,
 										Categorias.class);
 								startActivity(in);
 							} else {
-
 								sleep(100);
-
 								Intent showCategoriesIntent = new Intent(MainCategories.this,ShowCategorias.class);
 								showCategoriesIntent.putExtra("estado", 2);
 								showCategoriesIntent.putExtra("categoria",
@@ -207,7 +205,6 @@ public class MainCategories extends SherlockActivity implements
         return true;
     }
 
-
     /* Se obtiene el UUID persistente en de los preferences */
     private String getRegistrationId(Context context) {
         final SharedPreferences prefs = getGCMPreferences(context);
@@ -233,8 +230,6 @@ public class MainCategories extends SherlockActivity implements
     * Metodo que nos regresa las preferencias.
      */
     private SharedPreferences getGCMPreferences(Context context) {
-        // This sample app persists the registration ID in shared preferences, but
-        // how you store the regID in your app is up to you.
         return getSharedPreferences(MainCategories.class.getSimpleName(), Context.MODE_PRIVATE);
     }
 

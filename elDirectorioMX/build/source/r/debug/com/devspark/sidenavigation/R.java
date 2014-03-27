@@ -14,10 +14,10 @@ public final class R {
 		public static final int side_navigation_out_to_left = 0x7f040003;
 	}
 	public static final class color {
-		public static final int side_navigation_background = 0x7f060021;
-		public static final int side_navigation_item_text_color = 0x7f060022;
-		public static final int side_navigation_list_divider_color = 0x7f060023;
-		public static final int side_navigation_outside_background = 0x7f060024;
+		public static final int side_navigation_background = 0x7f060022;
+		public static final int side_navigation_item_text_color = 0x7f060023;
+		public static final int side_navigation_list_divider_color = 0x7f060024;
+		public static final int side_navigation_outside_background = 0x7f060025;
 	}
 	public static final class dimen {
 		public static final int side_navigation_item_image_height = 0x7f08001e;

@@ -37,6 +37,10 @@
     <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
     <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="black_overlay">#66000000</color>
     <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml -->
     <eat-comment />
 
@@ -72,6 +76,13 @@
     <color name="side_navigation_item_text_color">#f3f3f3</color>
     <color name="side_navigation_list_divider_color">#4f4f4f</color>
     <color name="side_navigation_outside_background">#7000</color>
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values/attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
     <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values/resources.xml -->
     <eat-comment />
 
@@ -772,6 +783,8 @@ www.eldirectorio.mx</string>
     <string name="cupones_club">Cupones Club</string>
     <string name="destacados">Club El Directorio</string>
     <string name="dile_a_tus_amigos_de_el_directorio_">Dile a tus amigos de El Directorio:</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="ecuador">Ecuador</string>
     <string name="email">email</string>
     <string name="en_un_radio_de_">"En un radio de: "</string>
@@ -834,6 +847,7 @@ www.eldirectorio.mx</string>
     <string name="title_activity_show_advertiser">Anunciante</string>
     <string name="title_activity_show_categorias">Todas las Categorías</string>
     <string name="title_activity_show_search">Resultados de Búsqueda</string>
+    <string name="title_activity_splash">Splash</string>
     <string name="twitter">Twitter</string>
     <string name="user_pass">Usuario y contraseña</string>
     <string name="usuario">Usuario</string>
@@ -857,6 +871,23 @@ www.eldirectorio.mx</string>
     </style>
 
     <style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
 
     <style name="PhotoGridLayout">
         <item name="android:drawSelectorOnTop">true</item>

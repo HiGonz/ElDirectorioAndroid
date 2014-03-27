@@ -98,5 +98,4 @@ public class CustomCategories extends BaseAdapter {
 
 		return v;
 	}
-
 }

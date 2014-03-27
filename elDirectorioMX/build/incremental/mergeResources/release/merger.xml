@@ -1,6 +1,888 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" >
 
+    <dataSet config="unspecified" >
+        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res" >
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/values/values.xml"
+                qualifiers="" >
+                <dimen name="side_navigation_item_padding_leftright" >8dp
+                </dimen>
+
+                <color name="side_navigation_list_divider_color" >#4f4f4f
+                </color>
+
+                <dimen name="side_navigation_item_image_padding" >2dp
+                </dimen>
+                <dimen name="side_navigation_width" >200dp
+                </dimen>
+                <dimen name="side_navigation_item_text_padding_left" >10dp
+                </dimen>
+                <dimen name="side_navigation_item_image_width" >24dp
+                </dimen>
+
+                <color name="side_navigation_outside_background" >#7000
+                </color>
+
+                <dimen name="side_navigation_item_text_size" >18sp
+                </dimen>
+                <dimen name="side_navigation_item_padding_topbottom" >12dp
+                </dimen>
+                <dimen name="side_navigation_item_image_height" >24dp
+                </dimen>
+
+                <color name="side_navigation_item_text_color" >#f3f3f3
+                </color>
+                <color name="side_navigation_background" >#303030
+                </color>
+            </file>
+            <file
+                name="side_navigation_shadow"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/drawable/side_navigation_shadow.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="side_navigation"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/layout/side_navigation.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="side_navigation_item"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/layout/side_navigation_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="side_navigation_fade_out"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_fade_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="side_navigation_fade_in"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_fade_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="side_navigation_in_from_left"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_in_from_left.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="side_navigation_out_to_left"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_out_to_left.xml"
+                qualifiers=""
+                type="anim" />
+        </source>
+    </dataSet>
+    <dataSet config="unspecified" >
+        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res" >
+            <file
+                name="com_facebook_close"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-ldpi/com_facebook_close.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_blue_focused.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_blue_normal.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_inverse_icon"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_inverse_icon.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_close"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_close.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_logo"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_logo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_picker_magnifier"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_picker_magnifier.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-he/values.xml"
+                qualifiers="he" >
+                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
+                </string>
+                <string name="com_facebook_requesterror_web_login" >.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך
+                </string>
+                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
+                </string>
+                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
+                </string>
+                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
+                </string>
+                <string name="com_facebook_picker_done_button_text" >בצע
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
+                </string>
+                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
+                </string>
+                <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
+                </string>
+                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
+                </string>
+                <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
+                </string>
+                <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
+                </string>
+                <string name="com_facebook_loginview_cancel_action" >בטל
+                </string>
+                <string name="com_facebook_choose_friends" >בחר חברים
+                </string>
+                <string name="com_facebook_loginview_log_out_button" >התנתק
+                </string>
+                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
+                </string>
+                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d היו פה
+                </string>
+                <string name="com_facebook_usersettingsfragment_not_logged_in" >לא מחובר
+                </string>
+                <string name="com_facebook_loading" >..מעלה
+                </string>
+                <string name="com_facebook_nearby" >קרוב אליי
+                </string>
+                <string name="com_facebook_loginview_logged_in_using_facebook" >מחובר באמצעות פייסבוק
+                </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
+                </string>
+                <string name="com_facebook_requesterror_permissions" >.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע
+                </string>
+                <string name="com_facebook_loginview_log_out_action" >התנתק
+                </string>
+            </file>
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-mdpi/values.xml"
+                qualifiers="mdpi" >
+                <dimen name="com_facebook_picker_divider_width" >1px
+                </dimen>
+            </file>
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-xhdpi/values.xml"
+                qualifiers="xhdpi" >
+                <dimen name="com_facebook_picker_divider_width" >2px
+                </dimen>
+            </file>
+            <file
+                name="com_facebook_button_blue_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_button_blue_focused.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_button_blue_normal.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_inverse_icon"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_inverse_icon.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_button_blue_pressed.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_picker_magnifier"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_picker_magnifier.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml"
+                qualifiers="" >
+                <string name="com_facebook_internet_permission_error_message" >WebView login requires INTERNET permission
+                </string>
+
+                <dimen name="com_facebook_loginview_padding_right" >16dp
+                </dimen>
+
+                <color name="com_facebook_blue" >#3B5998
+                </color>
+
+                <string name="com_facebook_usersettingsfragment_log_in_button" >Log in…
+                </string>
+
+                <color name="com_facebook_loginview_text_color" >#FFFFFF
+                </color>
+                <color name="com_facebook_picker_search_bar_background" >#f5f5f7
+                </color>
+
+                <string name="com_facebook_logo_content_description" >Facebook Logo
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >Log in with Facebook
+                </string>
+
+                <dimen name="com_facebook_usersettingsfragment_profile_picture_width" >64dp
+                </dimen>
+
+                <string name="com_facebook_requesterror_web_login" >Your Facebook account is locked. Please log into www.facebook.com to continue.
+                </string>
+                <string name="com_facebook_requesterror_permissions" >This app doesn’t have permission to do this. To change permissions, try logging into the app again.
+                </string>
+
+                <dimen name="com_facebook_loginview_compound_drawable_padding" >12dp
+                </dimen>
+
+                <string name="com_facebook_requesterror_relogin" >Please log into this app again to reconnect your Facebook account.
+                </string>
+
+                <declare-styleable name="com_facebook_picker_fragment" >
+                    <attr
+                        name="show_pictures"
+                        format="boolean" />
+                    <attr
+                        name="extra_fields"
+                        format="string" />
+                    <attr
+                        name="show_title_bar"
+                        format="boolean" />
+                    <attr
+                        name="title_text"
+                        format="string" />
+                    <attr
+                        name="done_button_text"
+                        format="string" />
+                    <attr
+                        name="title_bar_background"
+                        format="reference" />
+                    <attr
+                        name="done_button_background"
+                        format="reference" />
+                </declare-styleable>
+
+                <drawable name="com_facebook_picker_default_separator_color" >
+#33464c59
+                </drawable>
+
+                <string name="com_facebook_usersettingsfragment_not_logged_in" >Not logged in
+                </string>
+
+                <dimen name="com_facebook_loginview_padding_top" >12dp
+                </dimen>
+
+                <string name="com_facebook_nearby" >Nearby
+                </string>
+
+                <color name="com_facebook_picker_search_bar_text" >#bcbdc2
+                </color>
+
+                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
+                </string>
+
+                <declare-styleable name="com_facebook_place_picker_fragment" >
+                    <attr
+                        name="radius_in_meters"
+                        format="integer" />
+                    <attr
+                        name="results_limit"
+                        format="integer" />
+                    <attr
+                        name="search_text"
+                        format="string" />
+                    <attr
+                        name="show_search_box"
+                        format="boolean" />
+                </declare-styleable>
+
+                <string name="com_facebook_loading" >Loading...
+                </string>
+
+                <style
+                    name="com_facebook_loginview_silver_style"
+                    parent="@android:style/Widget.Button" >
+                    <item name="android:width">
+205dp
+                    </item>
+                    <item name="android:height">
+44dp
+                    </item>
+                    <item name="android:background">
+@drawable/com_facebook_loginbutton_silver
+                    </item>
+                    <item name="android:textSize">
+18sp
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:textColor">
+#4B5164
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                </style>
+
+                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d were here
+                </string>
+                <string name="com_facebook_picker_done_button_text" >Done
+                </string>
+                <string name="com_facebook_loginview_log_out_button" >Log out
+                </string>
+                <string name="com_facebook_usersettingsfragment_logged_in" >Logged in
+                </string>
+
+                <declare-styleable name="com_facebook_profile_picture_view" >
+                    <attr name="preset_size" >
+
+                        <!-- Keep in sync with constants in ProfilePictureView -->
+                        <enum
+                            name="small"
+                            value="-2" />
+                        <enum
+                            name="normal"
+                            value="-3" />
+                        <enum
+                            name="large"
+                            value="-4" />
+                    </attr>
+                    <attr
+                        name="is_cropped"
+                        format="boolean" />
+                </declare-styleable>
+
+                <dimen name="com_facebook_loginview_padding_left" >12dip
+                </dimen>
+                <dimen name="com_facebook_profilepictureview_preset_size_normal" >100dp
+                </dimen>
+
+                <declare-styleable name="com_facebook_friend_picker_fragment" >
+                    <attr
+                        name="multi_select"
+                        format="boolean" />
+                </declare-styleable>
+
+                <dimen name="com_facebook_loginview_padding_bottom" >12dp
+                </dimen>
+
+                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d were here
+                </string>
+                <string name="com_facebook_requesterror_password_changed" >Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.
+                </string>
+
+                <dimen name="com_facebook_loginview_text_size" >16.0sp
+                </dimen>
+
+                <string name="com_facebook_choose_friends" >Choose Friends
+                </string>
+
+                <dimen name="com_facebook_picker_place_image_size" >64dp
+                </dimen>
+
+                <string name="com_facebook_requesterror_reconnect" >Please log into this app again to reconnect your Facebook account.
+                </string>
+
+                <dimen name="com_facebook_usersettingsfragment_profile_picture_height" >64dp
+                </dimen>
+
+                <color name="com_facebook_usersettingsfragment_connected_text_color" >#FFFFFF
+                </color>
+
+                <string name="com_facebook_loginview_log_out_action" >Log out
+                </string>
+
+                <dimen name="com_facebook_profilepictureview_preset_size_small" >50dp
+                </dimen>
+
+                <string name="com_facebook_dialogloginactivity_ok_button" >OK
+                </string>
+
+                <color name="com_facebook_usersettingsfragment_not_connected_text_color" >#A6AED7
+                </color>
+
+                <string name="com_facebook_loginview_logged_in_as" >Logged in as: %1$s
+                </string>
+
+                <dimen name="com_facebook_profilepictureview_preset_size_large" >180dp
+                </dimen>
+
+                <string name="com_facebook_loginview_cancel_action" >Cancel
+                </string>
+
+                <color name="com_facebook_usersettingsfragment_connected_shadow_color" >#000000
+                </color>
+
+                <string name="com_facebook_loginview_logged_in_using_facebook" >Logged in using Facebook
+                </string>
+
+                <declare-styleable name="com_facebook_login_view" >
+                    <attr
+                        name="confirm_logout"
+                        format="boolean" />
+                    <attr
+                        name="fetch_user_info"
+                        format="boolean" />
+                    <attr
+                        name="login_text"
+                        format="string" />
+                    <attr
+                        name="logout_text"
+                        format="string" />
+                </declare-styleable>
+
+                <style
+                    name="com_facebook_loginview_default_style"
+                    parent="@android:style/Widget.Button" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:background">
+@drawable/com_facebook_button_blue
+                    </item>
+                    <item name="android:textColor">
+@color/com_facebook_loginview_text_color
+                    </item>
+                    <item name="android:textSize">
+@dimen/com_facebook_loginview_text_size
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:paddingLeft">
+@dimen/com_facebook_loginview_padding_left
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                </style>
+
+                <string name="com_facebook_internet_permission_error_title" >AndroidManifest Error
+                </string>
+            </file>
+            <file
+                name="com_facebook_button_grey_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_grey_normal.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_item_background"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_item_background.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_list_section_header_background"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_list_section_header_background.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_loginbutton_silver"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_loginbutton_silver.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_place_default_icon"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_place_default_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_top_button"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_top_button.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue_focused.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue_normal.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_inverse_icon"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_inverse_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_check"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_close"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_close.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_list_selector_disabled"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector_disabled.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_list_longpressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_longpressed.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_check_on"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check_on.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_top_background"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_top_background.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_check_off"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check_off.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_list_divider"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_list_divider.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_list_selector"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_profile_picture_blank_portrait"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_profile_picture_blank_portrait.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_grey_focused.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_profile_picture_blank_square"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_profile_picture_blank_square.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_profile_default_icon"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_profile_default_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_list_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_focused.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue_pressed.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_logo"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_logo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_usersettingsfragment_background_gradient"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_list_selector_background_transition"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector_background_transition.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_list_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_pressed.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_grey_pressed.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_top_button"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_top_button.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="com_facebook_picker_image"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_image.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_search_box"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_search_box.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_usersettingsfragment"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_usersettingsfragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_placepickerfragment"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_placepickerfragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_placepickerfragment_list_row"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_placepickerfragment_list_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_login_activity_layout"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_login_activity_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_title_bar"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_title_bar.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_search_bar_layout"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_search_bar_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_title_bar_stub"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_title_bar_stub.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_list_section_header"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_list_section_header.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_activity_circle_row"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_activity_circle_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_list_row"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_list_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_picker_checkbox"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_checkbox.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_friendpickerfragment"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_friendpickerfragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="com_facebook_button_grey_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_grey_normal.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_blue_focused.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_normal"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_blue_normal.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_inverse_icon"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_inverse_icon.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_close"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_close.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_focused"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_grey_focused.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_blue_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_blue_pressed.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_logo"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_logo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_picker_magnifier"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_picker_magnifier.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="com_facebook_button_grey_pressed"
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_grey_pressed.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-hdpi/values.xml"
+                qualifiers="hdpi" >
+                <dimen name="com_facebook_picker_divider_width" >1px
+                </dimen>
+            </file>
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-ldpi/values.xml"
+                qualifiers="ldpi" >
+                <dimen name="com_facebook_picker_divider_width" >1px
+                </dimen>
+            </file>
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-es/values.xml"
+                qualifiers="es" >
+                <string name="com_facebook_nearby" >Cercano
+                </string>
+                <string name="com_facebook_requesterror_password_changed" >Su contraseña de Facebook ha cambiado, por favor vuelva a conectar la aplicación con Facebook.
+                </string>
+                <string name="com_facebook_loginview_log_out_action" >Cerrar sesión
+                </string>
+                <string name="com_facebook_requesterror_reconnect" >Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.
+                </string>
+                <string name="com_facebook_requesterror_permissions" >Una conexión de aplicación con Facebook falló debido a permisos insuficientes, por favor, conceda los permisos de aplicaciones para realizar la operación.
+                </string>
+                <string name="com_facebook_usersettingsfragment_logged_in" >Sesión iniciada
+                </string>
+                <string name="com_facebook_internet_permission_error_title" >Error de AndroidManifest
+                </string>
+                <string name="com_facebook_usersettingsfragment_not_logged_in" >No has iniciado sesión
+                </string>
+                <string name="com_facebook_loginview_logged_in_using_facebook" >Sesión iniciada con Facebook
+                </string>
+                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d estuvieron aquí
+                </string>
+                <string name="com_facebook_requesterror_web_login" >Por favor, iniciar sesión a través https://www.facebook.com o https://m.facebook.com para volver a activar la aplicación para conectar con Facebook.
+                </string>
+                <string name="com_facebook_loading" >Cargando
+                </string>
+                <string name="com_facebook_picker_done_button_text" >Aceptar
+                </string>
+                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
+                </string>
+                <string name="com_facebook_loginview_cancel_action" >Cancelar
+                </string>
+                <string name="com_facebook_choose_friends" >Elige Amigos
+                </string>
+                <string name="com_facebook_internet_permission_error_message" >WebView inicio de sesión requiere permiso INTERNET
+                </string>
+                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >es:%1$,d estuvieron aquí
+                </string>
+                <string name="com_facebook_requesterror_relogin" >La aplicación no se conecta con Facebook, inicie sesión y volver a conectar esta aplicación.
+                </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >Aceptar
+                </string>
+                <string name="com_facebook_usersettingsfragment_log_in_button" >Iniciar sesión…
+                </string>
+                <string name="com_facebook_logo_content_description" >Logo de Facebook
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >Iniciar sesión con Facebook
+                </string>
+                <string name="com_facebook_loginview_log_out_button" >Cerrar sesión
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >Sesión iniciada como: %1$s
+                </string>
+            </file>
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-iw/values.xml"
+                qualifiers="iw" >
+                <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
+                </string>
+                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
+                </string>
+                <string name="com_facebook_picker_done_button_text" >בצע
+                </string>
+                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
+                </string>
+                <string name="com_facebook_loginview_log_out_button" >התנתק
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
+                </string>
+                <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
+                </string>
+                <string name="com_facebook_loginview_logged_in_using_facebook" >מחובר באמצעות פייסבוק
+                </string>
+                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
+                </string>
+                <string name="com_facebook_loginview_log_out_action" >התנתק
+                </string>
+                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
+                </string>
+                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
+                </string>
+                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
+                </string>
+                <string name="com_facebook_choose_friends" >בחר חברים
+                </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
+                </string>
+                <string name="com_facebook_loading" >..מעלה
+                </string>
+                <string name="com_facebook_nearby" >קרוב אליי
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
+                </string>
+                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
+                </string>
+                <string name="com_facebook_usersettingsfragment_not_logged_in" >לא מחובר
+                </string>
+                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d היו פה
+                </string>
+                <string name="com_facebook_requesterror_permissions" >.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע
+                </string>
+                <string name="com_facebook_loginview_cancel_action" >בטל
+                </string>
+                <string name="com_facebook_requesterror_web_login" >.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך
+                </string>
+                <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
+                </string>
+            </file>
+        </source>
+    </dataSet>
     <dataSet config="3.1.59" >
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.google.android.gms/play-services/3.1.59/res" >
             <file
@@ -9285,888 +10167,6 @@ false
             </file>
         </source>
     </dataSet>
-    <dataSet config="unspecified" >
-        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res" >
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/values/values.xml"
-                qualifiers="" >
-                <dimen name="side_navigation_item_padding_leftright" >8dp
-                </dimen>
-
-                <color name="side_navigation_list_divider_color" >#4f4f4f
-                </color>
-
-                <dimen name="side_navigation_item_image_padding" >2dp
-                </dimen>
-                <dimen name="side_navigation_width" >200dp
-                </dimen>
-                <dimen name="side_navigation_item_text_padding_left" >10dp
-                </dimen>
-                <dimen name="side_navigation_item_image_width" >24dp
-                </dimen>
-
-                <color name="side_navigation_outside_background" >#7000
-                </color>
-
-                <dimen name="side_navigation_item_text_size" >18sp
-                </dimen>
-                <dimen name="side_navigation_item_padding_topbottom" >12dp
-                </dimen>
-                <dimen name="side_navigation_item_image_height" >24dp
-                </dimen>
-
-                <color name="side_navigation_item_text_color" >#f3f3f3
-                </color>
-                <color name="side_navigation_background" >#303030
-                </color>
-            </file>
-            <file
-                name="side_navigation_shadow"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/drawable/side_navigation_shadow.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="side_navigation"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/layout/side_navigation.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="side_navigation_item"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/layout/side_navigation_item.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="side_navigation_fade_out"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_fade_out.xml"
-                qualifiers=""
-                type="anim" />
-            <file
-                name="side_navigation_fade_in"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_fade_in.xml"
-                qualifiers=""
-                type="anim" />
-            <file
-                name="side_navigation_in_from_left"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_in_from_left.xml"
-                qualifiers=""
-                type="anim" />
-            <file
-                name="side_navigation_out_to_left"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/res/anim/side_navigation_out_to_left.xml"
-                qualifiers=""
-                type="anim" />
-        </source>
-    </dataSet>
-    <dataSet config="unspecified" >
-        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res" >
-            <file
-                name="com_facebook_close"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-ldpi/com_facebook_close.png"
-                qualifiers="ldpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_blue_focused.9.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_blue_normal.9.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_inverse_icon"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_inverse_icon.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_close"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_close.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_logo"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_logo.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_picker_magnifier"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_picker_magnifier.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-he/values.xml"
-                qualifiers="he" >
-                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
-                </string>
-                <string name="com_facebook_requesterror_web_login" >.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך
-                </string>
-                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
-                </string>
-                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
-                </string>
-                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
-                </string>
-                <string name="com_facebook_picker_done_button_text" >בצע
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
-                </string>
-                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
-                </string>
-                <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
-                </string>
-                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
-                </string>
-                <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
-                </string>
-                <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
-                </string>
-                <string name="com_facebook_loginview_cancel_action" >בטל
-                </string>
-                <string name="com_facebook_choose_friends" >בחר חברים
-                </string>
-                <string name="com_facebook_loginview_log_out_button" >התנתק
-                </string>
-                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
-                </string>
-                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d היו פה
-                </string>
-                <string name="com_facebook_usersettingsfragment_not_logged_in" >לא מחובר
-                </string>
-                <string name="com_facebook_loading" >..מעלה
-                </string>
-                <string name="com_facebook_nearby" >קרוב אליי
-                </string>
-                <string name="com_facebook_loginview_logged_in_using_facebook" >מחובר באמצעות פייסבוק
-                </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
-                </string>
-                <string name="com_facebook_requesterror_permissions" >.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע
-                </string>
-                <string name="com_facebook_loginview_log_out_action" >התנתק
-                </string>
-            </file>
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-mdpi/values.xml"
-                qualifiers="mdpi" >
-                <dimen name="com_facebook_picker_divider_width" >1px
-                </dimen>
-            </file>
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-xhdpi/values.xml"
-                qualifiers="xhdpi" >
-                <dimen name="com_facebook_picker_divider_width" >2px
-                </dimen>
-            </file>
-            <file
-                name="com_facebook_button_blue_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_button_blue_focused.9.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_button_blue_normal.9.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_inverse_icon"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_inverse_icon.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_button_blue_pressed.9.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_picker_magnifier"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-mdpi/com_facebook_picker_magnifier.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values/values.xml"
-                qualifiers="" >
-                <string name="com_facebook_internet_permission_error_message" >WebView login requires INTERNET permission
-                </string>
-
-                <dimen name="com_facebook_loginview_padding_right" >16dp
-                </dimen>
-
-                <color name="com_facebook_blue" >#3B5998
-                </color>
-
-                <string name="com_facebook_usersettingsfragment_log_in_button" >Log in…
-                </string>
-
-                <color name="com_facebook_loginview_text_color" >#FFFFFF
-                </color>
-                <color name="com_facebook_picker_search_bar_background" >#f5f5f7
-                </color>
-
-                <string name="com_facebook_logo_content_description" >Facebook Logo
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >Log in with Facebook
-                </string>
-
-                <dimen name="com_facebook_usersettingsfragment_profile_picture_width" >64dp
-                </dimen>
-
-                <string name="com_facebook_requesterror_web_login" >Your Facebook account is locked. Please log into www.facebook.com to continue.
-                </string>
-                <string name="com_facebook_requesterror_permissions" >This app doesn’t have permission to do this. To change permissions, try logging into the app again.
-                </string>
-
-                <dimen name="com_facebook_loginview_compound_drawable_padding" >12dp
-                </dimen>
-
-                <string name="com_facebook_requesterror_relogin" >Please log into this app again to reconnect your Facebook account.
-                </string>
-
-                <declare-styleable name="com_facebook_picker_fragment" >
-                    <attr
-                        name="show_pictures"
-                        format="boolean" />
-                    <attr
-                        name="extra_fields"
-                        format="string" />
-                    <attr
-                        name="show_title_bar"
-                        format="boolean" />
-                    <attr
-                        name="title_text"
-                        format="string" />
-                    <attr
-                        name="done_button_text"
-                        format="string" />
-                    <attr
-                        name="title_bar_background"
-                        format="reference" />
-                    <attr
-                        name="done_button_background"
-                        format="reference" />
-                </declare-styleable>
-
-                <drawable name="com_facebook_picker_default_separator_color" >
-#33464c59
-                </drawable>
-
-                <string name="com_facebook_usersettingsfragment_not_logged_in" >Not logged in
-                </string>
-
-                <dimen name="com_facebook_loginview_padding_top" >12dp
-                </dimen>
-
-                <string name="com_facebook_nearby" >Nearby
-                </string>
-
-                <color name="com_facebook_picker_search_bar_text" >#bcbdc2
-                </color>
-
-                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
-                </string>
-
-                <declare-styleable name="com_facebook_place_picker_fragment" >
-                    <attr
-                        name="radius_in_meters"
-                        format="integer" />
-                    <attr
-                        name="results_limit"
-                        format="integer" />
-                    <attr
-                        name="search_text"
-                        format="string" />
-                    <attr
-                        name="show_search_box"
-                        format="boolean" />
-                </declare-styleable>
-
-                <string name="com_facebook_loading" >Loading...
-                </string>
-
-                <style
-                    name="com_facebook_loginview_silver_style"
-                    parent="@android:style/Widget.Button" >
-                    <item name="android:width">
-205dp
-                    </item>
-                    <item name="android:height">
-44dp
-                    </item>
-                    <item name="android:background">
-@drawable/com_facebook_loginbutton_silver
-                    </item>
-                    <item name="android:textSize">
-18sp
-                    </item>
-                    <item name="android:textStyle">
-bold
-                    </item>
-                    <item name="android:textColor">
-#4B5164
-                    </item>
-                    <item name="android:gravity">
-center
-                    </item>
-                </style>
-
-                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d were here
-                </string>
-                <string name="com_facebook_picker_done_button_text" >Done
-                </string>
-                <string name="com_facebook_loginview_log_out_button" >Log out
-                </string>
-                <string name="com_facebook_usersettingsfragment_logged_in" >Logged in
-                </string>
-
-                <declare-styleable name="com_facebook_profile_picture_view" >
-                    <attr name="preset_size" >
-
-                        <!-- Keep in sync with constants in ProfilePictureView -->
-                        <enum
-                            name="small"
-                            value="-2" />
-                        <enum
-                            name="normal"
-                            value="-3" />
-                        <enum
-                            name="large"
-                            value="-4" />
-                    </attr>
-                    <attr
-                        name="is_cropped"
-                        format="boolean" />
-                </declare-styleable>
-
-                <dimen name="com_facebook_loginview_padding_left" >12dip
-                </dimen>
-                <dimen name="com_facebook_profilepictureview_preset_size_normal" >100dp
-                </dimen>
-
-                <declare-styleable name="com_facebook_friend_picker_fragment" >
-                    <attr
-                        name="multi_select"
-                        format="boolean" />
-                </declare-styleable>
-
-                <dimen name="com_facebook_loginview_padding_bottom" >12dp
-                </dimen>
-
-                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d were here
-                </string>
-                <string name="com_facebook_requesterror_password_changed" >Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.
-                </string>
-
-                <dimen name="com_facebook_loginview_text_size" >16.0sp
-                </dimen>
-
-                <string name="com_facebook_choose_friends" >Choose Friends
-                </string>
-
-                <dimen name="com_facebook_picker_place_image_size" >64dp
-                </dimen>
-
-                <string name="com_facebook_requesterror_reconnect" >Please log into this app again to reconnect your Facebook account.
-                </string>
-
-                <dimen name="com_facebook_usersettingsfragment_profile_picture_height" >64dp
-                </dimen>
-
-                <color name="com_facebook_usersettingsfragment_connected_text_color" >#FFFFFF
-                </color>
-
-                <string name="com_facebook_loginview_log_out_action" >Log out
-                </string>
-
-                <dimen name="com_facebook_profilepictureview_preset_size_small" >50dp
-                </dimen>
-
-                <string name="com_facebook_dialogloginactivity_ok_button" >OK
-                </string>
-
-                <color name="com_facebook_usersettingsfragment_not_connected_text_color" >#A6AED7
-                </color>
-
-                <string name="com_facebook_loginview_logged_in_as" >Logged in as: %1$s
-                </string>
-
-                <dimen name="com_facebook_profilepictureview_preset_size_large" >180dp
-                </dimen>
-
-                <string name="com_facebook_loginview_cancel_action" >Cancel
-                </string>
-
-                <color name="com_facebook_usersettingsfragment_connected_shadow_color" >#000000
-                </color>
-
-                <string name="com_facebook_loginview_logged_in_using_facebook" >Logged in using Facebook
-                </string>
-
-                <declare-styleable name="com_facebook_login_view" >
-                    <attr
-                        name="confirm_logout"
-                        format="boolean" />
-                    <attr
-                        name="fetch_user_info"
-                        format="boolean" />
-                    <attr
-                        name="login_text"
-                        format="string" />
-                    <attr
-                        name="logout_text"
-                        format="string" />
-                </declare-styleable>
-
-                <style
-                    name="com_facebook_loginview_default_style"
-                    parent="@android:style/Widget.Button" >
-                    <item name="android:layout_width">
-wrap_content
-                    </item>
-                    <item name="android:layout_height">
-wrap_content
-                    </item>
-                    <item name="android:background">
-@drawable/com_facebook_button_blue
-                    </item>
-                    <item name="android:textColor">
-@color/com_facebook_loginview_text_color
-                    </item>
-                    <item name="android:textSize">
-@dimen/com_facebook_loginview_text_size
-                    </item>
-                    <item name="android:textStyle">
-bold
-                    </item>
-                    <item name="android:paddingLeft">
-@dimen/com_facebook_loginview_padding_left
-                    </item>
-                    <item name="android:gravity">
-center
-                    </item>
-                </style>
-
-                <string name="com_facebook_internet_permission_error_title" >AndroidManifest Error
-                </string>
-            </file>
-            <file
-                name="com_facebook_button_grey_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_grey_normal.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_item_background"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_item_background.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_list_section_header_background"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_list_section_header_background.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_loginbutton_silver"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_loginbutton_silver.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_place_default_icon"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_place_default_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_top_button"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_top_button.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue_focused.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue_normal.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_inverse_icon"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_inverse_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_check"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_close"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_close.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_list_selector_disabled"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector_disabled.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_list_longpressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_longpressed.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_check_on"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check_on.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_top_background"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_top_background.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_check_off"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_check_off.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_list_divider"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_list_divider.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_list_selector"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_profile_picture_blank_portrait"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_profile_picture_blank_portrait.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_grey_focused.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_profile_picture_blank_square"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_profile_picture_blank_square.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_profile_default_icon"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_profile_default_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_list_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_focused.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue_pressed.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_logo"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_logo.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_usersettingsfragment_background_gradient"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_list_selector_background_transition"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_selector_background_transition.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_list_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_picker_list_pressed.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_grey_pressed.9.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_button_blue.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_top_button"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable/com_facebook_top_button.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="com_facebook_picker_image"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_image.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_search_box"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_search_box.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_usersettingsfragment"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_usersettingsfragment.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_placepickerfragment"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_placepickerfragment.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_placepickerfragment_list_row"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_placepickerfragment_list_row.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_login_activity_layout"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_login_activity_layout.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_title_bar"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_title_bar.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_search_bar_layout"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_search_bar_layout.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_title_bar_stub"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_title_bar_stub.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_list_section_header"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_list_section_header.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_activity_circle_row"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_activity_circle_row.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_list_row"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_list_row.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_picker_checkbox"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_picker_checkbox.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_friendpickerfragment"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/layout/com_facebook_friendpickerfragment.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_button_grey_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_grey_normal.9.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_blue_focused.9.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_normal"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_blue_normal.9.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_inverse_icon"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_inverse_icon.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_close"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_close.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_focused"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_grey_focused.9.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_blue_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_blue_pressed.9.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_logo"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_logo.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_picker_magnifier"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_picker_magnifier.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="com_facebook_button_grey_pressed"
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/drawable-hdpi/com_facebook_button_grey_pressed.9.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-hdpi/values.xml"
-                qualifiers="hdpi" >
-                <dimen name="com_facebook_picker_divider_width" >1px
-                </dimen>
-            </file>
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-ldpi/values.xml"
-                qualifiers="ldpi" >
-                <dimen name="com_facebook_picker_divider_width" >1px
-                </dimen>
-            </file>
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-es/values.xml"
-                qualifiers="es" >
-                <string name="com_facebook_nearby" >Cercano
-                </string>
-                <string name="com_facebook_requesterror_password_changed" >Su contraseña de Facebook ha cambiado, por favor vuelva a conectar la aplicación con Facebook.
-                </string>
-                <string name="com_facebook_loginview_log_out_action" >Cerrar sesión
-                </string>
-                <string name="com_facebook_requesterror_reconnect" >Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.
-                </string>
-                <string name="com_facebook_requesterror_permissions" >Una conexión de aplicación con Facebook falló debido a permisos insuficientes, por favor, conceda los permisos de aplicaciones para realizar la operación.
-                </string>
-                <string name="com_facebook_usersettingsfragment_logged_in" >Sesión iniciada
-                </string>
-                <string name="com_facebook_internet_permission_error_title" >Error de AndroidManifest
-                </string>
-                <string name="com_facebook_usersettingsfragment_not_logged_in" >No has iniciado sesión
-                </string>
-                <string name="com_facebook_loginview_logged_in_using_facebook" >Sesión iniciada con Facebook
-                </string>
-                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d estuvieron aquí
-                </string>
-                <string name="com_facebook_requesterror_web_login" >Por favor, iniciar sesión a través https://www.facebook.com o https://m.facebook.com para volver a activar la aplicación para conectar con Facebook.
-                </string>
-                <string name="com_facebook_loading" >Cargando
-                </string>
-                <string name="com_facebook_picker_done_button_text" >Aceptar
-                </string>
-                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
-                </string>
-                <string name="com_facebook_loginview_cancel_action" >Cancelar
-                </string>
-                <string name="com_facebook_choose_friends" >Elige Amigos
-                </string>
-                <string name="com_facebook_internet_permission_error_message" >WebView inicio de sesión requiere permiso INTERNET
-                </string>
-                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >es:%1$,d estuvieron aquí
-                </string>
-                <string name="com_facebook_requesterror_relogin" >La aplicación no se conecta con Facebook, inicie sesión y volver a conectar esta aplicación.
-                </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >Aceptar
-                </string>
-                <string name="com_facebook_usersettingsfragment_log_in_button" >Iniciar sesión…
-                </string>
-                <string name="com_facebook_logo_content_description" >Logo de Facebook
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >Iniciar sesión con Facebook
-                </string>
-                <string name="com_facebook_loginview_log_out_button" >Cerrar sesión
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >Sesión iniciada como: %1$s
-                </string>
-            </file>
-            <file
-                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/res/values-iw/values.xml"
-                qualifiers="iw" >
-                <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
-                </string>
-                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
-                </string>
-                <string name="com_facebook_picker_done_button_text" >בצע
-                </string>
-                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
-                </string>
-                <string name="com_facebook_loginview_log_out_button" >התנתק
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
-                </string>
-                <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
-                </string>
-                <string name="com_facebook_loginview_logged_in_using_facebook" >מחובר באמצעות פייסבוק
-                </string>
-                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
-                </string>
-                <string name="com_facebook_loginview_log_out_action" >התנתק
-                </string>
-                <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
-                </string>
-                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
-                </string>
-                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
-                </string>
-                <string name="com_facebook_choose_friends" >בחר חברים
-                </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
-                </string>
-                <string name="com_facebook_loading" >..מעלה
-                </string>
-                <string name="com_facebook_nearby" >קרוב אליי
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
-                </string>
-                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
-                </string>
-                <string name="com_facebook_usersettingsfragment_not_logged_in" >לא מחובר
-                </string>
-                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d היו פה
-                </string>
-                <string name="com_facebook_requesterror_permissions" >.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע
-                </string>
-                <string name="com_facebook_loginview_cancel_action" >בטל
-                </string>
-                <string name="com_facebook_requesterror_web_login" >.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך
-                </string>
-                <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
-                </string>
-            </file>
-        </source>
-    </dataSet>
     <dataSet config="main" >
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res" >
             <file
@@ -11051,15 +11051,7 @@ center
                 </string>
                 <string name="title_activity_no_network" >Error en la Red
                 </string>
-                <string name="facebook" >Facebook
-                </string>
-                <string name="_deseas_ser_miembro_del_club_" >¿Deseas ser miembro del club?
-                </string>
                 <string name="title_activity_cupones_registro" >Registro
-                </string>
-                <string name="compartir_en_twitter" >compartir en twitter
-                </string>
-                <string name="title_activity_cupon_login" >Cupones El Directorio
                 </string>
                 <string name="title_activity_cupones" >Cupones
                 </string>
@@ -11067,27 +11059,17 @@ center
                 </string>
                 <string name="compartir_en_facebook" >compartir en facebook
                 </string>
-                <string name="_galeria" >" Galeria"
-                </string>
                 <string name="en_un_radio_de_" >"En un radio de: "
-                </string>
-                <string name="cerrar_sesion" >Cerrar Sesión
                 </string>
                 <string name="title_activity_comparte" >Comparte
                 </string>
-                <string name="m_exico" >México
-                </string>
                 <string name="iniciar_cerrar_sesion" >Iniciar/Cerrar Sesión
-                </string>
-                <string name="no_cuenta" >¿No tienes cuenta?
-                </string>
-                <string name="title_activity_favoritos" >Favoritos
                 </string>
                 <string name="dile_a_tus_amigos_de_el_directorio_" >Dile a tus amigos de El Directorio:
                 </string>
-                <string name="inicio_sesion" >Inicio de sesión
+                <string name="title_activity_favoritos" >Favoritos
                 </string>
-                <string name="m_s_informaci_n_en_" >Más información en:
+                <string name="inicio_sesion" >Inicio de sesión
                 </string>
                 <string name="logoElDir1" >ElDirectorio
                 </string>
@@ -11095,91 +11077,53 @@ center
                 </string>
                 <string name="layout_anunciate_2" >Envía un correo electrónico con tus datos: nombre, ciudad y teléfonos (LADA incluida) a ventas@eldirectorio.mx y uno de nuestros ejecutivos se pondrá en contacto contigo.
                 </string>
-                <string name="menu_settings" >Settings
-                </string>
-                <string name="title_activity_configure" >Configuración
-                </string>
                 <string name="layout_anunciate_3" >O si prefieres comunícate al (871)227 7080 para hablar con uno de nuestros representantes.
                 </string>
                 <string name="_datos_de_la_empresa" >"Datos de la Empresa"
                 </string>
                 <string name="cupones_club" >Cupones Club
                 </string>
-                <string name="ecuador" >Ecuador
-                </string>
-                <string name="twitter" >Twitter
-                </string>
                 <string name="title_activity_categorias" >Categorias
-                </string>
-                <string name="user_pass" >Usuario y contraseña
                 </string>
                 <string name="no_hay_cupones_en_esta_categor_a" >No hay cupones en esta categoría
                 </string>
-                <string name="register_here" >¡Registrate aquí!
+                <string name="user_pass" >Usuario y contraseña
                 </string>
                 <string name="title_activity_gallery_view" >Galería de Imágenes
                 </string>
-                <string name="logo_el_directorio" >Logo El Directorio
-                </string>
                 <string name="comparte" >Comparte
-                </string>
-                <string name="no_description" >no description
-                </string>
-                <string name="video" >Video
-                </string>
-                <string name="contrase_a" >Contraseña
-                </string>
-                <string name="title_activity_franquicias" >Franquicias
                 </string>
                 <string name="nombre_de_usuario" >Nombre de Usuario
                 </string>
-                <string name="anunciate" >Anúnciate
-                </string>
-                <string name="ventas_mail" >ventas@eldirectorio.mx
-                </string>
-                <string name="imageview_description" >Image Thumbnail
+                <string name="title_activity_franquicias" >Franquicias
                 </string>
                 <string name="buscando_" >Buscando . . .
                 </string>
-                <string name="title_activity_info_club" >Información Club El Directorio
-                </string>
                 <string name="title_activity_pais" >El Directorio
-                </string>
-                <string name="imagen_seleccionada" >Imagen seleccionada
-                </string>
-                <string name="info_contacto" >Información y Contacto
-                </string>
-                <string name="title_activity_acerca_de" >Acerca De
                 </string>
                 <string name="_qu_est_s_buscando_" >¿Qué estás buscando?
                 </string>
-                <string name="destacados" >Club El Directorio
-                </string>
-                <string name="buscar" >Buscar
+                <string name="info_contacto" >Información y Contacto
                 </string>
                 <string name="title_activity_show_categorias" >Todas las Categorías
                 </string>
+                <string name="buscar" >Buscar
+                </string>
                 <string name="action_settings" >Settings
                 </string>
-                <string name="ver_video" >Ver video
-                </string>
-                <string name="_contacto" >" Contacto"
-                </string>
-                <string name="title_activity_cupones_lista" >Lista de Cupones
-                </string>
                 <string name="icono_next" >Icono Next
-                </string>
-                <string name="icono_localizacion" >Icono localización
                 </string>
                 <string name="buscando" >buscando
                 </string>
                 <string name="activity_cupones_club" >Cupones del Club El Directorio
                 </string>
-                <string name="title_activity_show_search" >Resultados de Búsqueda
-                </string>
                 <string name="inicia_sesi_n_o_reg_strate_para_acceder_a_los_cupones" >Inicia sesión o regístrate para acceder a los cupones
                 </string>
-                <string name="categorias" >Categorías
+                <string name="title_activity_show_search" >Resultados de Búsqueda
+                </string>
+                <string name="title_activity_main_categories" >Categorías principales
+                </string>
+                <string name="title_activity_cupones_categorias" >Categorías con Cupones
                 </string>
                 <string name="app_description" >El Directorio Mx es una práctica aplicación que te permite buscar negocios por palabras clave o por categoría, y obtener toda su información. En nuestro directorio comercial, con un clic, podrás llamar al negocio, obtener direcciones precisas desde tu ubicación hacia éste, visualizar su fachada, revisar su sitio web oficial, sus perfiles en redes sociales, etc. Además, con El Directorio tendrás acceso a promociones exclusivas de y para nuestros anunciantes.
 
@@ -11190,61 +11134,123 @@ center
  
 www.eldirectorio.mx
                 </string>
-                <string name="title_activity_cupones_categorias" >Categorías con Cupones
-                </string>
-                <string name="title_activity_main_categories" >Categorías principales
-                </string>
                 <string name="testing" >Cargando
                 </string>
-                <string name="logo_negocio" >logo del negocio
-                </string>
-                <string name="_sucursales" >" Sucursales"
+                <string name="dummy_content" >DUMMY\nCONTENT
                 </string>
                 <string name="hello_world" >El Directorio 
+                </string>
+                <string name="_sucursales" >" Sucursales"
                 </string>
                 <string name="title_activity_show_advertiser" >Anunciante
                 </string>
                 <string name="facebook_app_id" >524299617619996
                 </string>
-                <string name="web" >Web
-                </string>
                 <string name="icono_destacados" >icono destacados
                 </string>
-                <string name="email" >email
-                </string>
-                <string name="title_activity_search" >Búsqueda
-                </string>
                 <string name="linealinea" >--
-                </string>
-                <string name="select_country" >Selecciona tu País
-                </string>
-                <string name="cupones" >Cupones
                 </string>
                 <string name="promociones_del_club" >Promociones Club El Directorio
                 </string>
                 <string name="reg_strate_gratis_" >¡Regístrate Gratis!
                 </string>
+                <string name="usuario" >Usuario
+                </string>
                 <string name="nombre_de_la_empresa" >Nombre de la empresa
                 </string>
-                <string name="usuario" >Usuario
+                <string name="title_activity_splash" >Splash
                 </string>
                 <string name="image_desc" >Image
                 </string>
                 <string name="header_del_directorio" >Header del directorio
                 </string>
-                <string name="franquicias" >Franquicias
+                <string name="app_name" >ElDirectorio
                 </string>
                 <string name="_coupons" >Cupones
-                </string>
-                <string name="app_name" >ElDirectorio
                 </string>
                 <string name="compartir_v_a_email" >compartir vía email
                 </string>
                 <string name="register_desc" >El registro es gratis y solo toma unos segundos.
                 </string>
-                <string name="iniciar_sesi_n" >Iniciar Sesión
-                </string>
                 <string name="favoritos" >Favoritos
+                </string>
+                <string name="facebook" >Facebook
+                </string>
+                <string name="_deseas_ser_miembro_del_club_" >¿Deseas ser miembro del club?
+                </string>
+                <string name="title_activity_cupon_login" >Cupones El Directorio
+                </string>
+                <string name="compartir_en_twitter" >compartir en twitter
+                </string>
+                <string name="_galeria" >" Galeria"
+                </string>
+                <string name="cerrar_sesion" >Cerrar Sesión
+                </string>
+                <string name="m_exico" >México
+                </string>
+                <string name="no_cuenta" >¿No tienes cuenta?
+                </string>
+                <string name="m_s_informaci_n_en_" >Más información en:
+                </string>
+                <string name="menu_settings" >Settings
+                </string>
+                <string name="title_activity_configure" >Configuración
+                </string>
+                <string name="ecuador" >Ecuador
+                </string>
+                <string name="twitter" >Twitter
+                </string>
+                <string name="register_here" >¡Registrate aquí!
+                </string>
+                <string name="logo_el_directorio" >Logo El Directorio
+                </string>
+                <string name="dummy_button" >Dummy Button
+                </string>
+                <string name="no_description" >no description
+                </string>
+                <string name="contrase_a" >Contraseña
+                </string>
+                <string name="video" >Video
+                </string>
+                <string name="ventas_mail" >ventas@eldirectorio.mx
+                </string>
+                <string name="anunciate" >Anúnciate
+                </string>
+                <string name="imageview_description" >Image Thumbnail
+                </string>
+                <string name="title_activity_info_club" >Información Club El Directorio
+                </string>
+                <string name="imagen_seleccionada" >Imagen seleccionada
+                </string>
+                <string name="title_activity_acerca_de" >Acerca De
+                </string>
+                <string name="destacados" >Club El Directorio
+                </string>
+                <string name="title_activity_cupones_lista" >Lista de Cupones
+                </string>
+                <string name="_contacto" >" Contacto"
+                </string>
+                <string name="ver_video" >Ver video
+                </string>
+                <string name="icono_localizacion" >Icono localización
+                </string>
+                <string name="categorias" >Categorías
+                </string>
+                <string name="logo_negocio" >logo del negocio
+                </string>
+                <string name="web" >Web
+                </string>
+                <string name="email" >email
+                </string>
+                <string name="title_activity_search" >Búsqueda
+                </string>
+                <string name="select_country" >Selecciona tu País
+                </string>
+                <string name="cupones" >Cupones
+                </string>
+                <string name="franquicias" >Franquicias
+                </string>
+                <string name="iniciar_sesi_n" >Iniciar Sesión
                 </string>
             </file>
             <file
@@ -11272,6 +11278,12 @@ www.eldirectorio.mx
                 </color>
             </file>
             <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="black_overlay" >#66000000
+                </color>
+            </file>
+            <file
                 path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values/styles.xml"
                 qualifiers="" >
 
@@ -11288,6 +11300,24 @@ true
                     </item>
                 </style>
 
+                <style name="ButtonBar" >
+                    <item name="android:paddingLeft">
+2dp
+                    </item>
+                    <item name="android:paddingTop">
+5dp
+                    </item>
+                    <item name="android:paddingRight">
+2dp
+                    </item>
+                    <item name="android:paddingBottom">
+0dp
+                    </item>
+                    <item name="android:background">
+@android:drawable/bottom_bar
+                    </item>
+                </style>
+
                 <style
                     name="AppBaseTheme"
                     parent="android:Theme.Light" >
@@ -11298,6 +11328,25 @@ true
             backward-compatibility can go here.
                     -->
                 </style>
+
+                <style
+                    name="FullscreenTheme"
+                    parent="android:Theme.NoTitleBar" >
+                    <item name="android:windowContentOverlay">
+@null
+                    </item>
+                    <item name="android:windowBackground">
+@null
+                    </item>
+                    <item name="metaButtonBarStyle">
+@style/ButtonBar
+                    </item>
+                    <item name="metaButtonBarButtonStyle">
+@style/ButtonBarButton
+                    </item>
+                </style>
+
+                <style name="ButtonBarButton" />
 
                 <style
                     name="AppTheme"
@@ -11311,6 +11360,18 @@ true
                 qualifiers="" >
                 <declare-styleable name="Gallery1" >
                     <attr name="android:galleryItemBackground" />
+                </declare-styleable>
+            </file>
+            <file
+                path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values/attrs.xml"
+                qualifiers="" >
+                <declare-styleable name="ButtonBarContainerTheme" >
+                    <attr
+                        name="metaButtonBarStyle"
+                        format="reference" />
+                    <attr
+                        name="metaButtonBarButtonStyle"
+                        format="reference" />
                 </declare-styleable>
             </file>
             <file
@@ -11747,6 +11808,34 @@ true
             <file
                 path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
+
+                <style
+                    name="FullscreenTheme"
+                    parent="android:Theme.Holo" >
+                    <item name="android:actionBarStyle">
+@style/FullscreenActionBarStyle
+                    </item>
+                    <item name="android:windowActionBarOverlay">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@null
+                    </item>
+                    <item name="metaButtonBarStyle">
+?android:attr/buttonBarStyle
+                    </item>
+                    <item name="metaButtonBarButtonStyle">
+?android:attr/buttonBarButtonStyle
+                    </item>
+                </style>
+
+                <style
+                    name="FullscreenActionBarStyle"
+                    parent="android:Widget.Holo.ActionBar" >
+                    <item name="android:background">
+@color/black_overlay
+                    </item>
+                </style>
 
                 <style
                     name="AppBaseTheme"

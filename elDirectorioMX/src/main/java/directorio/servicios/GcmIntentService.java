@@ -53,10 +53,10 @@ public class GcmIntentService extends IntentService {
     *   Metodo que manda una notificación a la pantalla
     */
     private void sendNotification(String msg) {
+
+        String[] arreglo = msg.split("&");
         mNotificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
-
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,  new Intent(this, MainCategories.class), 0);
-
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
         NotificationCompat.Builder mBuilder =
@@ -64,9 +64,22 @@ public class GcmIntentService extends IntentService {
                         .setSmallIcon(R.drawable.ic_launcher)
                         .setContentTitle("El Directorio")
                                 .setStyle(new NotificationCompat.BigTextStyle()
-                                        .bigText(msg))
+                                        .bigText(arreglo[0]))
                                 .setContentText(msg).setSound(alarmSound);
         mBuilder.setContentIntent(contentIntent);
+
+
+        try{
+            if (arreglo[1].length() > 0){
+                String url = arreglo[1];
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                PendingIntent intentopendiente = PendingIntent.getActivity(this, 0,i,0);
+                mBuilder.addAction(R.drawable.ic_launcher,url,intentopendiente);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         mNotificationManager.notify(NOTIFICATION_ID, mBuilder.build());
     }
 
