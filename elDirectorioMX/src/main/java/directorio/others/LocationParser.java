@@ -8,7 +8,9 @@ import org.json.JSONObject;
 /**
  * Created by juancarlos on 27/03/14.
  */
+
 public class LocationParser {
+
     private String Address1 = "", Address2 = "", City = "", State = "", Country = "", County = "", PIN = "";
 
     public void getAddress(String curLatitude, String curLongitude) {
@@ -21,7 +23,6 @@ public class LocationParser {
         PIN = "";
 
         try {
-
             JSONObject jsonObj = JSONFunctions.getJSONfromURL("http://maps.googleapis.com/maps/api/geocode/json?latlng=" + curLatitude + ","+ curLongitude + "&sensor=true");
             String Status = jsonObj.getString("status");
             if (Status.equalsIgnoreCase("OK")) {
@@ -55,7 +56,6 @@ public class LocationParser {
                             PIN = long_name;
                         }
                     }
-
                     // JSONArray mtypes = zero2.getJSONArray("types");
                     // String Type = mtypes.getString(0);
                     // Log.e(Type,long_name);
@@ -65,27 +65,22 @@ public class LocationParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public String getAddress1() {
         return Address1;
-
     }
 
     public String getAddress2() {
         return Address2;
-
     }
 
     public String getCity() {
         return City;
-
     }
 
     public String getState() {
         return State;
-
     }
 
     public String getCountry() {
@@ -95,12 +90,9 @@ public class LocationParser {
 
     public String getCounty() {
         return County;
-
     }
 
     public String getPIN() {
         return PIN;
-
     }
-
 }

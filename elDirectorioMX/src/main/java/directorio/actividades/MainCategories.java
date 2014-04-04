@@ -45,9 +45,7 @@ import directorio.servicios.RegisterDevice;
  */
 
 @SuppressLint("ParserError")
-public class MainCategories extends SherlockActivity implements
-		ISideNavigationCallback {
-
+public class MainCategories extends SherlockActivity implements  ISideNavigationCallback {
     //Variables de registro para el GCM/a
     public static final String EXTRA_MESSAGE = "message";
     public static final String PROPERTY_REG_ID = "registration_id";

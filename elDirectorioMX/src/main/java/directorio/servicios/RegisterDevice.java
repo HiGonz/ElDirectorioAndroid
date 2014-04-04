@@ -34,7 +34,6 @@ public class RegisterDevice extends IntentService {
     protected void onHandleIntent(Intent intent) {
 
         LocationParser lp = new LocationParser();
-
         LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 

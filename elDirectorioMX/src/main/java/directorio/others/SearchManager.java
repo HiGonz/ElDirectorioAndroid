@@ -119,12 +119,13 @@ public class SearchManager {
 			ArrayList<Advertiser> negociosEnRango = new ArrayList<Advertiser>();
 
 			for (int i = 0; i < negociosPorNombre.size(); i++) {
+                 //Aqui esta el despapaye
 				String ciudadcomparar = negociosPorNombre.get(i).getCiudad();
-
+                System.out.println(ciudad + " vs ");
+                System.out.println(ciudadcomparar);
 				if (ciudad.equals(ciudadcomparar)) {
 					negociosEnRango.add(negociosPorNombre.get(i));
 				}
-
 			}
 			return negociosEnRango;
 			// En caso de que no
@@ -209,7 +210,7 @@ public class SearchManager {
 	 * @return La lista de Advertisers resultantes
 	 */
 	public static ArrayList<Advertiser> returnAll(String filtro, String pais) {
-		// Se quitan los espacios
+        // Se quitan los espacios
 		String spaceString = " ";
 		char spaceCharacter = spaceString.charAt(0);
 		int last = filtro.length() - 1;

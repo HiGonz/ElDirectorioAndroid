@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
-    <dataSet config="4.4.0" >
-        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/assets" />
-    </dataSet>
     <dataSet config="unspecified" >
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX/library/unspecified/assets" />
     </dataSet>
     <dataSet config="unspecified" >
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/ElDirectorioMX.facebook-android-sdk/facebook/unspecified/assets" />
+    </dataSet>
+    <dataSet config="4.4.0" >
+        <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/build/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/assets" />
     </dataSet>
     <dataSet config="main" >
         <source path="/home/juancarlos/Desarrollo/movil/ElDirectorioMX/elDirectorioMX/src/main/assets" >

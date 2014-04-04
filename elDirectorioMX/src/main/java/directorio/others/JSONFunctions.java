@@ -31,7 +31,6 @@ public class JSONFunctions {
             HttpResponse response = httpclient.execute(httppost);
             HttpEntity entity = response.getEntity();
             is = entity.getContent();
-
         } catch (Exception e) {
             Log.e("log_tag", "Error in http connection " + e.toString());
         }
@@ -53,7 +52,6 @@ public class JSONFunctions {
         }
 
         try {
-
             jArray = new JSONObject(result);
         } catch (JSONException e) {
             Log.e("log_tag create object ",
