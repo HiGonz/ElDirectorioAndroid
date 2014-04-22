@@ -1,5 +1,0 @@
-<!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioMX/library/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.devspark.sidenavigation">
-
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
-
-</manifest>

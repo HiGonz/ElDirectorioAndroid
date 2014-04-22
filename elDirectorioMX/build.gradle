@@ -11,6 +11,10 @@ android {
         versionName "3.2.3"
     }
 
+   lintOptions {
+          abortOnError false
+      }
+
     signingConfigs {
         release {
             storeFile file("/home/juancarlos/Desarrollo/movil/Keystores/eldirectorioks")

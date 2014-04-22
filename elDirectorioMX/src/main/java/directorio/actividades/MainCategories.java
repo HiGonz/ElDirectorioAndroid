@@ -51,6 +51,7 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
     public static final String PROPERTY_REG_ID = "registration_id";
     private static final String PROPERTY_APP_VERSION = "appVersion";
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+
     GoogleCloudMessaging gcm;
     String regid;
     String SENDER_ID = "732420872532";
@@ -96,11 +97,9 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 			// Cambio Diseño ActionBar
 			getSupportActionBar().setBackgroundDrawable(this.getResources().getDrawable(R.drawable.header));
 			getSupportActionBar().setIcon(R.drawable.menu);
-			getSupportActionBar().setDisplayOptions(0,
-					ActionBar.DISPLAY_HOME_AS_UP);
+			getSupportActionBar().setDisplayOptions(0,	ActionBar.DISPLAY_HOME_AS_UP);
 			TextView customView = new TextView(this);
-			customView.setTextColor(getResources().getColor(
-					android.R.color.white));
+			customView.setTextColor(getResources().getColor(android.R.color.white));
 			customView.setTextSize(20f);
 			customView.setTypeface(null, Typeface.BOLD);
 			ActionBar.LayoutParams params = new ActionBar.LayoutParams(
