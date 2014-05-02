@@ -105,7 +105,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		sideNavigationSearch.setMenuItems(R.menu.side_navigation_menu);
 		sideNavigationSearch.setMenuClickCallback(this);
 
-
 		// Cambio Diseño ActionBar
 		getSupportActionBar().setBackgroundDrawable(this.getResources().getDrawable(R.drawable.header));
 		getSupportActionBar().setIcon(R.drawable.menu);
@@ -117,14 +116,9 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		customView.setTextColor(getResources().getColor(android.R.color.white));
 		customView.setTextSize(20f);
 		customView.setTypeface(null, Typeface.BOLD);
-		ActionBar.LayoutParams params = new ActionBar.LayoutParams(
-				ActionBar.LayoutParams.WRAP_CONTENT,
-				ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER_HORIZONTAL
-						| Gravity.CENTER_VERTICAL);
+		ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT,	ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
 		customView.setText("Buscar");
-		getSupportActionBar().setDisplayOptions(
-				ActionBar.DISPLAY_SHOW_CUSTOM | ActionBar.DISPLAY_SHOW_HOME
-						| ActionBar.DISPLAY_USE_LOGO);
+		getSupportActionBar().setDisplayOptions(	ActionBar.DISPLAY_SHOW_CUSTOM | ActionBar.DISPLAY_SHOW_HOME| ActionBar.DISPLAY_USE_LOGO);
 		getSupportActionBar().setCustomView(customView, params);
 
 		// se cargan los elementos de la interfaz

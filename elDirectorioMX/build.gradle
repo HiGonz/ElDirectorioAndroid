@@ -11,11 +11,11 @@ android {
         versionName "3.2.3"
     }
 
-   lintOptions {
-          abortOnError false
-      }
+    lintOptions {
+        abortOnError false
+    }
 
-    signingConfigs {
+    signingConfigs {adb
         release {
             storeFile file("/home/juancarlos/Desarrollo/movil/Keystores/eldirectorioks")
             storePassword "publysorpresas"
@@ -33,13 +33,14 @@ android {
     }
 }
 
+
 dependencies {
-    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    compile 'com.android.support:support-v4:18.0.0'
-    compile 'com.google.android.gms:play-services:3.1.+'
-    compile 'com.googlecode.android-query:android-query:0.25.9'
-    compile 'com.google.code.gson:gson:2.2.+'
     compile project(':facebook-android-sdk:facebook')
     compile project(':library')
     compile files('libs/commons-io-2.4.jar')
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.google.android.gms:play-services:3.1.+'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.googlecode.android-query:android-query:0.25.9'
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="portada">Portada</string>
     <string name="app_name">ElDirectorio</string>
     <string name="hello_world">El Directorio </string>
     <string name="menu_settings">Settings</string>

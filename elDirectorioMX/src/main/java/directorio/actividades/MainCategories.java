@@ -127,9 +127,8 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
             if (checkPlayServices()) {
                 gcm = GoogleCloudMessaging.getInstance(this);
                 regid = getRegistrationId(context);
-
                 if (regid.length() == 0) {
-                    Log.d("GCM","No hubo registro");
+                    Log.d("GCM","No hubo registro, comenzando a registrar...");
                     registerInBackground();
                 }else{
                     Log.d("GCM",regid);
@@ -161,15 +160,13 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 					public void run() {
 						try {
 							if (categoria == "Todas las categorias") {
-								Intent in = new Intent(MainCategories.this,
-										Categorias.class);
+								Intent in = new Intent(MainCategories.this, Categorias.class);
 								startActivity(in);
 							} else {
 								sleep(100);
 								Intent showCategoriesIntent = new Intent(MainCategories.this,ShowCategorias.class);
 								showCategoriesIntent.putExtra("estado", 2);
-								showCategoriesIntent.putExtra("categoria",
-										categoria);
+								showCategoriesIntent.putExtra("categoria", categoria);
 								startActivity(showCategoriesIntent);
 							}
 						} catch (InterruptedException e) {
