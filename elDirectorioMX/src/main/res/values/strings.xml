@@ -2,7 +2,7 @@
 <resources>
 
     <string name="portada">Portada</string>
-    <string name="app_name">ElDirectorio</string>
+    <string name="app_name">El Directorio</string>
     <string name="hello_world">El Directorio </string>
     <string name="menu_settings">Settings</string>
     <string name="categorias">Categorías</string>

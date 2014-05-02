@@ -16,8 +16,6 @@ import java.util.TimerTask;
  */
 public class Portada extends Activity {
 
-    Portada por;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
