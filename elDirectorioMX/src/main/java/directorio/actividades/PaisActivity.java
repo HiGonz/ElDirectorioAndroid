@@ -55,10 +55,7 @@ public class PaisActivity extends SherlockActivity {
 		customView.setTextColor(getResources().getColor(android.R.color.white));
 		customView.setTextSize(20f);
 		customView.setTypeface(null, Typeface.BOLD);
-		ActionBar.LayoutParams params = new ActionBar.LayoutParams(
-				ActionBar.LayoutParams.WRAP_CONTENT,
-				ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER_HORIZONTAL
-						| Gravity.CENTER_VERTICAL);
+		ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT,	ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER_HORIZONTAL	| Gravity.CENTER_VERTICAL);
 
 		customView.setText("Selecciona tu País");
 		getSupportActionBar().setDisplayOptions(
@@ -80,7 +77,7 @@ public class PaisActivity extends SherlockActivity {
 	}
 
 	/**
-	 * M�todo que se encarga de hacer lo de las preferencias.
+	 * Método que se encarga de hacer lo de las preferencias.
 	 */
 	private void doPrefs() {
 		// se revisa si se ha seleccionado algún país

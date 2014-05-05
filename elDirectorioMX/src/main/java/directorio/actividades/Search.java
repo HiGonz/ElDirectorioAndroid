@@ -25,6 +25,7 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
+import com.androidquery.AQuery;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -33,6 +34,7 @@ import java.util.ArrayList;
 import directorio.applications.TodoManagerApplication;
 import directorio.others.SearchManager;
 import directorio.services.dao.CiudadDAO;
+import directorio.services.dao.PaisDAO;
 
 //import directorio.others.ConnectionChangeReceiver;
 //import android.content.BroadcastReceiver;
@@ -78,9 +80,12 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 
 	private CiudadDAO cityDao;
 
+    private PaisDAO paisDAO;
+
 	private boolean networkStatus;
 
 	private ArrayAdapter<CharSequence> adapter;
+    private ArrayAdapter<CharSequence> adapterPaises;
 
 	// private final BroadcastReceiver bcr = new ConnectionChangeReceiver();
     //there we go
@@ -99,6 +104,8 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		networkStatus = tma.isNetworkAvailable();
 
 		cityDao = new CiudadDAO();
+        paisDAO = new PaisDAO();
+
 		selectedCountry = tma.getCountry();
 
 		sideNavigationSearch = (SideNavigationView) findViewById(R.id.search_sidenavigationview);
@@ -249,6 +256,9 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	 */
 	private void loadViews() {
 		spinner.setAdapter(adapter);
+        AQuery aq = new AQuery(this);
+        aq.id(R.id.spinner_paises).getSpinner().setAdapter(adapterPaises);
+        aq.id(R.id.spinner_paises).getSpinner().setSelection(adapterPaises.getPosition(selectedCountry));
 	}
 
 	/**
@@ -268,16 +278,24 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			cargando.setIndeterminate(false);
 		}
 
+        adapterPaises = new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item);
+        adapterPaises.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        ArrayList<String> paisesString = paisDAO.getPaises();
+        for (int j = 0;j < paisesString.size();j++){
+            adapterPaises.add(paisesString.get(j));
+            System.out.println(paisesString.get(j));
+        }
+
 		spinner = (Spinner) findViewById(R.id.spinner_localidades);
 
 		adapter = new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 		textoBarra = (TextView) findViewById(R.id.mostrar_metros);
 		Busqueda = (EditText) findViewById(R.id.busqueda);
 
-		Busqueda.setCompoundDrawablesWithIntrinsicBounds(null, null,
-				getResources().getDrawable(R.drawable.search2), null);
+		Busqueda.setCompoundDrawablesWithIntrinsicBounds(null, null,getResources().getDrawable(R.drawable.search2), null);
 
 		// EditText Search
 		Busqueda.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -351,6 +369,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	 * Método que hace la búsqueda usando las entradas del usuario.
 	 */
 	public void search() {
+        final AQuery aq = new AQuery(this);
 		// SegundoAlgoritmo de Búsqueda
 		if (Busqueda.getText().toString().trim().equals("")) {
 			// Mostrar todos los advertiser de la ciudad seleccionada
@@ -382,7 +401,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			// cargando.setIndeterminate(true);
 			// timer.start();
 			// No se realizará la búsqueda, ya que consume muchos datos.
-
 		} else if (longitude == 0.0 && latitude == 0.0 && kilometrosRedonda != 0.0) {
 			// en caso de que no se tenga la ubicación exacta.
 			Log.d(TAG, "kil es: " + kilometrosRedonda);
@@ -423,18 +441,13 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		} else {
 			Thread timer = new Thread() {
 				public void run() {
-					if (spinner.getSelectedItem().toString()
-							.equals("Todas las ciudades")
-							&& kilometrosRedonda == 0.0) {
-						SearchManager.returnAll(Busqueda.getText().toString(),
-								selectedCountry);
-					} else {
-						SearchManager.negociosenRango(latitude, longitude,
-								kilometrosRedonda, spinner.getSelectedItem()
-										.toString(), Busqueda.getText()
-										.toString(), selectedCountry);
-					}
+                    selectedCountry = aq.id(R.id.spinner_paises).getSpinner().getSelectedItem().toString();
 
+					if (spinner.getSelectedItem().toString().equals("Todas las ciudades")&& kilometrosRedonda == 0.0) {
+						SearchManager.returnAll(Busqueda.getText().toString(),selectedCountry);
+					} else {
+						SearchManager.negociosenRango(latitude, longitude,kilometrosRedonda, spinner.getSelectedItem().toString(), Busqueda.getText()	.toString(), selectedCountry);
+					}
 					intent = new Intent(Search.this, ShowSearch.class);
 					intent.putExtra("estado", 1);
 					intent.putExtra("latitude", latitude);
@@ -490,8 +503,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			if (networkStatus != false) {
 				// Se cargan los datos de la ciudades desde la base de datos
 				try {
-					ArrayList<String> datos = cityDao
-							.getCiudades(selectedCountry);
+					ArrayList<String> datos = cityDao.getCiudades(selectedCountry);
 					adapter.add("Todas las ciudades");
 					for (int i = 0; i < datos.size(); i++) {
 						adapter.add(datos.get(i));
