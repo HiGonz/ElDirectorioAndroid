@@ -173,8 +173,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		cargando.setIndeterminate(false);
 		manager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+		com.facebook.Settings.publishInstallAsync(getApplicationContext(),	getString(R.string.facebook_app_id));
 		//
 		// IntentFilter filter = new IntentFilter();
 		// filter.addAction(CONNECTIVITY_SERVICE);
@@ -271,8 +270,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 
 		spinner = (Spinner) findViewById(R.id.spinner_localidades);
 
-		adapter = new ArrayAdapter<CharSequence>(this,
-				android.R.layout.simple_spinner_item);
+		adapter = new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 		textoBarra = (TextView) findViewById(R.id.mostrar_metros);
@@ -290,8 +288,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 					if (networkStatus != false) {
 						search();
 					} else {
-						Intent intent = new Intent(Search.this,
-								NoNetworkActivity.class);
+						Intent intent = new Intent(Search.this,NoNetworkActivity.class);
 						Search.this.startActivity(intent);
 					}
 					return true;
@@ -359,7 +356,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			// Mostrar todos los advertiser de la ciudad seleccionada
 			String ciudadSeleccionada = spinner.getSelectedItem().toString();
 			if (ciudadSeleccionada.equals("Todas las ciudades")) {
-				Toast.makeText(Search.this,"¿Debes de insertar un valor de búsqueda!",	Toast.LENGTH_SHORT).show();
+				Toast.makeText(Search.this,"¡Debes de insertar un valor de búsqueda!",	Toast.LENGTH_SHORT).show();
 			} else {
 				intent = new Intent(Search.this, ShowSearch.class);
 				intent.putExtra("ciudad", ciudadSeleccionada);
@@ -386,13 +383,12 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			// timer.start();
 			// No se realizará la búsqueda, ya que consume muchos datos.
 
-		} else if (longitude == 0.0 && latitude == 0.0
-				&& kilometrosRedonda != 0.0) {
+		} else if (longitude == 0.0 && latitude == 0.0 && kilometrosRedonda != 0.0) {
 			// en caso de que no se tenga la ubicación exacta.
 			Log.d(TAG, "kil es: " + kilometrosRedonda);
 			Toast.makeText(
 					Search.this,
-					"Espera un momento mas en lo que obtenemos tu ubicaci�n exacta....",
+					"Espera un momento mas en lo que obtenemos tu ubicación exacta....",
 					Toast.LENGTH_SHORT).show();
 
 			lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -415,17 +411,15 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 					latitude = loc.getLatitude();
 					longitude = loc.getLongitude();
 				} catch (NullPointerException npe) {
-					Log.e(TAG, "No pude obtener localizacion");
+					Log.e(TAG, "No pude obtener localización");
 					Log.e(TAG, npe.toString());
 					latitude = 0.0;
 					longitude = 0.0;
 				}
-				Intent intento = new Intent(
-						"android.location.GPS_ENABLED_CHANGE");
+				Intent intento = new Intent("android.location.GPS_ENABLED_CHANGE");
 				intento.putExtra("enabled", false);
 				sendBroadcast(intento);
 			}
-
 		} else {
 			Thread timer = new Thread() {
 				public void run() {
@@ -510,7 +504,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			}
 			return null;
 		}
-
 	}
 
 }

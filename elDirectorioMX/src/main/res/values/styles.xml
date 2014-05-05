@@ -42,4 +42,8 @@
 
     <style name="ButtonBarButton" />
 
+    <style name="ApIntroTheme" parent="Theme.Sherlock.NoActionBar">
+        <item name="android:windowBackground">@color/azuldirectorio</item>
+    </style>
+
 </resources>

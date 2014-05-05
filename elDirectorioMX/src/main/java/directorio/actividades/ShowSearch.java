@@ -69,6 +69,7 @@ public class ShowSearch extends SherlockActivity implements
 		sideNavigationShowSearch.setMenuClickCallback(this);
 
 		TodoManagerApplication tma = (TodoManagerApplication) getApplication();
+
 		country = tma.getCountry();
 
 		// Cambio Diseño ActionBar

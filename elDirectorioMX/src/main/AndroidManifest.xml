@@ -227,7 +227,7 @@
             android:label="@string/title_activity_no_network" >
         </activity>
         <activity android:name=".Portada" android:label="@string/portada" android:noHistory="true" android:theme="@style/Theme.Sherlock.NoActionBar"/>
-        <activity android:name=".Splash" android:noHistory="true">
+        <activity android:name=".Splash" android:noHistory="true" android:theme="@style/ApIntroTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
