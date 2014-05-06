@@ -65,7 +65,7 @@ public class TodoManagerApplication extends Application {
 	public String getCountry() {
 		SharedPreferences sp = PreferenceManager
 				.getDefaultSharedPreferences(TodoManagerApplication.this);
-		selectedCountry = sp.getString("countrySelected", "M�xico");
+		selectedCountry = sp.getString("countrySelected", "México");
 		return selectedCountry;
 	}
 

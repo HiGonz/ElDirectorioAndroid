@@ -110,6 +110,7 @@ public class SearchManager {
 			double longitude, double rangoBuscar, String ciudad,
 			String filtroString, String pais) {
 
+        pais  = pais.replace(" ","%20");
 		ArrayList<Advertiser> negociosPorNombre = new ArrayList<Advertiser>();
 
 		negociosPorNombre = returnAll(filtroString, pais);
@@ -221,6 +222,7 @@ public class SearchManager {
 		}
 
 		filtro = filtro.replace(" ", "%20");
+        pais = pais.replace(" ","%20");
 
 		ArrayList<Advertiser> resultados = new ArrayList<Advertiser>();
 		JSONParser jp = new JSONParser();

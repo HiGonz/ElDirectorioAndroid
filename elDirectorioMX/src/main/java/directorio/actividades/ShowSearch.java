@@ -70,7 +70,7 @@ public class ShowSearch extends SherlockActivity implements
 
 		TodoManagerApplication tma = (TodoManagerApplication) getApplication();
 
-		country = tma.getCountry();
+        country = getIntent().getExtras().getString("pais",tma.getCountry());
 
 		// Cambio Diseño ActionBar
 		getSupportActionBar().setBackgroundDrawable(
@@ -175,6 +175,7 @@ public class ShowSearch extends SherlockActivity implements
 							Intent correo = new Intent(ShowSearch.this,
 									ShowAdvertiser.class);
 							correo.putExtra("advertiser", nombrenegocio);
+                            correo.putExtra("pais",country);
 							startActivity(correo);
 
 						} catch (InterruptedException e) {

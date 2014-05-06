@@ -209,8 +209,8 @@ public class ShowAdvertiser extends SherlockActivity implements
 		// Se usa el manager application para poder ver el pa�s que seleccioné
 		// el usuario
 		TodoManagerApplication tma = (TodoManagerApplication) getApplication();
-		String country = tma.getCountry();
-
+		String country = getIntent().getExtras().getString("pais",tma.getCountry());
+        country = country.replace(" ","%20");
 		// se usa un async task para descargar la información
 		PrepareStuff ps = new PrepareStuff(this);
 		ps.execute(country);
@@ -1019,7 +1019,7 @@ public class ShowAdvertiser extends SherlockActivity implements
 		 */
 		final TodoManagerApplication ama = (TodoManagerApplication) getApplication();
 		String nombreTemporal = advertiserToShow.getNombre();
-		final String paisTemp = ama.getCountry();
+		final String paisTemp = getIntent().getExtras().getString("pais",ama.getCountry());
 		boolean isInFavs = fd.isInFavoritos(nombreTemporal);
 		if (isInFavs == true) {
 			favs.setBackgroundResource(R.drawable.favorito);

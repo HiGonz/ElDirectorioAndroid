@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,13 +27,16 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.androidquery.AQuery;
+import com.androidquery.callback.AjaxCallback;
+import com.androidquery.callback.AjaxStatus;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
+
+import org.json.JSONArray;
 
 import java.util.ArrayList;
 
 import directorio.applications.TodoManagerApplication;
-import directorio.others.SearchManager;
 import directorio.services.dao.CiudadDAO;
 import directorio.services.dao.PaisDAO;
 
@@ -42,12 +46,12 @@ import directorio.services.dao.PaisDAO;
 
 /**
  * Actividad que hace la búsqueda de negocios.
- * 
+ *
  * @author NinjaDevelop
  * @author Carlos Tirado
  * @author Juan Carlos Hinojo
  * @author Publysorpresas
- * 
+ *
  */
 public class Search extends SherlockActivity implements ISideNavigationCallback {
 
@@ -86,6 +90,8 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 
 	private ArrayAdapter<CharSequence> adapter;
     private ArrayAdapter<CharSequence> adapterPaises;
+
+    GetCitiesAsync gla;
 
 	// private final BroadcastReceiver bcr = new ConnectionChangeReceiver();
     //there we go
@@ -130,7 +136,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 
 		// se cargan los elementos de la interfaz
 		setupViews();
-		GetCitiesAsync gla = new GetCitiesAsync(Search.this);
+		gla = new GetCitiesAsync(Search.this);
 		gla.execute();
 
 		// mientras tanto se obtiene la localización
@@ -255,10 +261,23 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 	 * Método que carga las partes de la interfaz con los datos descargados
 	 */
 	private void loadViews() {
+        final Context contexto = this;
 		spinner.setAdapter(adapter);
         AQuery aq = new AQuery(this);
         aq.id(R.id.spinner_paises).getSpinner().setAdapter(adapterPaises);
         aq.id(R.id.spinner_paises).getSpinner().setSelection(adapterPaises.getPosition(selectedCountry));
+        aq.id(R.id.spinner_paises).getSpinner().setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                selectedCountry = adapterPaises.getItem(i).toString();
+                adapter.clear();
+                fetchCities(selectedCountry);
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 	}
 
 	/**
@@ -318,7 +337,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		// Button Search
 		busqueda = (Button) findViewById(R.id.search);
 		busqueda.setOnClickListener(new View.OnClickListener() {
-
 			public void onClick(View v) {
 				if (networkStatus != false) {
 					search();
@@ -327,23 +345,16 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 							NoNetworkActivity.class);
 					Search.this.startActivity(intent);
 				}
-
 			}
 		});
 
 		barra = (SeekBar) findViewById(R.id.radioALaRedonda);
 		barra.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
-
 			public void onStopTrackingTouch(SeekBar seekBar) {
-
 			}
-
 			public void onStartTrackingTouch(SeekBar seekBar) {
-
 			}
-
-			public void onProgressChanged(SeekBar seekBar, int progress,
-					boolean fromUser) {
+			public void onProgressChanged(SeekBar seekBar, int progress,	boolean fromUser) {
 				if (progress == 0) {
 					kilometrosRedonda = 0.0;
 					textoBarra.setText("--");
@@ -351,10 +362,8 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 					kilometrosRedonda = (double) progress;
 					textoBarra.setText(progress + "km");
 				}
-
 			}
 		});
-
 		// Botón de información, abre una nueva actividad con la información de
 		// la aplicación
 		info = (Button) findViewById(R.id.info_button);
@@ -404,10 +413,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		} else if (longitude == 0.0 && latitude == 0.0 && kilometrosRedonda != 0.0) {
 			// en caso de que no se tenga la ubicación exacta.
 			Log.d(TAG, "kil es: " + kilometrosRedonda);
-			Toast.makeText(
-					Search.this,
-					"Espera un momento mas en lo que obtenemos tu ubicación exacta....",
-					Toast.LENGTH_SHORT).show();
+			Toast.makeText(Search.this,"Espera un momento mas en lo que obtenemos tu ubicación exacta....",Toast.LENGTH_SHORT).show();
 
 			lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 			Location loc1 = lm
@@ -443,19 +449,19 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 				public void run() {
                     selectedCountry = aq.id(R.id.spinner_paises).getSpinner().getSelectedItem().toString();
 
-					if (spinner.getSelectedItem().toString().equals("Todas las ciudades")&& kilometrosRedonda == 0.0) {
-						SearchManager.returnAll(Busqueda.getText().toString(),selectedCountry);
-					} else {
-						SearchManager.negociosenRango(latitude, longitude,kilometrosRedonda, spinner.getSelectedItem().toString(), Busqueda.getText()	.toString(), selectedCountry);
-					}
+//					if (spinner.getSelectedItem().toString().equals("Todas las ciudades")&& kilometrosRedonda == 0.0) {
+//						SearchManager.returnAll(Busqueda.getText().toString(),selectedCountry);
+//					} else {
+//						SearchManager.negociosenRango(latitude, longitude,kilometrosRedonda, spinner.getSelectedItem().toString(), Busqueda.getText()	.toString(), selectedCountry);
+					//}
 					intent = new Intent(Search.this, ShowSearch.class);
 					intent.putExtra("estado", 1);
 					intent.putExtra("latitude", latitude);
 					intent.putExtra("longitude", longitude);
 					intent.putExtra("kil", kilometrosRedonda);
-					intent.putExtra("ciudad", spinner.getSelectedItem()
-							.toString());
+					intent.putExtra("ciudad", spinner.getSelectedItem().toString());
 					intent.putExtra("busqueda", Busqueda.getText().toString());
+                    intent.putExtra("pais",selectedCountry);
 					Search.this.startActivity(intent);
 				}
 			};
@@ -465,24 +471,53 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			timer.start();
 		}
 	}
+
+    public void fetchCities(String pais){
+        AQuery aq = new AQuery(this.getApplicationContext());
+
+        String url = "http://173.193.3.218/EntidadService.svc/getEntidades/"+ pais.replace(" ","%20")+"";
+        System.out.println(url);
+
+         adapter.add("Todas las ciudades");
+        aq.ajax(url, JSONArray.class, new AjaxCallback<JSONArray>() {
+            @Override
+            public void callback(String url, JSONArray json, AjaxStatus status) {
+                System.out.println(json.toString());
+                if(json != null){
+                    for (int j = 0; j<json.length();j++){
+                        try{
+                            String citi = json.getString(j);
+                            System.out.println(citi);
+                            adapter.add(citi);
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                }else{
+                }
+            }
+        });
+    }
+
 	/**
 	 * Async Task que se encarga de la descarga de la lista de las ciudades.
-	 * 
+	 *
 	 * @author Publysorpresas
-	 * 
+	 *
 	 */
 	public class GetCitiesAsync extends AsyncTask<Void, Integer, Void> {
 
 		private Context ctx;
 		private ProgressDialog pd = null;
 
+
 		public GetCitiesAsync(Context c) {
-			ctx = c;
+            ctx = c;
 		}
 
 		@Override
 		protected void onPostExecute(Void result) {
-			loadViews();
+            loadViews();
 			pd.cancel();
 			super.onPostExecute(result);
 		}
