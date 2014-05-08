@@ -93,6 +93,8 @@ public class Cupones extends SherlockActivity implements
 			estado = "Not LoggedIn";
 		}
 
+
+        ChangeLayout();
 		// EN caso de que si hay internet, y se esta logueado, se cambia la
 		// interfaz
 		if (estado.equals("Logged") || estado.equals("LoggedClub")) {
@@ -242,8 +244,7 @@ public class Cupones extends SherlockActivity implements
 
 		// Create a new HttpClient and Post Header
 		HttpClient httpclient = new DefaultHttpClient();
-		HttpPost httppost = new HttpPost(
-				"http://m.eldirectorio.mx/loginHandler.axd");
+		HttpPost httppost = new HttpPost("http://m.eldirectorio.mx/loginHandler.axd");
 		estadoLogUsuario = "Not LoggedIn";
 		try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -305,30 +306,22 @@ public class Cupones extends SherlockActivity implements
 
 		@Override
 		protected void onPostExecute(String result) {
-			Toast.makeText(Cupones.this, "Resultado=" + result,
-					Toast.LENGTH_LONG).show();
-			SharedPreferences settings = PreferenceManager
-					.getDefaultSharedPreferences(Cupones.this);
+			Toast.makeText(Cupones.this, "Resultado=" + result,	Toast.LENGTH_LONG).show();
+			SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(Cupones.this);
 			Editor session = settings.edit();
 
 			if (result.equals("0")) {
 				session.putString("estado", "Logged");
 				session.commit();
-
 				ChangeLayout();
-
 			} else if (result.equals("1")) {
 				session.putString("estado", "LoggedClub");
 				session.commit();
-
 				// Change Layout
 				ChangeLayout();
-
-				Toast.makeText(Cupones.this, "Loggeado Correctamente!",
-						Toast.LENGTH_LONG).show();
+				Toast.makeText(Cupones.this, "Loggeado Correctamente!",Toast.LENGTH_LONG).show();
 			} else {
-				Toast.makeText(Cupones.this, "Datos Incorrectos",
-						Toast.LENGTH_LONG).show();
+				Toast.makeText(Cupones.this, "Datos Incorrectos",Toast.LENGTH_LONG).show();
 			}
 		}
 	}

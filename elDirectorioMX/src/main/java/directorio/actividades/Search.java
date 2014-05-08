@@ -218,7 +218,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			Log.d(TAG, "Lo obtuve por WIFI");
 			latitude = loc1.getLatitude();
 			longitude = loc1.getLongitude();
-
 		} else {
 			Log.d(TAG, "Lo obtuve por GPS");
 			Intent intent = new Intent("android.location.GPS_ENABLED_CHANGE");

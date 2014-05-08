@@ -14,10 +14,6 @@
         android:icon="@drawable/menu_favorite"
         android:title="@string/favoritos"/>
     <item
-        android:id="@+id/snm_destacados"
-        android:icon="@drawable/menu_important"
-        android:title="@string/destacados"/>
-    <item
         android:id="@+id/snm_cupones"
         android:icon="@drawable/menu_coupons"
         android:title="@string/cupones"/>

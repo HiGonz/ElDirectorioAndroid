@@ -311,7 +311,9 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 	 * Método que hace la descarga de información
 	 */
 	private void downloadCategories() {
-		categorias = catDAO.getFeatured(tma.getCountry());
+        String parsed = tma.getCountry();
+        parsed = parsed.replace(" ","%20");
+		categorias = catDAO.getFeatured(parsed);
 	}
 
 	@Override

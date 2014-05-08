@@ -59,8 +59,7 @@ import directorio.services.dao.SucursalDAO;
  * @author Publysorpresas
  * 
  */
-public class ShowAdvertiser extends SherlockActivity implements
-		ISideNavigationCallback {
+public class ShowAdvertiser extends SherlockActivity implements ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationShowAdv;
 
@@ -209,8 +208,21 @@ public class ShowAdvertiser extends SherlockActivity implements
 		// Se usa el manager application para poder ver el pa�s que seleccioné
 		// el usuario
 		TodoManagerApplication tma = (TodoManagerApplication) getApplication();
-		String country = getIntent().getExtras().getString("pais",tma.getCountry());
-        country = country.replace(" ","%20");
+
+        String  country = getIntent().getStringExtra("pais");
+        if (country == null){
+            System.out.println("entre aqui");
+            country = tma.getCountry();
+        }
+        System.out.println(country);
+
+        try{
+            country = country.replace(" ","%20");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
 		// se usa un async task para descargar la información
 		PrepareStuff ps = new PrepareStuff(this);
 		ps.execute(country);
@@ -436,14 +448,9 @@ public class ShowAdvertiser extends SherlockActivity implements
 		// en caso de que no sea parte del club, o de que no se haya iniciado la
 		// sesión, no se muestra en caso de que la inicion no se haya iniciado,
 		// o en caso de que no se sea parte del club.
-		if (esDestacado != true || log.equals("NotLoggedIn")
-				|| log.equals("Logged")) {
-			//destacado.setVisibility(View.INVISIBLE);
-			promocionBlue.setVisibility(View.INVISIBLE);
-			promocion.setVisibility(View.INVISIBLE);
-		} else if (log.equals("LoggedClub")) {
+
+
 			promocion.setText(advertiserToShow.getPromocion());
-		}
 
 		// se muestra el nombre de la empresa
 		String name = advertiserToShow.getNombre();
@@ -1019,7 +1026,8 @@ public class ShowAdvertiser extends SherlockActivity implements
 		 */
 		final TodoManagerApplication ama = (TodoManagerApplication) getApplication();
 		String nombreTemporal = advertiserToShow.getNombre();
-		final String paisTemp = getIntent().getExtras().getString("pais",ama.getCountry());
+
+
 		boolean isInFavs = fd.isInFavoritos(nombreTemporal);
 		if (isInFavs == true) {
 			favs.setBackgroundResource(R.drawable.favorito);
@@ -1052,7 +1060,14 @@ public class ShowAdvertiser extends SherlockActivity implements
 				@SuppressWarnings("deprecation")
 				public void onClick(View v) {
 
-					fd.addToFavoritos(advertiserToShow, paisTemp);
+                    String paisTemp = "";
+                    try {
+                         paisTemp = getIntent().getStringExtra("pais");
+                    }catch (Exception e){
+                         paisTemp = ama.getCountry();
+                    }
+
+                    fd.addToFavoritos(advertiserToShow, paisTemp);
 					AlertDialog alertDialog = new AlertDialog.Builder(
 							ShowAdvertiser.this).create();
 					alertDialog.setTitle("Agregado a Favoritos");

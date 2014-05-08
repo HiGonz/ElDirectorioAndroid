@@ -122,8 +122,6 @@ public class SearchManager {
 			for (int i = 0; i < negociosPorNombre.size(); i++) {
                  //Aqui esta el despapaye
 				String ciudadcomparar = negociosPorNombre.get(i).getCiudad();
-                System.out.println(ciudad + " vs ");
-                System.out.println(ciudadcomparar);
 				if (ciudad.equals(ciudadcomparar)) {
 					negociosEnRango.add(negociosPorNombre.get(i));
 				}

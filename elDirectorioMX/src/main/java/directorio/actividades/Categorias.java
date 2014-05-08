@@ -105,6 +105,7 @@ public class Categorias extends SherlockActivity implements
 		SharedPreferences sp = PreferenceManager
 				.getDefaultSharedPreferences(Categorias.this);
 		selectedCountry = sp.getString("countrySelected", "México");
+        selectedCountry = selectedCountry.replace(" ","%20");
 		// se preparan las vistas
 		setupViews();
 

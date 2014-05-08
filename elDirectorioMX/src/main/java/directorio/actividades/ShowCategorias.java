@@ -224,11 +224,13 @@ public class ShowCategorias extends SherlockActivity implements
 		@Override
 		protected Void doInBackground(Void... params) {
 			String country = tma.getCountry();
+            String parsed = country.replace(" ","%20");
+
 			if (city != null && !city.equals("Todas las ciudades")
 					&& !city.equals("")) {
 				adds = advDAO.getByCategoryCity(cat, city);
 			} else {
-				adds = advDAO.getByCategory(cat, country);
+				adds = advDAO.getByCategory(cat, parsed);
 			}
 			return null;
 		}
