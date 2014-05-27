@@ -23,6 +23,7 @@ import directorio.others.LocationParser;
 
 /**
  * Created by juancarlos on 4/03/14.
+ * Este es un intent service que se encarga de registrar el dispositivo con el servidor.
  */
 public class RegisterDevice extends IntentService {
 
@@ -30,6 +31,10 @@ public class RegisterDevice extends IntentService {
         super("Register");
     }
 
+    /*
+    * Este es el metodo principal que manda a llamar el location manager, para obtener la ultima ubicación conocida
+    * del dispositivo, obteniendo la ciudad en la que se encuentra, mandandolo junto con su UUID unico para poder mandar la notificación.
+     */
     @Override
     protected void onHandleIntent(Intent intent) {
 
@@ -42,14 +47,12 @@ public class RegisterDevice extends IntentService {
         try{
             double longitude = location.getLongitude();
             double latitude = location.getLatitude();
-
             lp.getAddress(latitude+"",longitude+"");
             city = lp.getCity();
             System.out.println("La ciudad fue: " + city);
         }catch (Exception e){
             city = "";
         }
-
         System.out.println("La ciudad fue: " + city);
 
         String uuid = intent.getStringExtra("uuid");
@@ -65,7 +68,7 @@ public class RegisterDevice extends IntentService {
             HttpEntity ent = resp.getEntity();/*y obtenemos una respuesta*/
             String responseText = EntityUtils.toString(ent);
             System.out.println("Aca chido: "+ responseText);
-         }catch (Exception e){
+         }catch (Exception e) {
             e.printStackTrace();
         }
     }

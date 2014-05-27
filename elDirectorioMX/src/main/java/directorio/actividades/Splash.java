@@ -8,6 +8,10 @@ import com.actionbarsherlock.app.SherlockActivity;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
+/*
+*   Clase que se encarga de cargar la portada, ademas de hacer un delay de 5 segundos, esta es la clase con la que siempre se inicia.
+ */
 public class Splash extends SherlockActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

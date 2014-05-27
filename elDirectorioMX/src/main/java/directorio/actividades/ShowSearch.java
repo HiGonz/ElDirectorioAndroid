@@ -168,20 +168,16 @@ public class ShowSearch extends SherlockActivity implements
 
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-
 				final String nombrenegocio = adds.get(arg2).getNombre();
 				Thread thread = new Thread() {
 					public void run() {
-
 						try {
-
 							sleep(100);
 							Intent correo = new Intent(ShowSearch.this,
 									ShowAdvertiser.class);
 							correo.putExtra("advertiser", nombrenegocio);
                             correo.putExtra("pais",country);
 							startActivity(correo);
-
 						} catch (InterruptedException e) {
 							Log.e(TAG, e.toString());
 							e.printStackTrace();
@@ -189,10 +185,8 @@ public class ShowSearch extends SherlockActivity implements
 					}
 				};
 				thread.start();
-
 			}
 		});
-
 	}
 
 	/**
@@ -211,8 +205,8 @@ public class ShowSearch extends SherlockActivity implements
 			ctx = c;
 		}
 
-		@Override
-		protected void onPostExecute(Void result) {
+        @Override
+        protected void onPostExecute(Void result) {
 			fillViews();
 			pd.cancel();
 			super.onPostExecute(result);
@@ -237,8 +231,7 @@ public class ShowSearch extends SherlockActivity implements
 				if (ciudad.equals("Todas las ciudades") && kil == 0.0) {
 					adds = SearchManager.returnAll(filtro, country);
 				} else {
-					adds = SearchManager.negociosenRango(latitude, longitude,
-							kil, ciudad, filtro, country);
+					adds = SearchManager.negociosenRango(latitude, longitude,kil, ciudad, filtro, country);
 				}
 			}
 			return null;

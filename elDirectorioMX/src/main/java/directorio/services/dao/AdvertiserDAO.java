@@ -409,7 +409,6 @@ public class AdvertiserDAO {
 		if (valor == 1) {
 			resultado = true;
 		}
-
 		return resultado;
 	}
 

@@ -6,10 +6,9 @@ import android.app.Activity;
 import android.content.ComponentName;
 import android.support.v4.content.WakefulBroadcastReceiver;
 
-import directorio.servicios.GcmIntentService;
-
 /**
  * Created by juancarlos on 3/03/14.
+ *  Recibidor que se encarga de despertar el dispositivo cuando recibe una notificación.
  */
 public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
     @Override
@@ -18,5 +17,6 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
         // Start the service, keeping the device awake while it is launching.
         startWakefulService(context, (intent.setComponent(comp)));
         setResultCode(Activity.RESULT_OK);
+        
     }
 }

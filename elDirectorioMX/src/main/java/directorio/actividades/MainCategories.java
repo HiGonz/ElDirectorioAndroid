@@ -84,8 +84,7 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 		tma = (TodoManagerApplication) getApplication();
 		boolean network = tma.isNetworkAvailable();
 		if (network == false) {
-			Intent intent = new Intent(MainCategories.this,
-					NoNetworkActivity.class);
+			Intent intent = new Intent(MainCategories.this,NoNetworkActivity.class);
 			startActivity(intent);
 			finish();
 		} else {
@@ -124,15 +123,22 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 			setupViews();
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+            //Para poder registrar un servicio con el GCM, primero verificamos
+            // que exista una instancia de google play services en el sdispositivo.
             if (checkPlayServices()) {
+                //Si existe mandamos a llamar la instancia del GCM y registramos el dispositivo.
                 gcm = GoogleCloudMessaging.getInstance(this);
                 regid = getRegistrationId(context);
+                //Si no hubo un un registro existente entonces pasamos a registrarlo.
                 if (regid.length() == 0) {
                     Log.d("GCM","No hubo registro, comenzando a registrar...");
                     registerInBackground();
+                 //Si hubo un registro entonces mandamos al servidor el UUID unico para poder mandar la notificación.
                 }else{
                     Log.d("GCM",regid);
+                    //Mandamos a llamar el IntentService de Register Service.
                     Intent registrationService = new Intent(MainCategories.this, RegisterDevice.class);
+                    //Ponemos en los extras el id de registro (UUID)
                     registrationService.putExtra("uuid",regid);
                     startService(registrationService);
                 }
@@ -253,12 +259,17 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
                     if (gcm == null) {
                         gcm = GoogleCloudMessaging.getInstance(context);
                     }
+
+                    //Comenzmos el registro
                     Log.d("GCM","Comenzando registro ;D");
                     regid = gcm.register(SENDER_ID);
+                    //Obtenemos el UUID de registro.
                     msg = "Device registered, registration ID=" + regid;
                     Log.d("GCM",msg);
-                    storeRegistrationId(context, regid);
+                    //Lo hacemos persistente.
+                   storeRegistrationId(context, regid);
 
+                    //Finalmente pasamos a registrarlo.
                     Log.d("Mandando",regid);
                     Intent registrationService = new Intent(MainCategories.this, RegisterDevice.class);
                     registrationService.putExtra("uuid",regid);
@@ -278,7 +289,7 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
     }
 
     /*
-    * Metodo que manda el ID de registro del GCM en las preferencias para hacerla persistente.
+    * Metodo que manda el ID de registro del GCM a las preferencias para hacerla persistente.
      */
     private void storeRegistrationId(Context context, String regId) {
         final SharedPreferences prefs = getGCMPreferences(context);
@@ -289,7 +300,6 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
         editor.putInt(PROPERTY_APP_VERSION, appVersion);
         editor.commit();
     }
-
 	/*
 	 * Método que prepara los elementos de la interfaz para mostrar al usuario.
 	 */
@@ -308,7 +318,7 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 	}
 
 	/**
-	 * Método que hace la descarga de información
+	 * Método que hace la descarga de información, eliminamos el espacio, que existe en Estados Unidos para que no haya algun problema con la consulta.
 	 */
 	private void downloadCategories() {
         String parsed = tma.getCountry();
@@ -347,7 +357,6 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 	@Override
 	protected void onResume() {
 		super.onResume();
-
 		progreso.setVisibility(ProgressBar.INVISIBLE);
 		progreso.setIndeterminate(false);
 		com.facebook.Settings.publishInstallAsync(getApplicationContext(),

@@ -27,7 +27,7 @@ import directorio.services.dao.PaisDAO;
  * @author Publysorpresas
  * 
  */
-public class Anunciate extends SherlockActivity implements
+public class    Anunciate extends SherlockActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationView;

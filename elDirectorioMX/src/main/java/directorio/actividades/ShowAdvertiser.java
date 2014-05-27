@@ -662,7 +662,7 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 				gal.setVisibility(View.VISIBLE);
 				galName.setVisibility(View.VISIBLE);
 				galName.setTextSize(23);
-				galName.setText("Ver Galer�a: "
+				galName.setText("Ver Galería: "
 						+ advertiserDao.getGalleryName(advertiserToShow.getId()));
 				galName.setOnClickListener(new View.OnClickListener() {
 

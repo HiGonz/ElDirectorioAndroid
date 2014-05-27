@@ -1,4 +1,4 @@
-package directorio.servicios;
+package directorio.actividades;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
@@ -11,10 +11,6 @@ import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
-
-import directorio.actividades.GcmBroadcastReceiver;
-import directorio.actividades.MainCategories;
-import directorio.actividades.R;
 
 /**
  * Created by juancarlos on 3/03/14.
@@ -53,7 +49,6 @@ public class GcmIntentService extends IntentService {
     *   Metodo que manda una notificación a la pantalla
     */
     private void sendNotification(String msg) {
-
         String[] arreglo = msg.split("&");
         mNotificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,  new Intent(this, MainCategories.class), 0);
@@ -67,8 +62,6 @@ public class GcmIntentService extends IntentService {
                                         .bigText(arreglo[0]))
                                 .setContentText(msg).setSound(alarmSound);
         mBuilder.setContentIntent(contentIntent);
-
-
         try{
             if (arreglo[1].length() > 0){
                 String url = arreglo[1];
@@ -82,6 +75,4 @@ public class GcmIntentService extends IntentService {
         }
         mNotificationManager.notify(NOTIFICATION_ID, mBuilder.build());
     }
-
-
 }

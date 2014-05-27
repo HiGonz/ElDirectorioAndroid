@@ -213,7 +213,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		// trata de obtener por medio de los datos del proovedor de datos, en
 		// caso de que no se conozca, se regresa NULL.
 		Location loc1 = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-
 		if (loc1 != null) {
 			Log.d(TAG, "Lo obtuve por WIFI");
 			latitude = loc1.getLatitude();
@@ -238,7 +237,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			intento.putExtra("enabled", false);
 			sendBroadcast(intento);
 		}
-
 //		manager = (LocationManager) this	.getSystemService(Context.LOCATION_SERVICE);
 		locationListener = new LocationListener() {
 			public void onLocationChanged(Location arg0) {
@@ -263,6 +261,8 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
         final Context contexto = this;
 		spinner.setAdapter(adapter);
         AQuery aq = new AQuery(this);
+
+        //Cuando alla un cambio en el spinner se sustituiran las ciudades del pais con las que se obtengan del servidor.
         aq.id(R.id.spinner_paises).getSpinner().setAdapter(adapterPaises);
         aq.id(R.id.spinner_paises).getSpinner().setSelection(adapterPaises.getPosition(selectedCountry));
         aq.id(R.id.spinner_paises).getSpinner().setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -274,7 +274,6 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
             }
         });
 	}
@@ -374,7 +373,8 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		});
 	}
 	/**
-	 * Método que hace la búsqueda usando las entradas del usuario.
+	 * Método que hace la búsqueda usando las entradas del usuario., aparte de parsear el valor de "Estados Unidos" para que no haya problemas
+     * en la consulta con el servidor.
 	 */
 	public void search() {
         final AQuery aq = new AQuery(this);
@@ -413,23 +413,19 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			// en caso de que no se tenga la ubicación exacta.
 			Log.d(TAG, "kil es: " + kilometrosRedonda);
 			Toast.makeText(Search.this,"Espera un momento mas en lo que obtenemos tu ubicación exacta....",Toast.LENGTH_SHORT).show();
-
 			lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-			Location loc1 = lm
-					.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+			Location loc1 = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 			if (loc1 != null) {
 				Log.d(TAG, "Lo obtuve por WIFI");
 				latitude = loc1.getLatitude();
 				longitude = loc1.getLongitude();
 			} else {
 				Log.d(TAG, "Lo obtuve por GPS");
-				Intent intent = new Intent(
-						"android.location.GPS_ENABLED_CHANGE");
+				Intent intent = new Intent("android.location.GPS_ENABLED_CHANGE");
 				intent.putExtra("enabled", true);
 				sendBroadcast(intent);
 				lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-				Location loc = lm
-						.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+				Location loc = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 				try {
 					latitude = loc.getLatitude();
 					longitude = loc.getLongitude();
@@ -447,12 +443,11 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			Thread timer = new Thread() {
 				public void run() {
                     selectedCountry = aq.id(R.id.spinner_paises).getSpinner().getSelectedItem().toString();
-
 //					if (spinner.getSelectedItem().toString().equals("Todas las ciudades")&& kilometrosRedonda == 0.0) {
 //						SearchManager.returnAll(Busqueda.getText().toString(),selectedCountry);
 //					} else {
 //						SearchManager.negociosenRango(latitude, longitude,kilometrosRedonda, spinner.getSelectedItem().toString(), Busqueda.getText()	.toString(), selectedCountry);
-					//}
+					//
 					intent = new Intent(Search.this, ShowSearch.class);
 					intent.putExtra("estado", 1);
 					intent.putExtra("latitude", latitude);
@@ -471,12 +466,15 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		}
 	}
 
+    /*
+    * Metodo que se encarga de obtener todas las ciudades de el servidor, y para que no haya problema con el string "Estados Unidos".
+    * y parseamos el espacio para que no nos marque ningun error, lo convertimos el espacio a "%20" para que pueda consultar,
+    * en caso de que no sea Estados Unidos, no parseara nada y podra seguir la consulta.
+     */
     public void fetchCities(String pais){
         AQuery aq = new AQuery(this.getApplicationContext());
-
         String url = "http://173.193.3.218/EntidadService.svc/getEntidades/"+ pais.replace(" ","%20")+"";
         System.out.println(url);
-
          adapter.add("Todas las ciudades");
         aq.ajax(url, JSONArray.class, new AjaxCallback<JSONArray>() {
             @Override

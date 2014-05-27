@@ -85,7 +85,6 @@ public class LocationParser {
 
     public String getCountry() {
         return Country;
-
     }
 
     public String getCounty() {

@@ -134,11 +134,9 @@ public class Advertiser {
 	 */
 	public void setImgSrc(String url) {
 
-		File RutaImagenes = new File(
-				"data/data/directorio.actividades/cache/imgs");
+		File RutaImagenes = new File("data/data/directorio.actividades/cache/imgs");
 		RutaImagenes.mkdirs();
 		File archivo = new File(RutaImagenes, this.getId() + ".png");
-
 		if (archivo.exists()) {
 			try {
 				InputStream is = new FileInputStream(archivo);
@@ -151,10 +149,8 @@ public class Advertiser {
 				e.printStackTrace();
 			}
 		} else {
-
 			_url = url;
 			_archivo = archivo;
-
 			try {
 				new AsyncImgDownload().execute();
 			} catch (RejectedExecutionException ex) {
@@ -162,9 +158,7 @@ public class Advertiser {
 						nombre
 								+ " - There was an error about the queu for running too many AsyncTasks");
 			}
-
 		}
-
 	}
 
 	/**
