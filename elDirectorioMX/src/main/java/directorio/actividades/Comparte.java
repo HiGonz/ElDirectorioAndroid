@@ -8,8 +8,12 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -17,15 +21,16 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.Menu;
+//import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
-import directorio.facebook.FacebookConnector;
-import directorio.facebook.SessionEvents;
+//import directorio.facebook.FacebookConnector;
+//import directorio.facebook.SessionEvents;
+import com.facebook.share.model.ShareModel;
 
 /**
  * Clase que se encarga de compartir en las redes sociales.
@@ -33,7 +38,7 @@ import directorio.facebook.SessionEvents;
  * @author NinjaDevelop
  * 
  */
-public class Comparte extends SherlockActivity implements
+public class Comparte extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView comparteSideNavView;
@@ -42,10 +47,10 @@ public class Comparte extends SherlockActivity implements
 	private static final String FACEBOOK_APPID = "	412621975483931";
 	private static final String FACEBOOK_PERMISSION = "publish_stream";
 	private static final String TAG = "Comparte";
-	private static final String MSG = "He descargado la nueva app para Android ElDirectorio.mx\n B�jatela desde Google Play Store en Android. Es GRATIS!\n\nhttps://play.google.com/store/apps/details?id=directorio.actividades";
+	private static final String MSG = "He descargado la nueva app para Android ElDirectorio.mx\n Bájatela desde Google Play Store en Android. Es GRATIS!\n\nhttps://play.google.com/store/apps/details?id=directorio.actividades";
 
-	private final Handler mFacebookHandler = new Handler();
-	private FacebookConnector facebookConnector;
+	//private final Handler mFacebookHandler = new Handler();
+	//private FacebookConnector facebookConnector;
 
 	final Runnable mUpdateFacebookNotification = new Runnable() {
 		public void run() {
@@ -68,11 +73,11 @@ public class Comparte extends SherlockActivity implements
 
 		// Buttons(Imagen/ImageView)
 		ImageButton btnFB = (ImageButton) findViewById(R.id.btn_fb);
-		ImageButton btnTwitter = (ImageButton) findViewById(R.id.btn_twitter);
-		ImageButton btnMail = (ImageButton) findViewById(R.id.btn_mail);
+		//ImageButton btnTwitter = (ImageButton) findViewById(R.id.btn_twitter);
+		//ImageButton btnMail = (ImageButton) findViewById(R.id.btn_mail);
 
 		// ClickListeners
-		btnMail.setOnClickListener(new OnClickListener() {
+	/*	btnMail.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(Intent.ACTION_SEND);
@@ -84,7 +89,7 @@ public class Comparte extends SherlockActivity implements
 				startActivity(Intent.createChooser(i,
 						"Selecciona la aplicaci�n..."));
 			}
-		});
+		});*/
 
 		// Cambio Diseño ActionBar
 		getSupportActionBar().setBackgroundDrawable(
@@ -108,25 +113,32 @@ public class Comparte extends SherlockActivity implements
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 		// Facebook
-		facebookConnector = new FacebookConnector(FACEBOOK_APPID, this,
-				getApplicationContext(), new String[] { FACEBOOK_PERMISSION });
 
-		btnFB.setOnClickListener(new View.OnClickListener() {
+
+
+	//	facebookConnector = new FacebookConnector(FACEBOOK_APPID, this,
+		//		getApplicationContext(), new String[] { FACEBOOK_PERMISSION });
+
+		btnFB.setOnClickListener(new OnClickListener() {
 			@Override
-			public void onClick(View v) {
-				postMessage();
-			}
-		});
+                    public void onClick(View v){
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "¡Hola! Los invito a descargar la aplicación de El DirectorioMx.\nDescárgala gratis para Android" +
+                    "en http://goo.gl/8tkdHx y para iOS en http://goo.gl/ULgWPA.");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+		}});
 
 		// Twitter - Mandar a mail (de mientras)
-		btnTwitter.setOnClickListener(new OnClickListener() {
+		/*btnTwitter.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(Intent.ACTION_VIEW, Uri
 						.parse("https://twitter.com/EldirectorioMx"));
 				startActivity(i);
 			}
-		});
+		});*/
 	}
 	
 	@Override
@@ -190,15 +202,15 @@ public class Comparte extends SherlockActivity implements
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getSupportMenuInflater().inflate(R.menu.activity_comparte, menu);
+		getMenuInflater().inflate(R.menu.activity_comparte, menu);
 		return true;
 	}
 
@@ -206,8 +218,8 @@ public class Comparte extends SherlockActivity implements
 	@SuppressWarnings("deprecation")
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		facebookConnector.getFacebook().authorizeCallback(requestCode,
-				resultCode, data);
+	//	facebookConnector.getFacebook().authorizeCallback(requestCode,
+	//			resultCode, data);
 	}
 
 	// Facebook Methods
@@ -218,7 +230,7 @@ public class Comparte extends SherlockActivity implements
 	@SuppressWarnings("deprecation")
 	public void postMessage() {
 
-		if (facebookConnector.getFacebook().isSessionValid()) {
+	/*	if (facebookConnector.getFacebook().isSessionValid()) {
 
 			DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
 
@@ -284,11 +296,11 @@ public class Comparte extends SherlockActivity implements
 			};
 			SessionEvents.addAuthListener(listener);
 			facebookConnector.login();
-		}
+		}*/
 	}
 
 	private void postMessageInThread() {
-		Thread t = new Thread() {
+		/*Thread t = new Thread() {
 			public void run() {
 
 				try {
@@ -299,7 +311,7 @@ public class Comparte extends SherlockActivity implements
 				}
 			}
 		};
-		t.start();
+		t.start();*/
 	}
 
 }

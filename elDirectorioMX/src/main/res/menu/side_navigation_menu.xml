@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/snm_categorias"
-        android:icon="@drawable/menu_categories"
-        android:title="@string/categorias"/>
-    <item
         android:id="@+id/snm_buscar"
         android:icon="@drawable/menu_search"
         android:title="@string/buscar"/>
     <item
-        android:id="@+id/snm_favoritos"
-        android:icon="@drawable/menu_favorite"
-        android:title="@string/favoritos"/>
-    <item
-        android:id="@+id/snm_cupones"
-        android:icon="@drawable/menu_coupons"
-        android:title="@string/cupones"/>
+        android:id="@+id/snm_categorias"
+        android:icon="@drawable/menu_categories"
+        android:title="@string/categorias"/>
+<!--     <item
+            android:id="@+id/snm_favoritos"
+            android:icon="@drawable/menu_favorite"
+            android:title="@string/favoritos"/>
+       <item
+            android:id="@+id/snm_cupones"
+            android:icon="@drawable/menu_coupons"
+            android:title="@string/cupones"/>-->
     <item
         android:id="@+id/snm_franquicias"
         android:icon="@drawable/menu_franq"

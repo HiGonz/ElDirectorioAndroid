@@ -6,8 +6,11 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -15,9 +18,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -35,7 +36,7 @@ import directorio.others.SearchManager;
  * @author Publysorpresas
  * 
  */
-public class ShowSearch extends SherlockActivity implements
+public class ShowSearch extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationShowSearch;
@@ -120,8 +121,8 @@ public class ShowSearch extends SherlockActivity implements
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 

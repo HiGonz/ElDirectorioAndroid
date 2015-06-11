@@ -8,8 +8,11 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -19,9 +22,9 @@ import android.widget.SectionIndexer;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -44,7 +47,7 @@ import directorio.tools.StringMatcher;
  * 
  */
 
-public class Categorias extends SherlockActivity implements
+public class Categorias extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	// Partes de la interfaz
@@ -327,8 +330,8 @@ public class Categorias extends SherlockActivity implements
 		super.onResume();
 		progreso.setVisibility(ProgressBar.INVISIBLE);
 		progreso.setIndeterminate(false);
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 	}
 
 	/**

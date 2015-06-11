@@ -101,8 +101,8 @@ public class GalleryView extends Activity {
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 

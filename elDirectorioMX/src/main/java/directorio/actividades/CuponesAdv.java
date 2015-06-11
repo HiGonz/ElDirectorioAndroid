@@ -6,8 +6,11 @@ import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -17,9 +20,9 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -37,7 +40,7 @@ import directorio.services.dao.CuponDAO;
  * 
  */
 @SuppressWarnings("deprecation")
-public class CuponesAdv extends SherlockActivity implements
+public class CuponesAdv extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationCuponLista;
@@ -115,8 +118,8 @@ public class CuponesAdv extends SherlockActivity implements
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 

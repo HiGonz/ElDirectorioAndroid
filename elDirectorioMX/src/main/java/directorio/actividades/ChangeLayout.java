@@ -16,28 +16,30 @@ public class ChangeLayout {
 
 	public static void layoutChange(int itemId, Context context) {
 		switch (itemId) {
-		case R.id.snm_categorias:
+            case R.id.snm_buscar:
+                intent = new Intent(context, Search.class);
+                context.startActivity(intent);
+                break;
+
+            case R.id.snm_categorias:
 			intent = new Intent(context, MainCategories.class);
 			context.startActivity(intent);
 			break;
 
-		case R.id.snm_buscar:
-			intent = new Intent(context, Search.class);
-			context.startActivity(intent);
-			break;
 
-		case R.id.snm_favoritos:
-			intent = new Intent(context, Favoritos.class);
-			context.startActivity(intent);
-			break;
+
+//		case R.id.snm_favoritos:
+//			intent = new Intent(context, Favoritos.class);
+//			context.startActivity(intent);
+//			break;
 //		case R.id.snm_destacados:
 //			intent = new Intent(context, CuponesClub.class);
 //			context.startActivity(intent);
 //			break;
-		case R.id.snm_cupones:
-			intent = new Intent(context, Cupones.class);
-			context.startActivity(intent);
-			break;
+//		case R.id.snm_cupones:
+//			intent = new Intent(context, Cupones.class);
+//			context.startActivity(intent);
+//			break;
 
 		case R.id.snm_franquicias:
 			intent = new Intent(context, Franquicias.class);

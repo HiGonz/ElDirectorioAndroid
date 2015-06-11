@@ -1,14 +1,14 @@
 apply plugin: 'android'
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "19.0.3"
+    compileSdkVersion 21
+    buildToolsVersion '19.1.0'
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 17
-        versionCode 49
-        versionName "3.2.7"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 60
+        versionName "3.3.4"
     }
 
     lintOptions {
@@ -26,7 +26,8 @@ android {
 
     buildTypes {
         release {
-            runProguard false
+            apply plugin: 'maven'
+       //     runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release
         }
@@ -35,12 +36,14 @@ android {
 
 
 dependencies {
-    compile project(':facebook-android-sdk:facebook')
+   // compile project(':facebook-android-sdk:facebook')
     compile project(':library')
     compile files('libs/commons-io-2.4.jar')
-    compile 'com.android.support:support-v4:18.0.0'
-    compile 'com.google.android.gms:play-services:3.1.+'
-    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.android.support:support-v4:21.0.0'
+    // compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:appcompat-v7:21.0.0'
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.googlecode.android-query:android-query:0.25.9'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
 }

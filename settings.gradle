@@ -1,3 +1,2 @@
-include ':facebook-android-sdk:facebook'
-include ':library'
+include ':library', ':facebook'
 include ':elDirectorioMX'

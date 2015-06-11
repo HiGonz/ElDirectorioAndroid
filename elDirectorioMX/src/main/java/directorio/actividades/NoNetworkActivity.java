@@ -3,13 +3,14 @@ package directorio.actividades;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -19,7 +20,7 @@ import com.devspark.sidenavigation.SideNavigationView;
  * @author Publysorpresas
  * 
  */
-public class NoNetworkActivity extends SherlockActivity implements
+public class NoNetworkActivity extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationView;
@@ -73,8 +74,8 @@ public class NoNetworkActivity extends SherlockActivity implements
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 

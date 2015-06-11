@@ -42,7 +42,7 @@ public class CiudadDAO {
 
 		ArrayList<String> ciudades = new ArrayList<String>();
 		JSONParser jp = new JSONParser();
-		String ad = URL + "getEntidades/"+ pais;
+		String ad = URL + "getEntidadesConCategorias/"+ pais;
 		JSONArray jArray = jp.getJSONFromUrl(ad);
 		for (int i = 0; i < jArray.length(); i++) {
 			try {

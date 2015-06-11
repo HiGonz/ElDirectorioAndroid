@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/widgetscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/negocio_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dip"
+                android:contentDescription="@string/logo_negocio"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/logo_destacados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/negocio_logo"
+                android:contentDescription="@string/icono_destacados"
+                android:src="@drawable/clubicon" />
+
+            <TextView
+                android:id="@+id/datos_empresa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/negocio_logo"
+                android:background="@color/Blue2"
+                android:text="@string/_datos_de_la_empresa"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nombre_empresa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datos_empresa"
+                android:layout_margin="5dp"
+                android:text="@string/nombre_de_la_empresa"
+                android:textColor="@color/Black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/descripcion_empresa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nombre_empresa"
+                android:layout_margin="5dp"
+                android:text="@string/testing"
+                android:textColor="@color/Black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutDireccion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descripcion_empresa"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/localizacionIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="0dp"
+                    android:contentDescription="@string/icono_localizacion"
+                    android:src="@drawable/local_icon" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/direccion_empresa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.73"
+                    android:gravity="center_vertical"
+                    android:text="@string/testing"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/nextIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/icono_next"
+                    android:src="@drawable/next_icon" >
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sucursales_empresa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutDireccion"
+                android:background="@color/Blue2"
+                android:text="@string/_sucursales"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_si"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sucursales_empresa"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contacto_empresa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_si"
+                android:background="@color/Blue2"
+                android:text="@string/_contacto"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_contacto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contacto_empresa"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/youtube"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_contacto"
+                android:background="@color/Blue2"
+                android:text="@string/video"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ver_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/youtube"
+                android:text="@string/ver_video"
+                android:textColor="@color/Black"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/galerias"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ver_video"
+                android:background="@color/Blue2"
+                android:text="@string/_galeria"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nombre_galeria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/galerias"
+                android:textColor="@color/Black"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/adv_coupons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nombre_galeria"
+                android:background="@color/Blue2"
+                android:text="@string/_coupons"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/link_adv_coupons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adv_coupons"
+                android:textColor="@color/Black"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/adv_coupons_club"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/link_adv_coupons"
+                android:background="@color/Blue2"
+                android:text="@string/cupones_club"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/link_adv_coupons_club"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adv_coupons_club"
+                android:textColor="@color/Black"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+            
+             <TextView
+                android:id="@+id/promocion_club"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/link_adv_coupons_club"
+                android:background="@color/Blue2"
+                android:text="@string/promociones_del_club"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/promocion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promocion_club"
+                android:textColor="@color/Black"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promocion"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/agregar_contectos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/contacto" />
+
+                <!--<Button
+                    android:id="@+id/agregar_favs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="20dp"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/no_favorito" />-->
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/loadingAdvCoupons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/show_advertiser_sidenavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/layout/activity_show_advertiser.xml -->

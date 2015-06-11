@@ -23,8 +23,11 @@ import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.CommonDataKinds.StructuredName;
 import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.RawContacts;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -35,9 +38,6 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -59,7 +59,7 @@ import directorio.services.dao.SucursalDAO;
  * @author Publysorpresas
  * 
  */
-public class ShowAdvertiser extends SherlockActivity implements ISideNavigationCallback {
+public class ShowAdvertiser extends ActionBarActivity implements ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationShowAdv;
 
@@ -396,7 +396,7 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 		couponLinkClub = (TextView) findViewById(R.id.link_adv_coupons_club);
 
 		// boton de favoritos
-		favs = (Button) findViewById(R.id.agregar_favs);
+		//favs = (Button) findViewById(R.id.agregar_favs);
 
 		// boton de agregar contactos
 		addContacts = (Button) findViewById(R.id.agregar_contectos);
@@ -413,8 +413,8 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 	public void onResume() {
 		super.onResume();
 		loadCoupons.setVisibility(View.INVISIBLE);
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 	}
 
 	/**
@@ -504,6 +504,7 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 					.getSucursales(sucursalId);
 			for (int i = 0; i < sucursales.size(); i++) {
 				final Sucursal s = arraySucursales.get(i);
+
 				// Image View Maps
 				ImageView iv1 = new ImageView(this);
 				iv1.setId(3);
@@ -1025,10 +1026,10 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 		 * variables para poder probarlos.
 		 */
 		final TodoManagerApplication ama = (TodoManagerApplication) getApplication();
-		String nombreTemporal = advertiserToShow.getNombre();
+	//	String nombreTemporal = advertiserToShow.getNombre();
 
 
-		boolean isInFavs = fd.isInFavoritos(nombreTemporal);
+/*		boolean isInFavs = fd.isInFavoritos(nombreTemporal);
 		if (isInFavs == true) {
 			favs.setBackgroundResource(R.drawable.favorito);
 			favs.setOnClickListener(new View.OnClickListener() {
@@ -1085,7 +1086,7 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 				}
 			});
 
-		}
+		}*/
 
 	}
 
@@ -1118,7 +1119,7 @@ public class ShowAdvertiser extends SherlockActivity implements ISideNavigationC
 		}
 
 		/**
-		 * Método que se ejecuta antes de que empiece el async task, en eeste
+		 * Método que se ejecuta antes de que empiece el async task, en este
 		 * caso se prepara el progress dialog y se muestra.
 		 */
 		@Override

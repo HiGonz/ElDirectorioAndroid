@@ -35,13 +35,13 @@
             android:id="@+id/btn_fb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/share_fb"
+            android:src="@drawable/banner_icono"
             android:layout_weight="1"
             android:background="@null"
             android:padding="10dp"
             android:contentDescription="@string/compartir_en_facebook"/>
         
-        <ImageButton
+      <!--  <ImageButton
             android:id="@+id/btn_twitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:background="@null"
             android:padding="10dp"
             android:contentDescription="@string/compartir_v_a_email"/>
-
+-->
     </LinearLayout>
 
     <com.devspark.sidenavigation.SideNavigationView

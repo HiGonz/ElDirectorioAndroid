@@ -7,8 +7,11 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -16,9 +19,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -51,7 +54,7 @@ import directorio.applications.TodoManagerApplication;
  * @author Publysorpresas
  * 
  */
-public class CuponesClub extends SherlockActivity implements
+public class CuponesClub extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView cuponesSideNavView;
@@ -104,7 +107,7 @@ public class CuponesClub extends SherlockActivity implements
 					this.getResources().getDrawable(R.drawable.header));
 			getSupportActionBar().setIcon(R.drawable.menu);
 			getSupportActionBar().setDisplayOptions(0,
-					ActionBar.DISPLAY_HOME_AS_UP);
+                    ActionBar.DISPLAY_HOME_AS_UP);
 			TextView customView = new TextView(this);
 			customView.setTextColor(getResources().getColor(
 					android.R.color.white));
@@ -161,8 +164,8 @@ public class CuponesClub extends SherlockActivity implements
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 

@@ -256,14 +256,14 @@
                     android:layout_marginLeft="20dip"
                     android:background="@drawable/contacto" />
 
-                <Button
+                <!--<Button
                     android:id="@+id/agregar_favs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_margin="20dp"
                     android:layout_marginRight="20dip"
-                    android:background="@drawable/no_favorito" />
+                    android:background="@drawable/no_favorito" />-->
             </LinearLayout>
 
             <ProgressBar

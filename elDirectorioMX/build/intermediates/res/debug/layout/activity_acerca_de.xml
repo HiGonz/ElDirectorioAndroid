@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaDe"
+    android:background="@color/White" >
+
+    <ImageView 
+        android:id="@+id/header2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header_eldirectorio2"
+        android:background="@color/White"
+        android:layout_centerHorizontal="true"/>
+    
+    <ImageView 
+        android:id="@+id/acerca"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/acerca_de"
+        android:layout_below="@id/header2"/>
+    
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/acerca_de_sidenavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/layout/activity_acerca_de.xml -->

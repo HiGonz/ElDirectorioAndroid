@@ -10,17 +10,20 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 import com.google.android.gms.common.ConnectionResult;
@@ -45,7 +48,7 @@ import directorio.servicios.RegisterDevice;
  */
 
 @SuppressLint("ParserError")
-public class MainCategories extends SherlockActivity implements  ISideNavigationCallback {
+public class MainCategories extends ActionBarActivity implements  ISideNavigationCallback {
     //Variables de registro para el GCM/a
     public static final String EXTRA_MESSAGE = "message";
     public static final String PROPERTY_REG_ID = "registration_id";
@@ -359,8 +362,8 @@ public class MainCategories extends SherlockActivity implements  ISideNavigation
 		super.onResume();
 		progreso.setVisibility(ProgressBar.INVISIBLE);
 		progreso.setIndeterminate(false);
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 	}
 
 	/**

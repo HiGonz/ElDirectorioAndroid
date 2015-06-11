@@ -5,15 +5,14 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
 
 import java.util.ArrayList;
 
@@ -31,7 +30,7 @@ import directorio.services.dao.PaisDAO;
  * @author Publysorpresas
  * 
  */
-public class PaisActivity extends SherlockActivity {
+public class PaisActivity extends ActionBarActivity {
 
 	private ArrayList<String> paisesNames;
 	private ListView Lista;
@@ -69,7 +68,7 @@ public class PaisActivity extends SherlockActivity {
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),getString(R.string.facebook_app_id));
 //		IntentFilter intentFilter = new IntentFilter();
 //		intentFilter.addAction(CONNECTIVITY_SERVICE);
 //		registerReceiver(bcr, intentFilter);
@@ -86,7 +85,7 @@ public class PaisActivity extends SherlockActivity {
 
 		if (selectionDone == true) {
 			// en caso de que si se seleccioné un país, empezar la aplicación
-			Intent intent = new Intent(PaisActivity.this, MainCategories.class);
+			Intent intent = new Intent(PaisActivity.this, Search.class);
 			startActivity(intent);
 		} else {
 			// en caso de que no, mostrar la lista de paises para seleccionar

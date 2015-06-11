@@ -2,13 +2,19 @@ package directorio.actividades;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.appcompat.BuildConfig;
+
+//import com.AppCompat.app.ActionBar;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.MenuItem;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
 
@@ -18,7 +24,7 @@ import com.devspark.sidenavigation.SideNavigationView;
  * @author NinjaDevelop
  * 
  */
-public class AcercaDe extends SherlockActivity implements
+public class AcercaDe extends ActionBarActivity implements
 		ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationAcercaDe;
@@ -63,10 +69,10 @@ public class AcercaDe extends SherlockActivity implements
 
 	@Override
 	protected void onResume() {
-		// c�digo que se debe agregar para hacer la comunicación con facebook
+		// código que se debe agregar para hacer la comunicación con facebook
 		// para los adds
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+		//com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+		//		getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 

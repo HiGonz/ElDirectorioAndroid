@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:contentDescription="@string/header_del_directorio"
+                android:src="@drawable/header_eldirectorio2" />
+
+            <EditText
+                android:id="@+id/busqueda"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:hint="@string/_qu_est_s_buscando_"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete" />
+
+            <ProgressBar
+                android:id="@+id/progresoBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busqueda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                android:id="@+id/textoBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busqueda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="@string/buscando_" />
+
+            <Spinner
+                android:id="@+id/spinner_paises"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textoBusqueda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="0dip"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_localidades"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_paises"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="0dip" />
+
+            <TextView
+                android:id="@+id/texto_metros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/spinner_localidades"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="5dip"
+                android:text="@string/en_un_radio_de_" />
+
+            <TextView
+                android:id="@+id/mostrar_metros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_localidades"
+                android:layout_toRightOf="@id/texto_metros"
+                android:text="@string/linealinea" />
+
+            <SeekBar
+                android:id="@+id/radioALaRedonda"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texto_metros"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:max="8" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioALaRedonda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/btn_buscar" />
+
+            <Button
+                android:id="@+id/info_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/radioALaRedonda"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:layout_toRightOf="@id/search"
+                android:background="@drawable/info_icon" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.devspark.sidenavigation.SideNavigationView
+        android:id="@+id/search_sidenavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/layout/activity_search_3.xml -->

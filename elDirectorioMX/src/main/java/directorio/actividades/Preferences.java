@@ -53,15 +53,15 @@ public class Preferences extends PreferenceActivity {
 		// versiones antiguas de android.
 		addPreferencesFromResource(R.layout.preferences);
 
-		PaisDAO pDao = new PaisDAO();
+		//PaisDAO pDao = new PaisDAO();
 
 		// se accesa a la preferencia que guarda el país
-		ListPreference lp = (ListPreference) findPreference("countrySelected");
+		/*ListPreference lp = (ListPreference) findPreference("countrySelected");
 		TodoManagerApplication tma = (TodoManagerApplication) getApplication();
-
+*/
 		// se revisa si hay conexión a internet para descargar la lista de
 		// paises
-		boolean network = tma.isNetworkAvailable();
+		/*boolean network = tma.isNetworkAvailable();
 		ArrayList<String> paises = new ArrayList<String>();
 		if (network != false) {
 			// en caso de que si hay internet, se descargan los paises
@@ -102,7 +102,7 @@ public class Preferences extends PreferenceActivity {
 					return false;
 				}
 			});
-		}
+		}*/
 
 		// se cargan los elementos de la interfaz
 		setOnViews();
@@ -176,7 +176,7 @@ public class Preferences extends PreferenceActivity {
 				});
 
 		// elemento que te lleva a la página de registo
-		Preference register = findPreference("registerHere");
+	/*	Preference register = findPreference("registerHere");
 		register.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 
 			@Override
@@ -186,10 +186,10 @@ public class Preferences extends PreferenceActivity {
 				startActivity(intent);
 				return false;
 			}
-		});
+		});*/
 
 		// elemento para iniciar sesión
-		Preference logUser = findPreference("iniciarCerrarSesion");
+		/*Preference logUser = findPreference("iniciarCerrarSesion");
 		logUser.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 
 			@Override
@@ -213,7 +213,7 @@ public class Preferences extends PreferenceActivity {
 
 				return false;
 			}
-		});
+		});*/
 
 	}
 
@@ -227,11 +227,11 @@ public class Preferences extends PreferenceActivity {
 	/**
 	 * Método que encripta el password
 	 * 
-	 * @param pass
+	// * @param pass
 	 *            El password a encriptar
-	 * @return EL password encriptado.
+	// * @return EL password encriptado.
 	 */
-	private String toMd5(String pass) {
+	/*private String toMd5(String pass) {
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			md.reset();
@@ -248,12 +248,12 @@ public class Preferences extends PreferenceActivity {
 		} catch (Exception ex) {
 			return null;
 		}
-	}
+	}*/
 
 	@Override
 	protected void onResume() {
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),
-				getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),
+	//			getString(R.string.facebook_app_id));
 		super.onResume();
 	}
 
@@ -263,7 +263,7 @@ public class Preferences extends PreferenceActivity {
 	 * @author NinjaDevelop
 	 * 
 	 */
-	private class LoginAsync extends AsyncTask<String, Void, String> {
+	/*private class LoginAsync extends AsyncTask<String, Void, String> {
 
 		@Override
 		protected String doInBackground(String... params) {
@@ -335,6 +335,6 @@ public class Preferences extends PreferenceActivity {
 						Toast.LENGTH_LONG).show();
 			}
 		}
-	}
+	}*/
 
 }

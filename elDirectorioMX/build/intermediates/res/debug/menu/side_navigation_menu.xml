@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/snm_buscar"
+        android:icon="@drawable/menu_search"
+        android:title="@string/buscar"/>
+    <item
+        android:id="@+id/snm_categorias"
+        android:icon="@drawable/menu_categories"
+        android:title="@string/categorias"/>
+<!--     <item
+            android:id="@+id/snm_favoritos"
+            android:icon="@drawable/menu_favorite"
+            android:title="@string/favoritos"/>
+       <item
+            android:id="@+id/snm_cupones"
+            android:icon="@drawable/menu_coupons"
+            android:title="@string/cupones"/>-->
+    <item
+        android:id="@+id/snm_franquicias"
+        android:icon="@drawable/menu_franq"
+        android:title="@string/franquicias"/>
+    <item
+        android:id="@+id/snm_anunciate"
+        android:icon="@drawable/menu_anounce"
+        android:title="@string/anunciate"/>
+    <item
+        android:id="@+id/snm_comparte"
+        android:icon="@drawable/menu_fb"
+        android:title="@string/comparte"/>
+    <item
+        android:id="@+id/snm_configuracion"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/configuraci_n"/>
+
+</menu><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/menu/side_navigation_menu.xml -->

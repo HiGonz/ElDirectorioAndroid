@@ -9,8 +9,10 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,9 +25,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+
 import com.androidquery.AQuery;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
@@ -39,6 +39,8 @@ import java.util.ArrayList;
 import directorio.applications.TodoManagerApplication;
 import directorio.services.dao.CiudadDAO;
 import directorio.services.dao.PaisDAO;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 
 //import directorio.others.ConnectionChangeReceiver;
 //import android.content.BroadcastReceiver;
@@ -53,7 +55,7 @@ import directorio.services.dao.PaisDAO;
  * @author Publysorpresas
  *
  */
-public class Search extends SherlockActivity implements ISideNavigationCallback {
+public class Search extends ActionBarActivity implements ISideNavigationCallback {
 
 	private SideNavigationView sideNavigationSearch;
 
@@ -186,7 +188,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		cargando.setIndeterminate(false);
 		manager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 
-		com.facebook.Settings.publishInstallAsync(getApplicationContext(),	getString(R.string.facebook_app_id));
+	//	com.facebook.Settings.publishInstallAsync(getApplicationContext(),	getString(R.string.facebook_app_id));
 		//
 		// IntentFilter filter = new IntentFilter();
 		// filter.addAction(CONNECTIVITY_SERVICE);
@@ -219,9 +221,10 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			longitude = loc1.getLongitude();
 		} else {
 			Log.d(TAG, "Lo obtuve por GPS");
-			Intent intent = new Intent("android.location.GPS_ENABLED_CHANGE");
-			intent.putExtra("enabled", true);
-			sendBroadcast(intent);
+            //Intent encender = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+			//Intent intent = new Intent("android.location.GPS_ENABLED_CHANGE");
+			//intent.putExtra("enabled", true);
+			//sendBroadcast(intent);
 			lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 			Location loc = lm
 					.getLastKnownLocation(LocationManager.GPS_PROVIDER);
@@ -233,9 +236,9 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 				latitude = 0.0;
 				longitude = 0.0;
 			}
-			Intent intento = new Intent("android.location.GPS_ENABLED_CHANGE");
-			intento.putExtra("enabled", false);
-			sendBroadcast(intento);
+			//Intent intento = new Intent("android.location.GPS_ENABLED_CHANGE");
+			//intento.putExtra("enabled", false);
+			//sendBroadcast(intento);
 		}
 //		manager = (LocationManager) this	.getSystemService(Context.LOCATION_SERVICE);
 		locationListener = new LocationListener() {
@@ -382,8 +385,9 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 		if (Busqueda.getText().toString().trim().equals("")) {
 			// Mostrar todos los advertiser de la ciudad seleccionada
 			String ciudadSeleccionada = spinner.getSelectedItem().toString();
-			if (ciudadSeleccionada.equals("Todas las ciudades")) {
-				Toast.makeText(Search.this,"¡Debes de insertar un valor de búsqueda!",	Toast.LENGTH_SHORT).show();
+			if (ciudadSeleccionada.equals("Selecciona una Ciudad")) {
+
+				Toast.makeText(Search.this,"¡Debes seleccionar una ciudad!",	Toast.LENGTH_SHORT).show();
 			} else {
 				intent = new Intent(Search.this, ShowSearch.class);
 				intent.putExtra("ciudad", ciudadSeleccionada);
@@ -443,7 +447,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 			Thread timer = new Thread() {
 				public void run() {
                     selectedCountry = aq.id(R.id.spinner_paises).getSpinner().getSelectedItem().toString();
-//					if (spinner.getSelectedItem().toString().equals("Todas las ciudades")&& kilometrosRedonda == 0.0) {
+//					if (spinner.getSelectedItem().toString().equals("Selecciona una Ciudad")&& kilometrosRedonda == 0.0) {
 //						SearchManager.returnAll(Busqueda.getText().toString(),selectedCountry);
 //					} else {
 //						SearchManager.negociosenRango(latitude, longitude,kilometrosRedonda, spinner.getSelectedItem().toString(), Busqueda.getText()	.toString(), selectedCountry);
@@ -473,9 +477,9 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
      */
     public void fetchCities(String pais){
         AQuery aq = new AQuery(this.getApplicationContext());
-        String url = "http://173.193.3.218/EntidadService.svc/getEntidades/"+ pais.replace(" ","%20")+"";
+        String url = "http://173.193.3.218/EntidadService.svc/getEntidadesConCategorias/"+ pais.replace(" ","%20")+"";
         System.out.println(url);
-         adapter.add("Todas las ciudades");
+         adapter.add("Selecciona una Ciudad");
         aq.ajax(url, JSONArray.class, new AjaxCallback<JSONArray>() {
             @Override
             public void callback(String url, JSONArray json, AjaxStatus status) {
@@ -536,7 +540,7 @@ public class Search extends SherlockActivity implements ISideNavigationCallback 
 				// Se cargan los datos de la ciudades desde la base de datos
 				try {
 					ArrayList<String> datos = cityDao.getCiudades(selectedCountry);
-					adapter.add("Todas las ciudades");
+					adapter.add("Selecciona una Ciudad");
 					for (int i = 0; i < datos.size(); i++) {
 						adapter.add(datos.get(i));
 					}

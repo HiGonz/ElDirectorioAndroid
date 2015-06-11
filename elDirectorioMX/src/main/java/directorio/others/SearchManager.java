@@ -20,13 +20,14 @@ import directorio.tools.JSONParser;
  * @author Juan Carlos Hinojo
  * @author Carlos Tirado
  * @author Publysorpresas
+ * @author Hiram González
  * 
  */
 @SuppressLint({ "ParserError", "ParserError" })
 public class SearchManager {
 
 	/** URL del web service **/
-	private static String URL = "http://173.193.3.218/AdvertiserService.svc/";
+	private static String URL2 = "http://173.193.3.218/AdvertiserService.svc/";
 
 	// tags del json
 	private static final String TAG_ADDRESS = "Address";
@@ -133,21 +134,29 @@ public class SearchManager {
 	public static ArrayList<Advertiser> negociosCiudad(String ciudad){
 		ArrayList<Advertiser> result = new ArrayList<Advertiser>();
 		JSONParser jp = new JSONParser();
-		JSONArray jArray = jp.getJSONFromUrl(URL + "searchByCity/" + ciudad);
+		JSONArray jArray = jp.getJSONFromUrl(URL2 + "searchByCity/" + ciudad);
+     //   Log.d(TAG, "*****JARRAY*****"+jArray.length());
 		try {
 			for (int i = 0; i < jArray.length(); i++) {
+
 				Advertiser a = new Advertiser();
-				JSONObject o = jArray.getJSONObject(i);
-				a.setDireccion(o.getString(TAG_ADDRESS));
+                Log.e(TAG, "sd1");
+                //JSONObject o = jArray.getJSONObject(i);
+                JSONObject o = jArray.getJSONObject(i);
+                Log.e(TAG, "sd2");
+                a.setDireccion(o.getString(TAG_ADDRESS));
 				a.setId(o.getString(TAG_ADVERTISER_ID));
 				a.setCiudad(o.getString(TAG_CITY));
 				String[] cats = new String[o.getJSONArray(TAG_CATS).length()];
-				for (int j = 0; j < cats.length; j++) {
+                Log.e(TAG, "sd3");
+                for (int j = 0; j < cats.length; j++) {
 					cats[j] = o.getJSONArray(TAG_CATS).get(j).toString();
 				}
+
 				a.setCategorias(cats);
 				a.setContacto(o.getString(TAG_CONTACT));
 				a.setDescripcion(TAG_DESC);
+                Log.e(TAG, "sd4");
 
 				JSONArray jat = o.getJSONArray(TAG_EMAIL);
 				for (int j = 0; j < jat.length(); j++) {
@@ -177,10 +186,14 @@ public class SearchManager {
 
 				a.setTwitter(o.getString(TAG_TWITTER));
 				result.add(a);
+
 			}
 		} catch (JSONException e) {
 			Log.e(TAG, e.toString());
+
 			e.printStackTrace();
+            Log.e("log_tag", "Error parsing data "+e.toString());
+            Log.e("log_tag", "Failed data was:\n" + result);
 		}
 		return result;
 	}
@@ -212,7 +225,7 @@ public class SearchManager {
 		ArrayList<Advertiser> resultados = new ArrayList<Advertiser>();
 		JSONParser jp = new JSONParser();
 		// trae el JSON
-		JSONArray jArray = jp.getJSONFromUrl(URL + "searchAll/" + filtro + "/"+ pais);
+		JSONArray jArray = jp.getJSONFromUrl(URL2 + "searchAll/" + filtro + "/"+ pais);
 		// Se guardan los valores
 		try {
 			for (int i = 0; i < jArray.length(); i++) {
