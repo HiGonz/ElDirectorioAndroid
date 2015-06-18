@@ -35,10 +35,10 @@ public class Splash extends ActionBarActivity {
             public void run() {
                 Intent mainIntent = new Intent().setClass(Splash.this, Portada.class);
                 startActivity(mainIntent);
-                finish();//Destruimos esta activity para prevenit que el usuario retorne aqui presionando el boton Atras.
+                finish();//Destruimos esta activity para prevenir que el usuario retorne aqui presionando el boton Atras.
             }
         };
         Timer timer = new Timer();
-        timer.schedule(task, 5000);
+        timer.schedule(task, 3000);
     }
 }

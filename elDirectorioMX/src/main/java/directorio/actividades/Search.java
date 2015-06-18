@@ -37,10 +37,12 @@ import org.json.JSONArray;
 import java.util.ArrayList;
 
 import directorio.applications.TodoManagerApplication;
+import directorio.others.SearchManager;
 import directorio.services.dao.CiudadDAO;
 import directorio.services.dao.PaisDAO;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import directorio.servicios.RegisterDevice;
 
 //import directorio.others.ConnectionChangeReceiver;
 //import android.content.BroadcastReceiver;
@@ -385,9 +387,22 @@ public class Search extends ActionBarActivity implements ISideNavigationCallback
 		if (Busqueda.getText().toString().trim().equals("")) {
 			// Mostrar todos los advertiser de la ciudad seleccionada
 			String ciudadSeleccionada = spinner.getSelectedItem().toString();
-			if (ciudadSeleccionada.equals("Selecciona una Ciudad")) {
 
-				Toast.makeText(Search.this,"¡Debes seleccionar una ciudad!",	Toast.LENGTH_SHORT).show();
+            // Log.v(TAG, ciudadSeleccionada);
+			if (ciudadSeleccionada.equals("Selecciona una Ciudad")) {
+                // ciudadSeleccionada = "Colima".toString();
+//                SearchManager.returnAll(Busqueda.getText().toString(), selectedCountry);
+                intent = new Intent(Search.this, ShowSearch.class);
+
+                intent.putExtra("kil", 9999);
+                intent.putExtra("ciudad", "Colima");
+                intent.putExtra("busqueda", Busqueda.getText().toString());
+                intent.putExtra("pais",selectedCountry);
+                Search.this.startActivity(intent);
+                buscando.setVisibility(TextView.VISIBLE);
+                cargando.setVisibility(ProgressBar.VISIBLE);
+                cargando.setIndeterminate(true);
+				//Toast.makeText(Search.this,"¡Debes seleccionar una ciudad!",	Toast.LENGTH_SHORT).show();
 			} else {
 				intent = new Intent(Search.this, ShowSearch.class);
 				intent.putExtra("ciudad", ciudadSeleccionada);
@@ -408,9 +423,9 @@ public class Search extends ActionBarActivity implements ISideNavigationCallback
 			// Search.this.startActivity(intent);
 			// }
 			// };
-			// buscando.setVisibility(TextView.VISIBLE);
-			// cargando.setVisibility(ProgressBar.VISIBLE);
-			// cargando.setIndeterminate(true);
+			 buscando.setVisibility(TextView.VISIBLE);
+			 cargando.setVisibility(ProgressBar.VISIBLE);
+			 cargando.setIndeterminate(true);
 			// timer.start();
 			// No se realizará la búsqueda, ya que consume muchos datos.
 		} else if (longitude == 0.0 && latitude == 0.0 && kilometrosRedonda != 0.0) {

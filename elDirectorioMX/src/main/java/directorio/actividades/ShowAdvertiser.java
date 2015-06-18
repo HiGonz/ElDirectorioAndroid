@@ -380,8 +380,8 @@ public class ShowAdvertiser extends ActionBarActivity implements ISideNavigation
 		youtube = (TextView) findViewById(R.id.ver_video);
 
 		// Promociones del club
-		promocionBlue = (TextView) findViewById(R.id.promocion_club);
-		promocion = (TextView) findViewById(R.id.promocion);
+		//promocionBlue = (TextView) findViewById(R.id.promocion_club);
+		//promocion = (TextView) findViewById(R.id.promocion);
 
 		// Setup Business Galleries
 		gal = (TextView) findViewById(R.id.galerias);
@@ -396,17 +396,17 @@ public class ShowAdvertiser extends ActionBarActivity implements ISideNavigation
 		couponLinkClub = (TextView) findViewById(R.id.link_adv_coupons_club);
 
 		// boton de favoritos
-		//favs = (Button) findViewById(R.id.agregar_favs);
+		favs = (Button) findViewById(R.id.agregar_favs);
 
 		// boton de agregar contactos
-		addContacts = (Button) findViewById(R.id.agregar_contectos);
-		addContacts.setBackgroundResource(R.drawable.contacto);
+		// addContacts = (Button) findViewById(R.id.agregar_contectos);
+		//addContacts.setBackgroundResource(R.drawable.contacto);
 
-		addContacts.setOnClickListener(new View.OnClickListener() {
+		/*addContacts.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				addToContacts();
 			}
-		});
+		});*/
 	}
 
 	@Override
@@ -450,7 +450,7 @@ public class ShowAdvertiser extends ActionBarActivity implements ISideNavigation
 		// o en caso de que no se sea parte del club.
 
 
-			promocion.setText(advertiserToShow.getPromocion());
+//			promocion.setText(advertiserToShow.getPromocion());
 
 		// se muestra el nombre de la empresa
 		String name = advertiserToShow.getNombre();
@@ -971,8 +971,7 @@ public class ShowAdvertiser extends ActionBarActivity implements ISideNavigation
 				.getId());
 
 		// si tiene cupones, y si esta loggeado, se muestran los cupones
-		if (tieneCupones > 0
-				&& (log.equals("Logged") || log.equals("LoggedClub"))) {
+		if (tieneCupones > 0) {
 			coupon.setVisibility(View.VISIBLE);
 			couponLink.setVisibility(View.VISIBLE);
 			couponLink.setTextSize(23);
@@ -1026,10 +1025,10 @@ public class ShowAdvertiser extends ActionBarActivity implements ISideNavigation
 		 * variables para poder probarlos.
 		 */
 		final TodoManagerApplication ama = (TodoManagerApplication) getApplication();
-	//	String nombreTemporal = advertiserToShow.getNombre();
+		String nombreTemporal = advertiserToShow.getNombre();
 
 
-/*		boolean isInFavs = fd.isInFavoritos(nombreTemporal);
+		boolean isInFavs = fd.isInFavoritos(nombreTemporal);
 		if (isInFavs == true) {
 			favs.setBackgroundResource(R.drawable.favorito);
 			favs.setOnClickListener(new View.OnClickListener() {
@@ -1086,7 +1085,7 @@ public class ShowAdvertiser extends ActionBarActivity implements ISideNavigation
 				}
 			});
 
-		}*/
+		}
 
 	}
 

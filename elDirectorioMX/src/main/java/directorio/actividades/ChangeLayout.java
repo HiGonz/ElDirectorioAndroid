@@ -28,10 +28,10 @@ public class ChangeLayout {
 
 
 
-//		case R.id.snm_favoritos:
-//			intent = new Intent(context, Favoritos.class);
-//			context.startActivity(intent);
-//			break;
+		case R.id.snm_favoritos:
+			intent = new Intent(context, Favoritos.class);
+			context.startActivity(intent);
+			break;
 //		case R.id.snm_destacados:
 //			intent = new Intent(context, CuponesClub.class);
 //			context.startActivity(intent);

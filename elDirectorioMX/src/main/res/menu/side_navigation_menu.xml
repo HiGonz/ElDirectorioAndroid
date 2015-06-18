@@ -9,11 +9,11 @@
         android:id="@+id/snm_categorias"
         android:icon="@drawable/menu_categories"
         android:title="@string/categorias"/>
-<!--     <item
+     <item
             android:id="@+id/snm_favoritos"
             android:icon="@drawable/menu_favorite"
             android:title="@string/favoritos"/>
-       <item
+    <!--   <item
             android:id="@+id/snm_cupones"
             android:icon="@drawable/menu_coupons"
             android:title="@string/cupones"/>-->

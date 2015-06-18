@@ -1914,16 +1914,16 @@ www.eldirectorio.mx</string><string name="dummy_button">Dummy Button</string><st
         <item name="android:listSelector">@drawable/photogrid_list_selector</item>
     </style><style name="ButtonBarButton"/><style name="ApIntroTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowBackground">@color/azuldirectorio</item>
-    </style><style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen"/><style name="ButtonBar">
+    </style><style name="drawerArrowStyle">
         <item name="android:paddingLeft">2dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingRight">2dp</item>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:background">@android:drawable/bottom_bar</item>
-    </style><style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+    </style><style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen"/><style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowBackground">@null</item>
-        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarStyle">@style/drawerArrowStyle</item>
         <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
     </style><style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

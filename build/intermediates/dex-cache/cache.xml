@@ -9,39 +9,11 @@
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/gson-2.2.4-93533706ed58aa1fc4c99768239d7bcc5c1f1551.jar" />
     </item>
     <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-a348bef69e4c6bc06122bc33128053306736b7fe.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-fd13623d2093578a1a6abcc838ff6ebc14247a7e.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-56d13bfec8ebd6d5bb7bfb60bee04001f0c129e8.jar" />
-    </item>
-    <item
         jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="02bac2dc792d78241077861566f2c82da955e7fa">
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-035dafb2cab4cd1b77a52785e048b9e2fba1690a.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/eldirectoriomx/library/unspecified/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="e4b17771762a9099b6bd269a4035c34b5447eb36">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-025004eb1de5ccd3f15d4fa848f5c44b79b805ee.jar" />
     </item>
     <item
         jar="/Users/usuario/eldirectoriomx/elDirectorioMX/libs/commons-io-2.4.jar"
@@ -58,41 +30,6 @@
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-ec4787a44285f0e67cd80bf9bc74327427e59a9c.jar" />
     </item>
     <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-9e010bacfac5b0f428279620b412e97e384f0b16.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/.gradle/caches/modules-2/files-2.1/com.googlecode.android-query/android-query/0.25.9/fff82e4e1e56b60d6eb1d5487dbd3d3b526b635f/android-query-0.25.9.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="fff82e4e1e56b60d6eb1d5487dbd3d3b526b635f">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/android-query-0.25.9-b7121dc33b5ef87477a1929047e574a6dd453d7b.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="d405025c600055237c171a0bbabaa49d69696573">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-3be4d0c7fb8409f114664eb515c7878dffea2ed1.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-f61e426b9e2993c991f2d0d5398900e6cf109173.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-9ac8ea1a0d5287c35cd5772f4f457b4f68db39fa.jar" />
-    </item>
-    <item
         jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
@@ -107,13 +44,6 @@
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-9f404c2cb2c60f8aaab1a4910bc63e8b159aba21.jar" />
     </item>
     <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-6d95d6f3bd01ddbf0c7c4e5d9cd22ae58f708aa2.jar" />
-    </item>
-    <item
         jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
@@ -126,41 +56,6 @@
         revision="19.1.0"
         sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-126837ccf15ad1ce95449a6c207e1238fd2d5788.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-51245d633fb8913612e548429fc82018977e5475.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-394099f680859f8a21e08749674e649a00656488.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-3b869129f7a850a3318aa305fd188b6f6741ddb0.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-12f7809de9922643154f5b4072eea07786245692.jar" />
-    </item>
-    <item
-        jar="/Users/usuario/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-461b590c0d3a6b4a234130eb1082f666dbfda09e.jar" />
     </item>
     <item
         jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/classes.jar"
@@ -198,13 +93,6 @@
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-8c5c6c2039767e539f15fa2b33fd24ee5d21fa1b.jar" />
     </item>
     <item
-        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
-        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-d1406639bdf0c83a5a5e7186b5e31d3fb4d4e42d.jar" />
-    </item>
-    <item
         jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
@@ -224,6 +112,118 @@
         revision="19.1.0"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
         <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-4606cbdd4ecb36296e5df013858dc97453c13870.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-a348bef69e4c6bc06122bc33128053306736b7fe.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-fd13623d2093578a1a6abcc838ff6ebc14247a7e.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-56d13bfec8ebd6d5bb7bfb60bee04001f0c129e8.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/eldirectoriomx/library/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e4b17771762a9099b6bd269a4035c34b5447eb36">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-025004eb1de5ccd3f15d4fa848f5c44b79b805ee.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-9e010bacfac5b0f428279620b412e97e384f0b16.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/.gradle/caches/modules-2/files-2.1/com.googlecode.android-query/android-query/0.25.9/fff82e4e1e56b60d6eb1d5487dbd3d3b526b635f/android-query-0.25.9.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="fff82e4e1e56b60d6eb1d5487dbd3d3b526b635f">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/android-query-0.25.9-b7121dc33b5ef87477a1929047e574a6dd453d7b.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-3be4d0c7fb8409f114664eb515c7878dffea2ed1.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-f61e426b9e2993c991f2d0d5398900e6cf109173.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-9ac8ea1a0d5287c35cd5772f4f457b4f68db39fa.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-6d95d6f3bd01ddbf0c7c4e5d9cd22ae58f708aa2.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-51245d633fb8913612e548429fc82018977e5475.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-394099f680859f8a21e08749674e649a00656488.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-3b869129f7a850a3318aa305fd188b6f6741ddb0.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-12f7809de9922643154f5b4072eea07786245692.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-461b590c0d3a6b4a234130eb1082f666dbfda09e.jar" />
+    </item>
+    <item
+        jar="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="/Users/usuario/eldirectoriomx/elDirectorioMX/build/intermediates/pre-dexed/debug/classes-d1406639bdf0c83a5a5e7186b5e31d3fb4d4e42d.jar" />
     </item>
 
 </items>
