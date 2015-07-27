@@ -31,6 +31,9 @@ import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
 import com.devspark.sidenavigation.ISideNavigationCallback;
 import com.devspark.sidenavigation.SideNavigationView;
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
 
 import org.json.JSONArray;
 
@@ -105,6 +108,8 @@ public class Search extends ActionBarActivity implements ISideNavigationCallback
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+
 		setContentView(R.layout.activity_search_3);
 		setTitle("Buscar");
 		Log.d(TAG, "Actividad " + TAG);

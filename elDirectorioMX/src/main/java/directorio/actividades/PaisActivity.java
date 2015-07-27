@@ -84,7 +84,7 @@ public class PaisActivity extends ActionBarActivity {
 		boolean selectionDone = sp.getBoolean("hasSelected", false);
 
 		if (selectionDone == true) {
-			// en caso de que si se seleccioné un país, empezar la aplicación
+			// en caso de que si se seleccione un país, empezar la aplicación
 			Intent intent = new Intent(PaisActivity.this, Search.class);
 			startActivity(intent);
 		} else {
@@ -112,7 +112,7 @@ public class PaisActivity extends ActionBarActivity {
 							"no jala"));
 					finish();
 					Intent intent = new Intent(PaisActivity.this,
-							MainCategories.class);
+							ScreenSlidePagerActivity.class);
 					startActivity(intent);
 				}
 

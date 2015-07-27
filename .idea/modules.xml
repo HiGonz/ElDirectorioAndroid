@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ElDirectorioAndroid.iml" filepath="$PROJECT_DIR$/ElDirectorioAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/elDirectorioMX/elDirectorioMX.iml" filepath="$PROJECT_DIR$/elDirectorioMX/elDirectorioMX.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eldirectoriomx.iml" filepath="$PROJECT_DIR$/eldirectoriomx.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>
-

@@ -7,6 +7,10 @@ import android.view.Window;
 import android.view.WindowManager;
 
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -19,6 +23,11 @@ public class Splash extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
 //        getActionBar().hide();
+// Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+
+        Parse.initialize(this, "mDAb0aIwtyNyJyfkx1iXmimFH0n3g2Gx83U0Yju6", "kRlf13kipRGiTAE1HCpIlMybjEXQgpeJCwxZeiky");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);

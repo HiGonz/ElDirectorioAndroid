@@ -34,6 +34,7 @@
     <string name="title_activity_categorias">Categorias</string>
     <string name="title_activity_show_categorias">Todas las Categorías</string>
     <string name="title_activity_main_categories">Categorías principales</string>
+    <string name="title_activity_rifa">Rifa</string>
     <string name="title_activity_info_club">Información Club El Directorio</string>
     <string name="inicia_sesi_n_o_reg_strate_para_acceder_a_los_cupones">Inicia sesión o regístrate para acceder a los cupones</string>
     <string name="nombre_de_usuario">Nombre de Usuario</string>
@@ -108,5 +109,12 @@ www.eldirectorio.mx</string>
     <string name="title_activity_splash">Splash</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="NombreRifa">Tu Nombre*</string>
+    <string name="addressRifa">Dirección</string>
+    <string name="phoneRifa">Teléfono</string>
+    <string name="emailRifa">E-Mail*</string>
+    <string name="graciasInstalar">Gracias por instalar</string>
+    <string name="logoElDir">logoElDirectorio</string>
+    <string name="nameTitle">Nombre*</string>
 
 </resources>

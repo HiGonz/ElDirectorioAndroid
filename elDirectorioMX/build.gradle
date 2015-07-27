@@ -46,4 +46,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.googlecode.android-query:android-query:0.25.9'
     compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: '*.jar')
 }
