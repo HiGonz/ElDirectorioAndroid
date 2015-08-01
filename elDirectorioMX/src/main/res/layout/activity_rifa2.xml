@@ -110,4 +110,16 @@
         android:layout_height="wrap_content"
         android:onClick="registerClick" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/skipButton"
+        android:id="@+id/skipButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/Blue2"
+        android:onClick="skipThis" />
+
 </RelativeLayout>

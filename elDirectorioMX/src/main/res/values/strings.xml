@@ -116,5 +116,6 @@ www.eldirectorio.mx</string>
     <string name="graciasInstalar">Gracias por instalar</string>
     <string name="logoElDir">logoElDirectorio</string>
     <string name="nameTitle">Nombre*</string>
+    <string name="skipButton">Saltar</string>
 
 </resources>

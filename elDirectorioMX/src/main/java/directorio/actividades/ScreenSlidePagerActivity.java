@@ -5,15 +5,18 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
-import directorio.actividades.R;
-import directorio.actividades.Rifa;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Random;
+
+import directorio.database.DBConnection;
 
 public class ScreenSlidePagerActivity extends FragmentActivity {
     /**
@@ -68,8 +71,45 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
         mPager.setCurrentItem(1);
     }
 
-    public void registerClick(View view) {
-        
+    public void registerClick(View view) throws SQLException {
+
+        DBConnection miConexion;
+        miConexion=DBConnection.getInstance();
+
+        if(miConexion!=null)
+        {
+        Log.d("Conection", "Yeii");
+        }
+
+        EditText Nombre = (EditText) findViewById(R.id.entry);
+        EditText Direccion = (EditText) findViewById(R.id.entry2);
+        EditText Phone = (EditText) findViewById(R.id.entry3);
+        EditText Email = (EditText) findViewById(R.id.entry4);
+
+        Random rand = new Random();
+        int Folio = rand.nextInt((20000-0) +1) + 1;
+        String formatted = String.format("%05d",Folio);
+
+
+
+        String insertTableSQL = "INSERT INTO RIFA"
+                + "(Name, Direccion, Phone, Email, Folio) VALUES"
+                + "(?,?,?,?,?)";
+        PreparedStatement preparedStatement = miConexion.conectar().prepareStatement(insertTableSQL);
+        preparedStatement.setString(1, String.valueOf(Nombre));
+        preparedStatement.setString(2, String.valueOf(Direccion));
+        preparedStatement.setInt(3, Integer.parseInt(String.valueOf(Phone)));
+        preparedStatement.setString(4, String.valueOf(Email));
+        preparedStatement.setInt(5, Integer.parseInt(String.valueOf(formatted)));
+
+        preparedStatement.executeUpdate();
+
+        mPager.setCurrentItem(2);
+
+    }
+    public void skipThis(){
+        Intent mainIntent = new Intent().setClass(ScreenSlidePagerActivity.this, Search.class);
+        startActivity(mainIntent);
     }
 
     /**
@@ -88,9 +128,9 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
             switch (position) {
                 case 0: // Fragment # 0 - This will show FirstFragment
                     return Rifa.newInstance(0, "Page # 1");
-                case 1: // Fragment # 0 - This will show FirstFragment different title
+                case 1: // Fragment # 0 - This will show SecondFragment
                     return Rifa2.newInstance(1, "Page # 2");
-                case 2: // Fragment # 1 - This will show SecondFragment
+                case 2: // Fragment # 1 - This will show ThirdFragment
                     return Rifa3.newInstance(2, "Page # 3");
                 default:
                     return null;

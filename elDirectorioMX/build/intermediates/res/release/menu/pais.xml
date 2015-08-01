@@ -1,9 +1,10 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:directorio="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        directorio:showAsAction="never"
         android:title="@string/action_settings"/>
 
-</menu><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/menu/pais.xml -->
+</menu><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/menu/pais.xml -->

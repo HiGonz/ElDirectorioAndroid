@@ -43,4 +43,4 @@
         android:contentDescription="@string/no_description"
         android:src="@drawable/next_icon" />
 
-</LinearLayout><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/layout/adapters_custom_categories.xml -->
+</LinearLayout><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/adapters_custom_categories.xml -->

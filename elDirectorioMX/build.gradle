@@ -36,7 +36,7 @@ android {
 
 
 dependencies {
-   // compile project(':facebook-android-sdk:facebook')
+    // compile project(':facebook-android-sdk:facebook')
     compile project(':library')
     compile files('libs/commons-io-2.4.jar')
     compile 'com.google.android.gms:play-services:7.5.0'
@@ -48,4 +48,5 @@ dependencies {
     compile 'com.facebook.android:facebook-android-sdk:4.0.0'
     compile 'com.parse.bolts:bolts-android:1.+'
     compile fileTree(dir: 'libs', include: '*.jar')
+    compile files('libs/jtds-1.3.1.jar')
 }

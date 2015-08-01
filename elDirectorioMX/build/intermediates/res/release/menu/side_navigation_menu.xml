@@ -9,11 +9,11 @@
         android:id="@+id/snm_categorias"
         android:icon="@drawable/menu_categories"
         android:title="@string/categorias"/>
-<!--     <item
+     <item
             android:id="@+id/snm_favoritos"
             android:icon="@drawable/menu_favorite"
             android:title="@string/favoritos"/>
-       <item
+    <!--   <item
             android:id="@+id/snm_cupones"
             android:icon="@drawable/menu_coupons"
             android:title="@string/cupones"/>-->
@@ -34,4 +34,4 @@
         android:icon="@drawable/icon_settings"
         android:title="@string/configuraci_n"/>
 
-</menu><!-- From: file:/Users/usuario/eldirectoriomx/elDirectorioMX/src/main/res/menu/side_navigation_menu.xml -->
+</menu><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/menu/side_navigation_menu.xml -->

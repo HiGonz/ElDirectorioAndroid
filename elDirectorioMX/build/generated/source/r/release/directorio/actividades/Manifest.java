@@ -9,6 +9,12 @@ package directorio.actividades;
 
 public final class Manifest {
     public static final class permission {
+        /** 
+    <uses-permission android:name="directorio.actividades.permission.C2D_MESSAGE" />
+    <permission  android:name="directorio.actividades.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.C2D_MESSAGE" />
+    
+         */
         public static final String C2D_MESSAGE="directorio.actividades.permission.C2D_MESSAGE";
     }
 }

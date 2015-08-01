@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/diseno2/ElDirectorioAndroid/library/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/library/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <color name="side_navigation_background">#303030</color>
     <color name="side_navigation_item_text_color">#f3f3f3</color>
