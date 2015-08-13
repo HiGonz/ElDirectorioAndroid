@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="mediaRouteButtonStyle"/>
     <attr format="reference" name="mediaRouteConnectingDrawable"/>
@@ -14,7 +14,7 @@
     <attr format="reference" name="mediaRoutePauseDrawable"/>
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSettingsDrawable"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
@@ -23,7 +23,7 @@
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/color.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="Black">#000000</color>
     <color name="Blue">#0000FF</color>
@@ -33,7 +33,7 @@
     <color name="Red">#f00</color>
     <color name="Silver">#C0C0C0</color>
     <color name="White">#FFFFFF</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -41,19 +41,19 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="azuldirectorio">#0565B4</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black_overlay">#66000000</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -63,7 +63,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="com_facebook_blue">#3B5998</color>
     <color name="com_facebook_button_background_color">#415dae</color>
@@ -78,7 +78,7 @@
     <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
     <color name="com_facebook_likeview_text_color">#6a7180</color>
     <color name="com_facebook_share_button_text_color">#FFFFFF</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_colors.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_signin_btn_dark_text_default">@android:color/white</color>
@@ -90,17 +90,17 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/color.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="grid_state_focused">#777dbcd3</color>
     <color name="grid_state_pressed">#BB7dbcd3</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -127,17 +127,17 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/ElDirectorioAndroid/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/ElDirectorioAndroid/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="side_navigation_background">#303030</color>
     <color name="side_navigation_item_text_color">#f3f3f3</color>
     <color name="side_navigation_list_divider_color">#4f4f4f</color>
     <color name="side_navigation_outside_background">#7000</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_colors.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_colors.xml -->
     <eat-comment/>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -188,7 +188,7 @@
     <declare-styleable name="com_facebook_like_view"><attr format="color" name="foreground_color"/><attr format="string" name="object_id"/><attr name="object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
     <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="confirm_logout"/><attr format="string" name="login_text"/><attr format="string" name="logout_text"/></declare-styleable>
     <declare-styleable name="com_facebook_profile_picture_view"><attr name="preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="is_cropped"/></declare-styleable>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -232,11 +232,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
     <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
@@ -257,7 +257,7 @@
     <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
     <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
     <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -265,15 +265,15 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="image_detail_pager_margin">80dp</dimen>
     <dimen name="image_thumbnail_size">100dp</dimen>
     <dimen name="image_thumbnail_spacing">1dp</dimen>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/ElDirectorioAndroid/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/ElDirectorioAndroid/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="side_navigation_item_image_height">24dp</dimen>
     <dimen name="side_navigation_item_image_padding">2dp</dimen>
@@ -283,16 +283,16 @@
     <dimen name="side_navigation_item_text_padding_left">10dp</dimen>
     <dimen name="side_navigation_item_text_size">18sp</dimen>
     <dimen name="side_navigation_width">200dp</dimen>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_ids.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_ids.xml -->
     <eat-comment/>
     <item name="cast_notification_id" type="id"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
@@ -302,10 +302,10 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/version.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">7571000</integer>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="NombreRifa">Tu Nombre*</string>
     <string name="_contacto">" Contacto"</string>
@@ -315,7 +315,7 @@
     <string name="_galeria">" Galeria"</string>
     <string name="_qu_est_s_buscando_">¿Qué estás buscando?</string>
     <string name="_sucursales">" Sucursales"</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -333,10 +333,10 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="activity_cupones_club">Cupones del Club El Directorio</string>
@@ -351,25 +351,25 @@
  
 www.eldirectorio.mx</string>
     <string name="app_name">El Directorio</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/auth_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="buscando">buscando</string>
     <string name="buscando_">Buscando . . .</string>
     <string name="buscar">Buscar</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_disconnect">Disconnect</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="categorias">Categorías</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -387,7 +387,7 @@ www.eldirectorio.mx</string>
     <string name="com_facebook_send_button_text">Send</string>
     <string name="com_facebook_share_button_text">Share</string>
     <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
@@ -421,7 +421,7 @@ www.eldirectorio.mx</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="comparte">Comparte</string>
     <string name="compartir_en_facebook">compartir en facebook</string>
@@ -429,18 +429,18 @@ www.eldirectorio.mx</string>
     <string name="compartir_v_a_email">compartir vía email</string>
     <string name="configuraci_n">Configuración</string>
     <string name="contrase_a">Contraseña</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="cupones">Cupones</string>
     <string name="cupones_club">Cupones Club</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="decline">Decline</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="destacados">Club El Directorio</string>
     <string name="dile_a_tus_amigos_de_el_directorio_">Dile a tus amigos de El Directorio:</string>
@@ -479,10 +479,10 @@ www.eldirectorio.mx</string>
     <string name="m_exico">México</string>
     <string name="m_s_informaci_n_en_">Más información en:</string>
     <string name="menu_settings">Settings</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">Send</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="mr_media_route_button_content_description">Cast</string>
     <string name="mr_media_route_chooser_searching">Searching for devices\u2026</string>
@@ -494,7 +494,7 @@ www.eldirectorio.mx</string>
     <string name="mr_media_route_controller_stop">Stop casting</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="nameTitle">Nombre*</string>
     <string name="no_cuenta">¿No tienes cuenta?</string>
@@ -511,11 +511,11 @@ www.eldirectorio.mx</string>
     <string name="seleccion_pais">Selección de País</string>
     <string name="select_country">Selecciona tu País</string>
     <string name="skipButton">Saltar</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="testing">Cargando</string>
     <string name="title_activity_acerca_de">Acerca De</string>
@@ -546,16 +546,16 @@ www.eldirectorio.mx</string>
     <string name="ventas_mail">ventas@eldirectorio.mx</string>
     <string name="ver_video">Ver video</string>
     <string name="video">Video</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="web">Web</string>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ApIntroTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowBackground">@color/azuldirectorio</item>
@@ -571,7 +571,7 @@ www.eldirectorio.mx</string>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Animation.AppCompat.DropDownUp" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
@@ -1426,7 +1426,7 @@ www.eldirectorio.mx</string>
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ButtonBarButton"/>
     <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
@@ -1435,7 +1435,7 @@ www.eldirectorio.mx</string>
         <item name="metaButtonBarStyle">@style/drawerArrowStyle</item>
         <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="MessengerButton">
     <item name="android:clickable">true</item>
@@ -1495,13 +1495,13 @@ www.eldirectorio.mx</string>
     <style name="MessengerButtonText.White.Small">
     <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
   </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="PhotoGridLayout">
         <item name="android:drawSelectorOnTop">true</item>
         <item name="android:listSelector">@drawable/photogrid_list_selector</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1761,7 +1761,7 @@ www.eldirectorio.mx</string>
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_iap_style.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_iap_style.xml -->
     <eat-comment/>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>
@@ -1771,7 +1771,7 @@ www.eldirectorio.mx</string>
     <item name="android:windowIsFloating">true</item>
     <item name="android:backgroundDimEnabled">false</item>
   </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.MediaRouter" parent="">
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
@@ -1793,14 +1793,14 @@ www.eldirectorio.mx</string>
         <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_styles.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_styles.xml -->
     <eat-comment/>
     <style name="WalletFragmentDefaultButtonTextAppearance">
         <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
@@ -1834,7 +1834,7 @@ www.eldirectorio.mx</string>
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -1919,7 +1919,7 @@ www.eldirectorio.mx</string>
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
         <item name="android:minWidth">56dp</item>
@@ -1937,7 +1937,7 @@ www.eldirectorio.mx</string>
         <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
         <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="com_facebook_button" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/com_facebook_button_background</item>
@@ -1970,7 +1970,7 @@ www.eldirectorio.mx</string>
         <item name="android:drawableLeft">@null</item>
         <item name="android:textColor">#4b5164</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="drawerArrowStyle">
         <item name="android:paddingLeft">2dp</item>
@@ -1979,7 +1979,7 @@ www.eldirectorio.mx</string>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:background">@android:drawable/bottom_bar</item>
     </style>
-    <!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
+    <!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="tooltip_bubble_text">
 	    <item name="android:textColor">@android:color/white</item>

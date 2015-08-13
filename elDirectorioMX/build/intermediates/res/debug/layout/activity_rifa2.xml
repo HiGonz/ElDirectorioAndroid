@@ -120,6 +120,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textColor="@color/Blue2"
-        android:onClick="skipThis" />
+        />
 
-</RelativeLayout><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/activity_rifa2.xml -->
+</RelativeLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/activity_rifa2.xml -->

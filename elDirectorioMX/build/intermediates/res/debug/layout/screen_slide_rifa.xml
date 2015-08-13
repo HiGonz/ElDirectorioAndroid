@@ -3,4 +3,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/pager"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" /><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/screen_slide_rifa.xml -->
+    android:layout_height="match_parent" /><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/screen_slide_rifa.xml -->

@@ -2,6 +2,7 @@ package directorio.actividades;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
 import android.view.WindowManager;
@@ -28,6 +29,10 @@ public class Splash extends ActionBarActivity {
 
         Parse.initialize(this, "mDAb0aIwtyNyJyfkx1iXmimFH0n3g2Gx83U0Yju6", "kRlf13kipRGiTAE1HCpIlMybjEXQgpeJCwxZeiky");
         ParseInstallation.getCurrentInstallation().saveInBackground();
+
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);

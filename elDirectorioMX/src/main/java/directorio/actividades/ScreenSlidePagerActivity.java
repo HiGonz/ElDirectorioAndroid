@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.androidquery.AQuery;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Random;
@@ -46,6 +48,10 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
         mPager = (ViewPager) findViewById(R.id.pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
+        AQuery aq = new AQuery(this);
+
+        aq.id(R.id.skipButton).clicked(this, "skipThis");
+        aq.id(R.id.continueAction).clicked(this, "skipThis");
     }
 
     @Override
@@ -67,7 +73,6 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
      *
      */
     public void cliCkaoTio(View v) {
-
         mPager.setCurrentItem(1);
     }
 
@@ -90,24 +95,23 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
         int Folio = rand.nextInt((20000-0) +1) + 1;
         String formatted = String.format("%05d",Folio);
 
-
-
         String insertTableSQL = "INSERT INTO RIFA"
                 + "(Name, Direccion, Phone, Email, Folio) VALUES"
                 + "(?,?,?,?,?)";
         PreparedStatement preparedStatement = miConexion.conectar().prepareStatement(insertTableSQL);
-        preparedStatement.setString(1, String.valueOf(Nombre));
-        preparedStatement.setString(2, String.valueOf(Direccion));
-        preparedStatement.setInt(3, Integer.parseInt(String.valueOf(Phone)));
-        preparedStatement.setString(4, String.valueOf(Email));
-        preparedStatement.setInt(5, Integer.parseInt(String.valueOf(formatted)));
+        preparedStatement.setString(1, Nombre.getText().toString());
+        preparedStatement.setString(2, Direccion.getText().toString());
+        preparedStatement.setString(3, Phone.getText().toString());
+        preparedStatement.setString(4, Email.getText().toString());
+        preparedStatement.setString(5, formatted);
 
         preparedStatement.executeUpdate();
 
         mPager.setCurrentItem(2);
 
     }
-    public void skipThis(){
+
+    public void skipThis() {
         Intent mainIntent = new Intent().setClass(ScreenSlidePagerActivity.this, Search.class);
         startActivity(mainIntent);
     }
@@ -120,8 +124,6 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
-
-
 
         @Override
         public Fragment getItem(int position) {

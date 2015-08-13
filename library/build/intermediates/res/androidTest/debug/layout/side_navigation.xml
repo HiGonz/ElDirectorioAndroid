@@ -33,4 +33,4 @@
             android:background="@drawable/side_navigation_shadow" />
     </LinearLayout>
 
-</RelativeLayout><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/library/src/main/res/layout/side_navigation.xml --><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/library/build/intermediates/bundles/debug/res/layout/side_navigation.xml -->
+</RelativeLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/library/src/main/res/layout/side_navigation.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/library/build/intermediates/bundles/debug/res/layout/side_navigation.xml -->

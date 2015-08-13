@@ -26,4 +26,4 @@
         android:textColor="@color/side_navigation_item_text_color"
         android:textSize="@dimen/side_navigation_item_text_size" />
 
-</LinearLayout><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/library/src/main/res/layout/side_navigation_item.xml --><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/ElDirectorioAndroid/library/unspecified/res/layout/side_navigation_item.xml -->
+</LinearLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/library/src/main/res/layout/side_navigation_item.xml --><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/build/intermediates/exploded-aar/ElDirectorioAndroid/library/unspecified/res/layout/side_navigation_item.xml -->

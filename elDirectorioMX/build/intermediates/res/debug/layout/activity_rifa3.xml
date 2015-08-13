@@ -37,11 +37,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Continuar"
-        android:id="@+id/textView"
+        android:id="@+id/continueAction"
         android:layout_below="@id/avisaremos"
         android:textSize="25sp"
-        android:layout_centerHorizontal="true"
-        android:onClick="skipThis" />
+        android:layout_centerHorizontal="true" />
 
 
-</RelativeLayout><!-- From: file:/Users/jackiedajlala/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/activity_rifa3.xml -->
+</RelativeLayout><!-- From: file:/home/juancarlos/Desarrollo/movil/ElDirectorioAndroid/elDirectorioMX/src/main/res/layout/activity_rifa3.xml -->

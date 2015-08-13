@@ -2121,6 +2121,7 @@ containing a value of this type.
         public static final int comparte_sidenavigationview=0x7f0c0071;
         public static final int contacto_empresa=0x7f0c00b6;
         public static final int content=0x7f0c0099;
+        public static final int continueAction=0x7f0c009b;
         public static final int contraCupones=0x7f0c0079;
         public static final int cuponName=0x7f0c00d6;
         public static final int cupon_login_sidenavigationview=0x7f0c0076;
@@ -2290,7 +2291,6 @@ containing a value of this type.
         public static final int tabMode=0x7f0c0002;
         public static final int terrain=0x7f0c0011;
         public static final int test=0x7f0c001e;
-        public static final int textView=0x7f0c009b;
         public static final int text_wrapper=0x7f0c00e6;
         public static final int textoBusqueda=0x7f0c00a0;
         public static final int texto_metros=0x7f0c00a3;

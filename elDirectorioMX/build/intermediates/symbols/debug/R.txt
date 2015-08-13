@@ -720,6 +720,7 @@ int id comp_text 0x7f0c006f
 int id comparte_sidenavigationview 0x7f0c0071
 int id contacto_empresa 0x7f0c00b6
 int id content 0x7f0c0099
+int id continueAction 0x7f0c009b
 int id contraCupones 0x7f0c0079
 int id cuponName 0x7f0c00d6
 int id cupon_login_sidenavigationview 0x7f0c0076
@@ -889,7 +890,6 @@ int id sucursales_empresa 0x7f0c00b4
 int id tabMode 0x7f0c0002
 int id terrain 0x7f0c0011
 int id test 0x7f0c001e
-int id textView 0x7f0c009b
 int id text_wrapper 0x7f0c00e6
 int id textoBusqueda 0x7f0c00a0
 int id texto_metros 0x7f0c00a3
